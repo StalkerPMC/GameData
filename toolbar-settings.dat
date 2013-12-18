@@ -4,7 +4,7 @@ toolbars
 	{
 		x = 284
 		y = 10
-		width = 49
+		width = 82
 		height = 38
 		autoHide = False
 	}
