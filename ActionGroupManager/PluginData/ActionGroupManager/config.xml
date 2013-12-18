@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <rect name="MainWindowRect">
+        <xmin>180</xmin>
+        <xmax>775</xmax>
+        <ymin>208</ymin>
+        <ymax>608</ymax>
+    </rect>
+    <bool name="IsMainWindowVisible">0</bool>
+    <bool name="OrderByStage">0</bool>
+</config>
