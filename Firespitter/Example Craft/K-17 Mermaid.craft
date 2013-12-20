@@ -1,0 +1,5417 @@
+ship = K-17 Mermaid
+version = 0.21.1
+description = 
+type = SPH
+PART
+{
+	part = FSbomberCockpit_4294689030
+	partName = CommandPod
+	pos = 0,5,0
+	rot = 0.7071068,0,0,0.7071068
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = FSbomberFuselageEmpty_4294688730
+	link = strutConnector_4294686304
+	link = strutConnector_4294686248
+	attN = bottom,FSbomberFuselageEmpty_4294688730
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleCommand
+		isEnabled = True
+		controlSrcStatusText = 
+		EVENTS
+		{
+			MakeReference
+			{
+				active = True
+				guiActive = True
+				guiIcon = Control From Here
+				guiName = Control From Here
+				category = Control From Here
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			RenameVessel
+			{
+				active = True
+				guiActive = True
+				guiIcon = Rename Vessel
+				guiName = Rename Vessel
+				category = Rename Vessel
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateGeneric
+		isEnabled = True
+		animSwitch = True
+		animTime = 0
+		animSpeed = 1
+		EVENTS
+		{
+			Toggle
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle
+				guiName = Open windows
+				category = Toggle
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FSradarAltitude
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FStextureSwitch
+		isEnabled = True
+		selectedTexture = 0
+		EVENTS
+		{
+			nextTextureEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Next Texture
+				guiName = Next Texture
+				category = Next Texture
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTripLogger
+		isEnabled = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		Surfaced
+		{
+		}
+		Flew
+		{
+		}
+		FlewBy
+		{
+		}
+		Orbited
+		{
+		}
+		SubOrbited
+		{
+		}
+	}
+}
+PART
+{
+	part = FSbomberFuselageEmpty_4294688730
+	partName = Part
+	pos = 0,5,-4.275055
+	rot = 0.7071068,0,0,0.7071068
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = FSbomberFuselage_4294688708
+	link = fsgyroscope_4294688498
+	link = fsinfopopup_4294688466
+	link = fstrimgadget_4294688440
+	attN = top,FSbomberCockpit_4294689030
+	attN = bottom,FSbomberFuselage_4294688708
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = FSbomberFuselage_4294688708
+	partName = Part
+	pos = 0,5,-8.025125
+	rot = 0.7071068,0,0,0.7071068
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = strutConnector_4294688686
+	link = strutConnector_4294688630
+	link = FSbomberFuselageEmpty_4294688574
+	link = FSbomberWingExtender_4294688414
+	link = FSbomberWingExtender_4294687928
+	attN = top,FSbomberFuselageEmpty_4294688730
+	attN = bottom,FSbomberFuselageEmpty_4294688574
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = strutConnector_4294688686
+	partName = StrutConnector
+	pos = 0.7232874,3.991328,-7.231216
+	rot = 0.3210208,0.6300362,0.6300366,0.3210204
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	sym = strutConnector_4294688630
+	srfN = srfAttach,FSbomberFuselage_4294688708
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = strutConnector_4294688630
+	partName = StrutConnector
+	pos = -0.7232874,3.991328,-7.231216
+	rot = 0.6300365,0.3210205,0.3210208,0.6300362
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	sym = strutConnector_4294688686
+	srfN = srfAttach,FSbomberFuselage_4294688708
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = FSbomberFuselageEmpty_4294688574
+	partName = Part
+	pos = 0,5,-11.775
+	rot = 0.7071068,0,0,0.7071068
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = FSbomberFuselageTail_4294688552
+	link = strutConnector_4294686192
+	link = strutConnector_4294686136
+	srfN = srfAttach,FSbomberFuselage_4294688708
+	attN = top,FSbomberFuselage_4294688708
+	attN = bottom,FSbomberFuselageTail_4294688552
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = FSbomberFuselageTail_4294688552
+	partName = Part
+	pos = 0,5,-15.71004
+	rot = 0.7071068,0,0,0.7071068
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = FStailWingLarge_4294688532
+	link = FStailWingLarge_4294687442
+	link = FStailWingLarge_4294687408
+	link = FSfloatStrut_4294686402
+	link = strutConnector_4294685632
+	link = strutConnector_4294685576
+	attN = top,FSbomberFuselageEmpty_4294688574
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = FStailWingLarge_4294688532
+	partName = ControlSurface
+	pos = -1.043081E-07,6.838124,-17.83326
+	rot = -0.4721529,-0.5263762,-0.472153,-0.5263759
+	attRot = -0.04361939,0,0,0.9990482
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	srfN = srfAttach,FSbomberFuselageTail_4294688552
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSwingletRangeAdjustment
+		isEnabled = True
+		currentControlRange = 15
+		EVENTS
+		{
+			decreaseRangeEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Decrease control range
+				guiName = Decrease control range
+				category = Decrease control range
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			increaseRangeEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Increase control range
+				guiName = Increase control range
+				category = Increase control range
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			lockRangeEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle lock
+				guiName = Toggle lock
+				category = Toggle lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			decreaseRangeAction
+			{
+				actionGroup = None
+			}
+			increaseRangeAction
+			{
+				actionGroup = None
+			}
+			lockRangeAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = fsgyroscope_4294688498
+	partName = AdvSASModule
+	pos = 0,6.241255,-2.550151
+	rot = -5.154563E-08,4.214685E-07,1,-4.371141E-08
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	srfN = ,FSbomberFuselageEmpty_4294688730
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = fsinfopopup_4294688466
+	partName = Part
+	pos = -2.181543E-07,6.280087,-3.018047
+	rot = 1.192488E-08,-1,0,0
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	srfN = srfAttach,FSbomberFuselageEmpty_4294688730
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSinfoPopup
+		isEnabled = True
+		textHeading = K-17 mk6 Instructions
+		textBody1 = 1 - Raise air brakes
+		textBody2 = 2 - Lower air brakes
+		textBody3 = 3 - Increase wing control angle
+		textBody4 = 4 - Decrease wing control angle
+		textBody5 = 5 - Increase tail control angle
+		textBody6 = 6 - Decrease tail control angle
+		textBody7 = 7 - Toggle wheel steering and motor
+		textBody8 = 8 - Toggle outer engines
+		textBody9 = 9 - Toggle inner engines
+		textBody10 = 0 - Toggle reverse thrust
+		textBody11 = Backspace - Show/Hide Trim options
+		showAtFlightStart = True
+		hideAfterCountdown = True
+		showOnEachFlightStart = True
+		hasBeenShown = False
+		countDownDuration = 20
+		hideMeshInFlight = False
+		toggleKey = i
+		useHotkey = True
+		EVENTS
+		{
+			showInfoEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Show Info
+				guiName = Show Info
+				category = Show Info
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			showInfoAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = fstrimgadget_4294688440
+	partName = Part
+	pos = 0,6.241213,-3.586127
+	rot = -4.371139E-08,1,0,0
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	srfN = srfAttach,FSbomberFuselageEmpty_4294688730
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FStrimAdjustment
+		isEnabled = True
+		showOnFlightStart = True
+		presetTrim0 = -7
+		presetTrim1 = 0
+		presetTrim2 = 0
+		EVENTS
+		{
+			togglePopupEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle Popup
+				guiName = Toggle Pitch Popup
+				category = Toggle Popup
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			togglePopupAction
+			{
+				actionGroup = Abort
+			}
+			usePreset1Action
+			{
+				actionGroup = Stage
+			}
+			increaseTrimAction
+			{
+				actionGroup = None
+			}
+			decreaseTrimAction
+			{
+				actionGroup = None
+			}
+			increaseTrimMoreAction
+			{
+				actionGroup = None
+			}
+			decreaseTrimMoreAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FStrimAdjustment
+		isEnabled = True
+		showOnFlightStart = True
+		presetTrim0 = 0
+		presetTrim1 = 0
+		presetTrim2 = 0
+		EVENTS
+		{
+			togglePopupEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle Popup
+				guiName = Toggle Roll Popup
+				category = Toggle Popup
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			togglePopupAction
+			{
+				actionGroup = Abort
+			}
+			usePreset1Action
+			{
+				actionGroup = None
+			}
+			increaseTrimAction
+			{
+				actionGroup = None
+			}
+			decreaseTrimAction
+			{
+				actionGroup = None
+			}
+			increaseTrimMoreAction
+			{
+				actionGroup = None
+			}
+			decreaseTrimMoreAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FStrimAdjustment
+		isEnabled = True
+		showOnFlightStart = False
+		presetTrim0 = 0
+		presetTrim1 = 0
+		presetTrim2 = 0
+		EVENTS
+		{
+			togglePopupEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle Popup
+				guiName = Toggle Yaw Popup
+				category = Toggle Popup
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			togglePopupAction
+			{
+				actionGroup = None
+			}
+			usePreset1Action
+			{
+				actionGroup = None
+			}
+			increaseTrimAction
+			{
+				actionGroup = None
+			}
+			decreaseTrimAction
+			{
+				actionGroup = None
+			}
+			increaseTrimMoreAction
+			{
+				actionGroup = None
+			}
+			decreaseTrimMoreAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = FSbomberWingExtender_4294688414
+	partName = Winglet
+	pos = -2.791296,4.282097,-7.227777
+	rot = 0.0313416,0.7486847,0.6616121,0.02754015
+	attRot = -0.0260453,-0.05585436,-0.42009,0.9053878
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	link = FSbomberWing_4294688394
+	link = FSengineMount_4294688120
+	link = spotLight1_4294687962
+	sym = FSbomberWingExtender_4294687928
+	srfN = srfAttach,FSbomberFuselage_4294688708
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = FSbomberWing_4294688394
+	partName = ControlSurface
+	pos = -7.867673,4.704806,-7.242483
+	rot = 0.03134162,0.7486848,0.661612,0.02753991
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	link = FSengineMount_4294688354
+	link = FSairBrake_4294688196
+	link = FSairBrake_4294688158
+	link = strutConnector_4294686080
+	link = strutConnector_4294685968
+	sym = FSbomberWing_4294687908
+	srfN = srfAttach,FSbomberWingExtender_4294688414
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSwingletRangeAdjustment
+		isEnabled = True
+		currentControlRange = 15
+		EVENTS
+		{
+			decreaseRangeEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Decrease control range
+				guiName = Decrease control range
+				category = Decrease control range
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			increaseRangeEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Increase control range
+				guiName = Increase control range
+				category = Increase control range
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			lockRangeEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle lock
+				guiName = Toggle lock
+				category = Toggle lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			decreaseRangeAction
+			{
+				actionGroup = Custom04
+			}
+			increaseRangeAction
+			{
+				actionGroup = Custom03
+			}
+			lockRangeAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = FSengineMount_4294688354
+	partName = Strut
+	pos = -6.756561,4.824644,-5.925572
+	rot = -0.6936395,0.02888086,0.03011058,-0.7191131
+	attRot = -0.9990477,2.817797E-08,1.299958E-09,0.04361936
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	link = FSPropellerEngine_4294688334
+	link = FSfloatStrut_4294687374
+	sym = FSengineMount_4294687868
+	srfN = srfAttach,FSbomberWing_4294688394
+	attN = top,FSPropellerEngine_4294688334
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = FSPropellerEngine_4294688334
+	partName = Part
+	pos = -6.754353,4.849111,-5.244759
+	rot = 0.6942917,0.001145799,-0.001145645,0.7196922
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	sym = FSPropellerEngine_4294687848
+	attN = top,FSengineMount_4294688354
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSengineSounds
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		flameout = False
+		staged = False
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = Custom08
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FSpropellerAtmosphericNerf
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			hoverThrottleAction
+			{
+				actionGroup = None
+			}
+			normalThrottleAction
+			{
+				actionGroup = None
+			}
+			cargoThrottleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleResourceIntake
+		isEnabled = True
+		intakeEnabled = True
+		EVENTS
+		{
+			Deactivate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Close Intake
+				guiName = Close Intake
+				category = Close Intake
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Activate
+			{
+				active = False
+				guiActive = True
+				guiIcon = Open Intake
+				guiName = Open Intake
+				category = Open Intake
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FXModuleAnimateThrottle
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FSplanePropellerSpinner
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FSswitchEngineThrustTransform
+		isEnabled = True
+		isReversed = False
+		EVENTS
+		{
+			reverseTTEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Set Reverse Thrust
+				guiName = Set Reverse Thrust
+				category = Set Reverse Thrust
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			normalTTEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = Set Normal Thrust
+				guiName = Set Normal Thrust
+				category = Set Normal Thrust
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			debugEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = debug
+				guiName = debug
+				category = debug
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			switchTTAction
+			{
+				actionGroup = Custom10
+			}
+			reverseTTAction
+			{
+				actionGroup = None
+			}
+			normalTTAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FSengineHandCrank
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = FSairBrake_4294688196
+	partName = Part
+	pos = -7.802899,4.837903,-7.279865
+	rot = 0.0416356,0.9972305,-0.06156972,-0.002688234
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	sym = FSairBrake_4294687710
+	srfN = srfAttach,FSbomberWing_4294688394
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSairBrake
+		isEnabled = True
+		targetAngle = 0
+		EVENTS
+		{
+			toggleAltInputMode
+			{
+				active = True
+				guiActive = True
+				guiIcon = toggle Air Brake
+				guiName = toggle Air Brake
+				category = toggle Air Brake
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			toggleAirBrakeAction
+			{
+				actionGroup = None
+			}
+			raiseAirBrakeAction
+			{
+				actionGroup = Custom01
+			}
+			lowerAirBrakeAction
+			{
+				actionGroup = Custom02
+			}
+		}
+	}
+}
+PART
+{
+	part = FSairBrake_4294688158
+	partName = Part
+	pos = -7.250711,4.790792,-7.287341
+	rot = 0.04163552,0.9972305,-0.06156968,-0.002688234
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	sym = FSairBrake_4294687672
+	srfN = srfAttach,FSbomberWing_4294688394
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSairBrake
+		isEnabled = True
+		targetAngle = 0
+		EVENTS
+		{
+			toggleAltInputMode
+			{
+				active = True
+				guiActive = True
+				guiIcon = toggle Air Brake
+				guiName = toggle Air Brake
+				category = toggle Air Brake
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			toggleAirBrakeAction
+			{
+				actionGroup = None
+			}
+			raiseAirBrakeAction
+			{
+				actionGroup = Custom01
+			}
+			lowerAirBrakeAction
+			{
+				actionGroup = Custom02
+			}
+		}
+	}
+}
+PART
+{
+	part = FSengineMount_4294688120
+	partName = Strut
+	pos = -3.921355,4.863307,-5.87416
+	rot = 0.0800261,0.7245516,0.6831529,0.04385221
+	attRot = 0.5416747,-0.4545192,-0.4545193,0.541675
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	link = FSPropellerEngine_4294688100
+	sym = FSengineMount_4294687634
+	srfN = srfAttach,FSbomberWingExtender_4294688414
+	attN = top,FSPropellerEngine_4294688100
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = FSPropellerEngine_4294688100
+	partName = Part
+	pos = -3.883173,4.899959,-5.194962
+	rot = 0.687538,0.01983196,-0.01983179,0.7256066
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	sym = FSPropellerEngine_4294687614
+	attN = top,FSengineMount_4294688120
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSengineSounds
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		flameout = False
+		staged = False
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = Custom09
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FSpropellerAtmosphericNerf
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			hoverThrottleAction
+			{
+				actionGroup = None
+			}
+			normalThrottleAction
+			{
+				actionGroup = None
+			}
+			cargoThrottleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleResourceIntake
+		isEnabled = True
+		intakeEnabled = True
+		EVENTS
+		{
+			Deactivate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Close Intake
+				guiName = Close Intake
+				category = Close Intake
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Activate
+			{
+				active = False
+				guiActive = True
+				guiIcon = Open Intake
+				guiName = Open Intake
+				category = Open Intake
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FXModuleAnimateThrottle
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FSplanePropellerSpinner
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FSswitchEngineThrustTransform
+		isEnabled = True
+		isReversed = False
+		EVENTS
+		{
+			reverseTTEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Set Reverse Thrust
+				guiName = Set Reverse Thrust
+				category = Set Reverse Thrust
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			normalTTEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = Set Normal Thrust
+				guiName = Set Normal Thrust
+				category = Set Normal Thrust
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			debugEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = debug
+				guiName = debug
+				category = debug
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			switchTTAction
+			{
+				actionGroup = Custom10
+			}
+			reverseTTAction
+			{
+				actionGroup = None
+			}
+			normalTTAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FSengineHandCrank
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = spotLight1_4294687962
+	partName = Part
+	pos = -2.029562,4.887764,-5.271569
+	rot = -0.05607205,0.8780035,-0.4723416,-0.05347363
+	attRot = -0.4766915,0.8311134,-0.1918553,0.2126205
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	sym = spotLight1_4294687476
+	srfN = srfAttach,FSbomberWingExtender_4294688414
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = False
+		EVENTS
+		{
+			LightsOff
+			{
+				active = False
+				guiActive = True
+				guiIcon = Lights Off
+				guiName = Lights Off
+				category = Lights Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			LightsOn
+			{
+				active = True
+				guiActive = True
+				guiIcon = Lights On
+				guiName = Lights On
+				category = Lights On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Light
+			}
+			LightOnAction
+			{
+				actionGroup = None
+			}
+			LightOffAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = FSbomberWingExtender_4294687928
+	partName = Winglet
+	pos = 2.791296,4.282097,-7.227777
+	rot = -0.6616123,-0.02754019,-0.03134162,-0.7486846
+	attRot = 0.0260453,0.05585436,0.42009,0.9053878
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	link = FSbomberWing_4294687908
+	link = FSengineMount_4294687634
+	link = spotLight1_4294687476
+	sym = FSbomberWingExtender_4294688414
+	srfN = srfAttach,FSbomberFuselage_4294688708
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = FSbomberWing_4294687908
+	partName = ControlSurface
+	pos = 7.867649,4.704806,-7.242483
+	rot = -0.661612,-0.02753993,-0.03134166,-0.7486849
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	link = FSengineMount_4294687868
+	link = FSairBrake_4294687710
+	link = FSairBrake_4294687672
+	link = strutConnector_4294686024
+	link = strutConnector_4294685912
+	sym = FSbomberWing_4294688394
+	srfN = srfAttach,FSbomberWingExtender_4294687928
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSwingletRangeAdjustment
+		isEnabled = True
+		currentControlRange = 15
+		EVENTS
+		{
+			decreaseRangeEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Decrease control range
+				guiName = Decrease control range
+				category = Decrease control range
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			increaseRangeEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Increase control range
+				guiName = Increase control range
+				category = Increase control range
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			lockRangeEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle lock
+				guiName = Toggle lock
+				category = Toggle lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			decreaseRangeAction
+			{
+				actionGroup = Custom04
+			}
+			increaseRangeAction
+			{
+				actionGroup = Custom03
+			}
+			lockRangeAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = FSengineMount_4294687868
+	partName = Strut
+	pos = 6.756544,4.824644,-5.925573
+	rot = 0.6936398,0.02888081,0.03011056,0.7191128
+	attRot = -0.9990477,2.817797E-08,1.299958E-09,0.04361936
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	link = FSPropellerEngine_4294687848
+	link = FSfloatStrut_4294687342
+	sym = FSengineMount_4294688354
+	srfN = srfAttach,FSbomberWing_4294687908
+	attN = top,FSPropellerEngine_4294687848
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = FSPropellerEngine_4294687848
+	partName = Part
+	pos = 6.754342,4.84911,-5.244763
+	rot = 0.6942917,-0.001145786,0.001145648,0.7196921
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	sym = FSPropellerEngine_4294688334
+	attN = top,FSengineMount_4294687868
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSengineSounds
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		flameout = False
+		staged = False
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = Custom08
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FSpropellerAtmosphericNerf
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			hoverThrottleAction
+			{
+				actionGroup = None
+			}
+			normalThrottleAction
+			{
+				actionGroup = None
+			}
+			cargoThrottleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleResourceIntake
+		isEnabled = True
+		intakeEnabled = True
+		EVENTS
+		{
+			Deactivate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Close Intake
+				guiName = Close Intake
+				category = Close Intake
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Activate
+			{
+				active = False
+				guiActive = True
+				guiIcon = Open Intake
+				guiName = Open Intake
+				category = Open Intake
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FXModuleAnimateThrottle
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FSplanePropellerSpinner
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FSswitchEngineThrustTransform
+		isEnabled = True
+		isReversed = False
+		EVENTS
+		{
+			reverseTTEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Set Reverse Thrust
+				guiName = Set Reverse Thrust
+				category = Set Reverse Thrust
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			normalTTEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = Set Normal Thrust
+				guiName = Set Normal Thrust
+				category = Set Normal Thrust
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			debugEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = debug
+				guiName = debug
+				category = debug
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			switchTTAction
+			{
+				actionGroup = Custom10
+			}
+			reverseTTAction
+			{
+				actionGroup = None
+			}
+			normalTTAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FSengineHandCrank
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = FSairBrake_4294687710
+	partName = Part
+	pos = 7.802874,4.837903,-7.279865
+	rot = -0.04163557,0.9972305,-0.06156981,0.002688221
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	sym = FSairBrake_4294688196
+	srfN = srfAttach,FSbomberWing_4294687908
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSairBrake
+		isEnabled = True
+		targetAngle = 0
+		EVENTS
+		{
+			toggleAltInputMode
+			{
+				active = True
+				guiActive = True
+				guiIcon = toggle Air Brake
+				guiName = toggle Air Brake
+				category = toggle Air Brake
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			toggleAirBrakeAction
+			{
+				actionGroup = None
+			}
+			raiseAirBrakeAction
+			{
+				actionGroup = Custom01
+			}
+			lowerAirBrakeAction
+			{
+				actionGroup = Custom02
+			}
+		}
+	}
+}
+PART
+{
+	part = FSairBrake_4294687672
+	partName = Part
+	pos = 7.250685,4.790792,-7.287341
+	rot = -0.04163551,0.9972305,-0.06156977,0.002688221
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	sym = FSairBrake_4294688158
+	srfN = srfAttach,FSbomberWing_4294687908
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSairBrake
+		isEnabled = True
+		targetAngle = 0
+		EVENTS
+		{
+			toggleAltInputMode
+			{
+				active = True
+				guiActive = True
+				guiIcon = toggle Air Brake
+				guiName = toggle Air Brake
+				category = toggle Air Brake
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			toggleAirBrakeAction
+			{
+				actionGroup = None
+			}
+			raiseAirBrakeAction
+			{
+				actionGroup = Custom01
+			}
+			lowerAirBrakeAction
+			{
+				actionGroup = Custom02
+			}
+		}
+	}
+}
+PART
+{
+	part = FSengineMount_4294687634
+	partName = Strut
+	pos = 3.921355,4.863307,-5.874159
+	rot = -0.08002613,0.7245516,0.6831529,-0.04385223
+	attRot = 0.5416747,-0.4545192,-0.4545193,0.541675
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	link = FSPropellerEngine_4294687614
+	sym = FSengineMount_4294688120
+	srfN = srfAttach,FSbomberWingExtender_4294687928
+	attN = top,FSPropellerEngine_4294687614
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = FSPropellerEngine_4294687614
+	partName = Part
+	pos = 3.883172,4.899959,-5.194961
+	rot = 0.6875381,-0.01983196,0.01983176,0.7256067
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	sym = FSPropellerEngine_4294688100
+	attN = top,FSengineMount_4294687634
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSengineSounds
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		flameout = False
+		staged = False
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = Custom09
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FSpropellerAtmosphericNerf
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			hoverThrottleAction
+			{
+				actionGroup = None
+			}
+			normalThrottleAction
+			{
+				actionGroup = None
+			}
+			cargoThrottleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleResourceIntake
+		isEnabled = True
+		intakeEnabled = True
+		EVENTS
+		{
+			Deactivate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Close Intake
+				guiName = Close Intake
+				category = Close Intake
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Activate
+			{
+				active = False
+				guiActive = True
+				guiIcon = Open Intake
+				guiName = Open Intake
+				category = Open Intake
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FXModuleAnimateThrottle
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FSplanePropellerSpinner
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FSswitchEngineThrustTransform
+		isEnabled = True
+		isReversed = False
+		EVENTS
+		{
+			reverseTTEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Set Reverse Thrust
+				guiName = Set Reverse Thrust
+				category = Set Reverse Thrust
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			normalTTEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = Set Normal Thrust
+				guiName = Set Normal Thrust
+				category = Set Normal Thrust
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			debugEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = debug
+				guiName = debug
+				category = debug
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			switchTTAction
+			{
+				actionGroup = Custom10
+			}
+			reverseTTAction
+			{
+				actionGroup = None
+			}
+			normalTTAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FSengineHandCrank
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = spotLight1_4294687476
+	partName = Part
+	pos = 2.029562,4.887764,-5.271567
+	rot = 0.05607212,0.8780035,-0.4723415,0.05347371
+	attRot = -0.4766915,0.8311134,-0.1918553,0.2126205
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	sym = spotLight1_4294687962
+	srfN = srfAttach,FSbomberWingExtender_4294687928
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = False
+		EVENTS
+		{
+			LightsOff
+			{
+				active = False
+				guiActive = True
+				guiIcon = Lights Off
+				guiName = Lights Off
+				category = Lights Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			LightsOn
+			{
+				active = True
+				guiActive = True
+				guiIcon = Lights On
+				guiName = Lights On
+				category = Lights On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Light
+			}
+			LightOnAction
+			{
+				actionGroup = None
+			}
+			LightOffAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = FStailWingLarge_4294687442
+	partName = ControlSurface
+	pos = -1.888708,5.017069,-17.51568
+	rot = 0.002483243,-0.7333516,-0.6797297,-0.01252663
+	attRot = -0.0870728,-0.04345341,-0.003801678,0.9952466
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	sym = FStailWingLarge_4294687408
+	srfN = srfAttach,FSbomberFuselageTail_4294688552
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSwingletRangeAdjustment
+		isEnabled = True
+		currentControlRange = 15
+		EVENTS
+		{
+			decreaseRangeEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Decrease control range
+				guiName = Decrease control range
+				category = Decrease control range
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			increaseRangeEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Increase control range
+				guiName = Increase control range
+				category = Increase control range
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			lockRangeEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle lock
+				guiName = Toggle lock
+				category = Toggle lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			decreaseRangeAction
+			{
+				actionGroup = Custom06
+			}
+			increaseRangeAction
+			{
+				actionGroup = Custom05
+			}
+			lockRangeAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = FStailWingLarge_4294687408
+	partName = ControlSurface
+	pos = 1.888708,5.017069,-17.51568
+	rot = -0.6797298,-0.01252666,0.002483219,-0.7333515
+	attRot = 0.0870728,0.04345341,0.003801678,0.9952466
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	sym = FStailWingLarge_4294687442
+	srfN = srfAttach,FSbomberFuselageTail_4294688552
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSwingletRangeAdjustment
+		isEnabled = True
+		currentControlRange = 15
+		EVENTS
+		{
+			decreaseRangeEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Decrease control range
+				guiName = Decrease control range
+				category = Decrease control range
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			increaseRangeEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Increase control range
+				guiName = Increase control range
+				category = Increase control range
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			lockRangeEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle lock
+				guiName = Toggle lock
+				category = Toggle lock
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			decreaseRangeAction
+			{
+				actionGroup = Custom06
+			}
+			increaseRangeAction
+			{
+				actionGroup = Custom05
+			}
+			lockRangeAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = FSfloatStrut_4294687374
+	partName = Part
+	pos = -6.580688,2.853846,-5.708706
+	rot = 0.6941239,0.01821281,0.01531966,0.7194622
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	link = FSfloatStraight_4294687310
+	link = FSfloatStraight_4294686878
+	sym = FSfloatStrut_4294687342
+	srfN = srfAttach,FSengineMount_4294688354
+	attN = top,FSfloatStraight_4294687310
+	attN = bottom,FSfloatStraight_4294686878
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSbuoyancy
+		isEnabled = True
+		EVENTS
+		{
+			increaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = increase buoyancy (d)
+				guiName = increase buoyancy (d)
+				category = increase buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = decrease buoyancy (d)
+				guiName = decrease buoyancy (d)
+				category = decrease buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = FSfloatStrut_4294687342
+	partName = Part
+	pos = 6.580678,2.853853,-5.708707
+	rot = 0.6941239,-0.0182128,-0.01531967,0.7194622
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	link = FSfloatStraight_4294687288
+	link = FSfloatStraight_4294686856
+	sym = FSfloatStrut_4294687374
+	srfN = srfAttach,FSengineMount_4294687868
+	attN = top,FSfloatStraight_4294687288
+	attN = bottom,FSfloatStraight_4294686856
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSbuoyancy
+		isEnabled = True
+		EVENTS
+		{
+			increaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = increase buoyancy (d)
+				guiName = increase buoyancy (d)
+				category = increase buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = decrease buoyancy (d)
+				guiName = decrease buoyancy (d)
+				category = decrease buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = FSfloatStraight_4294687310
+	partName = Part
+	pos = -6.578505,2.878074,-5.034523
+	rot = 0.6942921,0.001145735,-0.00114569,0.7196918
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = FSfloatStraight_4294687266
+	sym = FSfloatStraight_4294687288
+	attN = top,FSfloatStraight_4294687266
+	attN = bottom,FSfloatStrut_4294687374
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSbuoyancy
+		isEnabled = True
+		EVENTS
+		{
+			increaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = increase buoyancy (d)
+				guiName = increase buoyancy (d)
+				category = increase buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = decrease buoyancy (d)
+				guiName = decrease buoyancy (d)
+				category = decrease buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = FSfloatStraight_4294687288
+	partName = Part
+	pos = 6.578492,2.87808,-5.034527
+	rot = 0.6942921,-0.001145678,0.001145747,0.7196918
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = FSfloatStraight_4294687244
+	sym = FSfloatStraight_4294687310
+	attN = top,FSfloatStraight_4294687244
+	attN = bottom,FSfloatStrut_4294687342
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSbuoyancy
+		isEnabled = True
+		EVENTS
+		{
+			increaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = increase buoyancy (d)
+				guiName = increase buoyancy (d)
+				category = increase buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = decrease buoyancy (d)
+				guiName = decrease buoyancy (d)
+				category = decrease buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = FSfloatStraight_4294687266
+	partName = Part
+	pos = -6.574449,2.923062,-3.782833
+	rot = 0.6942922,0.001145713,-0.001145716,0.7196917
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = FSfloatStraight_4294687222
+	sym = FSfloatStraight_4294687244
+	attN = top,FSfloatStraight_4294687222
+	attN = bottom,FSfloatStraight_4294687310
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSbuoyancy
+		isEnabled = True
+		EVENTS
+		{
+			increaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = increase buoyancy (d)
+				guiName = increase buoyancy (d)
+				category = increase buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = decrease buoyancy (d)
+				guiName = decrease buoyancy (d)
+				category = decrease buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = FSfloatStraight_4294687244
+	partName = Part
+	pos = 6.574429,2.923064,-3.782837
+	rot = 0.6942921,-0.001145733,0.001145703,0.7196918
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = FSfloatStraight_4294687200
+	sym = FSfloatStraight_4294687266
+	attN = top,FSfloatStraight_4294687200
+	attN = bottom,FSfloatStraight_4294687288
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSbuoyancy
+		isEnabled = True
+		EVENTS
+		{
+			increaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = increase buoyancy (d)
+				guiName = increase buoyancy (d)
+				category = increase buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = decrease buoyancy (d)
+				guiName = decrease buoyancy (d)
+				category = decrease buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = FSfloatStraight_4294687222
+	partName = Part
+	pos = -6.57039,2.968038,-2.531144
+	rot = 0.6942923,0.001145719,-0.00114571,0.7196915
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = FSfloatGearbay_4294687178
+	link = strutConnector_4294685688
+	sym = FSfloatStraight_4294687200
+	attN = top,FSfloatGearbay_4294687178
+	attN = bottom,FSfloatStraight_4294687266
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSbuoyancy
+		isEnabled = True
+		EVENTS
+		{
+			increaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = increase buoyancy (d)
+				guiName = increase buoyancy (d)
+				category = increase buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = decrease buoyancy (d)
+				guiName = decrease buoyancy (d)
+				category = decrease buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = FSfloatStraight_4294687200
+	partName = Part
+	pos = 6.570372,2.968048,-2.531153
+	rot = 0.6942922,-0.001145713,0.00114572,0.7196916
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = FSfloatGearbay_4294687050
+	link = strutConnector_4294685744
+	sym = FSfloatStraight_4294687222
+	attN = top,FSfloatGearbay_4294687050
+	attN = bottom,FSfloatStraight_4294687244
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSbuoyancy
+		isEnabled = True
+		EVENTS
+		{
+			increaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = increase buoyancy (d)
+				guiName = increase buoyancy (d)
+				category = increase buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = decrease buoyancy (d)
+				guiName = decrease buoyancy (d)
+				category = decrease buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = FSfloatGearbay_4294687178
+	partName = Part
+	pos = -6.566331,3.013021,-1.279453
+	rot = 0.6942923,0.001145716,-0.001145715,0.7196916
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = FSfloatEnd_4294686922
+	sym = FSfloatGearbay_4294687050
+	attN = top,FSfloatEnd_4294686922
+	attN = bottom,FSfloatStraight_4294687222
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSbuoyancy
+		isEnabled = True
+		EVENTS
+		{
+			increaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = increase buoyancy (d)
+				guiName = increase buoyancy (d)
+				category = increase buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = decrease buoyancy (d)
+				guiName = decrease buoyancy (d)
+				category = decrease buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FSwheel
+		isEnabled = True
+		deploymentState = Deployed
+		brakesEngaged = False
+		motorEnabled = False
+		reverseMotor = False
+		reverseMotorSet = False
+		motorStartsReversed = False
+		EVENTS
+		{
+			RaiseGear
+			{
+				active = True
+				guiActive = True
+				guiIcon = Raise Gear
+				guiName = Raise Gear
+				category = Raise Gear
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+			LowerGear
+			{
+				active = True
+				guiActive = True
+				guiIcon = Lower Gear
+				guiName = Lower Gear
+				category = Lower Gear
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+			ReverseMotorEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle Reverse Motor
+				guiName = Toggle Reverse Motor
+				category = Toggle Reverse Motor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			EnableMotorEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Enable Motor
+				guiName = Enable Motor
+				category = Enable Motor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableMotorEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = Disable Motor
+				guiName = Disable Motor
+				category = Disable Motor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			brakesOnEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Brakes On
+				guiName = Brakes On
+				category = Brakes On
+				guiActiveUnfocused = True
+				unfocusedRange = 6
+				externalToEVAOnly = True
+			}
+			brakesOffEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Brakes Off
+				guiName = Brakes Off
+				category = Brakes Off
+				guiActiveUnfocused = True
+				unfocusedRange = 6
+				externalToEVAOnly = True
+			}
+			increaseFrictionEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = increase friction (d)
+				guiName = increase friction (d)
+				category = increase friction (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseFrictionEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = decrease friction (d)
+				guiName = decrease friction (d)
+				category = decrease friction (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			suspensionGUIEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = adjust suspension (d)
+				guiName = adjust suspension (d)
+				category = adjust suspension (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleGearAction
+			{
+				actionGroup = Gear
+			}
+			ReverseMotorAction
+			{
+				actionGroup = None
+			}
+			ToggleMotorAction
+			{
+				actionGroup = None
+			}
+			BrakesAction
+			{
+				actionGroup = Brakes
+			}
+		}
+	}
+	MODULE
+	{
+		name = FSpartTurner
+		isEnabled = True
+		steerMultiplier = 25
+		steeringEnabled = False
+		altInputModeEnabled = False
+		reversedInput = False
+		ignoreTrim = True
+		EVENTS
+		{
+			toggleSteering
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle Steering
+				guiName = Toggle Steering
+				category = Toggle Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleAltInputMode
+			{
+				active = True
+				guiActive = True
+				guiIcon = QE or AD to steer
+				guiName = QE or AD to steer
+				category = QE or AD to steer
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleIgnoreTrim
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle Ignore trim
+				guiName = Toggle Ignore trim
+				category = Toggle Ignore trim
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleReverseInput
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle Reverse Steering
+				guiName = Toggle Reverse Steering
+				category = Toggle Reverse Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			increaseSteering
+			{
+				active = True
+				guiActive = True
+				guiIcon = Increase Steering
+				guiName = Increase Steering
+				category = Increase Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseSteering
+			{
+				active = True
+				guiActive = True
+				guiIcon = Decrease Steering
+				guiName = Decrease Steering
+				category = Decrease Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleSpeedAdjustedSteeringEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Dynamic Steering
+				guiName = Dynamic Steering
+				category = Dynamic Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			toggleSteeringAction
+			{
+				actionGroup = Custom07
+			}
+			toggleInvertAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = FSfloatGearbay_4294687050
+	partName = Part
+	pos = 6.566317,3.013027,-1.279463
+	rot = 0.6942922,-0.001145729,0.001145705,0.7196916
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = FSfloatEnd_4294686900
+	sym = FSfloatGearbay_4294687178
+	attN = top,FSfloatEnd_4294686900
+	attN = bottom,FSfloatStraight_4294687200
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSbuoyancy
+		isEnabled = True
+		EVENTS
+		{
+			increaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = increase buoyancy (d)
+				guiName = increase buoyancy (d)
+				category = increase buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = decrease buoyancy (d)
+				guiName = decrease buoyancy (d)
+				category = decrease buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FSwheel
+		isEnabled = True
+		deploymentState = Deployed
+		brakesEngaged = False
+		motorEnabled = False
+		reverseMotor = False
+		reverseMotorSet = False
+		motorStartsReversed = False
+		EVENTS
+		{
+			RaiseGear
+			{
+				active = True
+				guiActive = True
+				guiIcon = Raise Gear
+				guiName = Raise Gear
+				category = Raise Gear
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+			LowerGear
+			{
+				active = True
+				guiActive = True
+				guiIcon = Lower Gear
+				guiName = Lower Gear
+				category = Lower Gear
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+			ReverseMotorEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle Reverse Motor
+				guiName = Toggle Reverse Motor
+				category = Toggle Reverse Motor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			EnableMotorEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Enable Motor
+				guiName = Enable Motor
+				category = Enable Motor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableMotorEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = Disable Motor
+				guiName = Disable Motor
+				category = Disable Motor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			brakesOnEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Brakes On
+				guiName = Brakes On
+				category = Brakes On
+				guiActiveUnfocused = True
+				unfocusedRange = 6
+				externalToEVAOnly = True
+			}
+			brakesOffEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Brakes Off
+				guiName = Brakes Off
+				category = Brakes Off
+				guiActiveUnfocused = True
+				unfocusedRange = 6
+				externalToEVAOnly = True
+			}
+			increaseFrictionEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = increase friction (d)
+				guiName = increase friction (d)
+				category = increase friction (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseFrictionEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = decrease friction (d)
+				guiName = decrease friction (d)
+				category = decrease friction (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			suspensionGUIEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = adjust suspension (d)
+				guiName = adjust suspension (d)
+				category = adjust suspension (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleGearAction
+			{
+				actionGroup = Gear
+			}
+			ReverseMotorAction
+			{
+				actionGroup = None
+			}
+			ToggleMotorAction
+			{
+				actionGroup = None
+			}
+			BrakesAction
+			{
+				actionGroup = Brakes
+			}
+		}
+	}
+	MODULE
+	{
+		name = FSpartTurner
+		isEnabled = True
+		steerMultiplier = 25
+		steeringEnabled = False
+		altInputModeEnabled = False
+		reversedInput = False
+		ignoreTrim = True
+		EVENTS
+		{
+			toggleSteering
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle Steering
+				guiName = Toggle Steering
+				category = Toggle Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleAltInputMode
+			{
+				active = True
+				guiActive = True
+				guiIcon = QE or AD to steer
+				guiName = QE or AD to steer
+				category = QE or AD to steer
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleIgnoreTrim
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle Ignore trim
+				guiName = Toggle Ignore trim
+				category = Toggle Ignore trim
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleReverseInput
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle Reverse Steering
+				guiName = Toggle Reverse Steering
+				category = Toggle Reverse Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			increaseSteering
+			{
+				active = True
+				guiActive = True
+				guiIcon = Increase Steering
+				guiName = Increase Steering
+				category = Increase Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseSteering
+			{
+				active = True
+				guiActive = True
+				guiIcon = Decrease Steering
+				guiName = Decrease Steering
+				category = Decrease Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleSpeedAdjustedSteeringEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Dynamic Steering
+				guiName = Dynamic Steering
+				category = Dynamic Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			toggleSteeringAction
+			{
+				actionGroup = Custom07
+			}
+			toggleInvertAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = FSfloatEnd_4294686922
+	partName = Part
+	pos = -6.563287,3.046777,-0.3400619
+	rot = 0.6942923,0.001145711,-0.001145721,0.7196916
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	sym = FSfloatEnd_4294686900
+	attN = bottom,FSfloatGearbay_4294687178
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSbuoyancy
+		isEnabled = True
+		EVENTS
+		{
+			increaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = increase buoyancy (d)
+				guiName = increase buoyancy (d)
+				category = increase buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = decrease buoyancy (d)
+				guiName = decrease buoyancy (d)
+				category = decrease buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = FSfloatEnd_4294686900
+	partName = Part
+	pos = 6.56327,3.046788,-0.3400691
+	rot = 0.6942926,-0.001145726,0.001145707,0.7196913
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	sym = FSfloatEnd_4294686922
+	attN = bottom,FSfloatGearbay_4294687050
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSbuoyancy
+		isEnabled = True
+		EVENTS
+		{
+			increaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = increase buoyancy (d)
+				guiName = increase buoyancy (d)
+				category = increase buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = decrease buoyancy (d)
+				guiName = decrease buoyancy (d)
+				category = decrease buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = FSfloatStraight_4294686878
+	partName = Part
+	pos = -6.582872,2.829623,-6.382896
+	rot = 0.6942921,0.001145735,-0.00114569,0.7196918
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = FSfloatStraight_4294686834
+	sym = FSfloatStraight_4294686856
+	attN = top,FSfloatStrut_4294687374
+	attN = bottom,FSfloatStraight_4294686834
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSbuoyancy
+		isEnabled = True
+		EVENTS
+		{
+			increaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = increase buoyancy (d)
+				guiName = increase buoyancy (d)
+				category = increase buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = decrease buoyancy (d)
+				guiName = decrease buoyancy (d)
+				category = decrease buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = FSfloatStraight_4294686856
+	partName = Part
+	pos = 6.582861,2.829623,-6.382897
+	rot = 0.6942921,-0.001145678,0.001145747,0.7196918
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = FSfloatStraight_4294686812
+	sym = FSfloatStraight_4294686878
+	attN = top,FSfloatStrut_4294687342
+	attN = bottom,FSfloatStraight_4294686812
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSbuoyancy
+		isEnabled = True
+		EVENTS
+		{
+			increaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = increase buoyancy (d)
+				guiName = increase buoyancy (d)
+				category = increase buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = decrease buoyancy (d)
+				guiName = decrease buoyancy (d)
+				category = decrease buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = FSfloatStraight_4294686834
+	partName = Part
+	pos = -6.586929,2.784638,-7.634584
+	rot = 0.6942922,0.001145713,-0.001145716,0.7196917
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = FSfloatStraight_4294686790
+	sym = FSfloatStraight_4294686812
+	attN = top,FSfloatStraight_4294686878
+	attN = bottom,FSfloatStraight_4294686790
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSbuoyancy
+		isEnabled = True
+		EVENTS
+		{
+			increaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = increase buoyancy (d)
+				guiName = increase buoyancy (d)
+				category = increase buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = decrease buoyancy (d)
+				guiName = decrease buoyancy (d)
+				category = decrease buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = FSfloatStraight_4294686812
+	partName = Part
+	pos = 6.586922,2.784641,-7.634584
+	rot = 0.6942921,-0.001145733,0.001145703,0.7196918
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = FSfloatStraight_4294686768
+	sym = FSfloatStraight_4294686834
+	attN = top,FSfloatStraight_4294686856
+	attN = bottom,FSfloatStraight_4294686768
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSbuoyancy
+		isEnabled = True
+		EVENTS
+		{
+			increaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = increase buoyancy (d)
+				guiName = increase buoyancy (d)
+				category = increase buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = decrease buoyancy (d)
+				guiName = decrease buoyancy (d)
+				category = decrease buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = FSfloatStraight_4294686790
+	partName = Part
+	pos = -6.590991,2.739651,-8.886281
+	rot = 0.6942923,0.001145719,-0.00114571,0.7196915
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = FSfloatGearbay_4294686746
+	sym = FSfloatStraight_4294686768
+	attN = top,FSfloatStraight_4294686834
+	attN = bottom,FSfloatGearbay_4294686746
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSbuoyancy
+		isEnabled = True
+		EVENTS
+		{
+			increaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = increase buoyancy (d)
+				guiName = increase buoyancy (d)
+				category = increase buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = decrease buoyancy (d)
+				guiName = decrease buoyancy (d)
+				category = decrease buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = FSfloatStraight_4294686768
+	partName = Part
+	pos = 6.590979,2.739656,-8.886277
+	rot = 0.6942922,-0.001145713,0.00114572,0.7196916
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = FSfloatGearbay_4294686618
+	sym = FSfloatStraight_4294686790
+	attN = top,FSfloatStraight_4294686812
+	attN = bottom,FSfloatGearbay_4294686618
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSbuoyancy
+		isEnabled = True
+		EVENTS
+		{
+			increaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = increase buoyancy (d)
+				guiName = increase buoyancy (d)
+				category = increase buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = decrease buoyancy (d)
+				guiName = decrease buoyancy (d)
+				category = decrease buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = FSfloatGearbay_4294686746
+	partName = Part
+	pos = -6.59505,2.694673,-10.13796
+	rot = 0.6942923,0.001145716,-0.001145715,0.7196916
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = FSfloatEndTail_4294686490
+	link = strutConnector_4294685800
+	sym = FSfloatGearbay_4294686618
+	attN = top,FSfloatStraight_4294686790
+	attN = bottom,FSfloatEndTail_4294686490
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSbuoyancy
+		isEnabled = True
+		EVENTS
+		{
+			increaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = increase buoyancy (d)
+				guiName = increase buoyancy (d)
+				category = increase buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = decrease buoyancy (d)
+				guiName = decrease buoyancy (d)
+				category = decrease buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FSwheel
+		isEnabled = True
+		deploymentState = Deployed
+		brakesEngaged = False
+		motorEnabled = False
+		reverseMotor = False
+		reverseMotorSet = False
+		motorStartsReversed = True
+		EVENTS
+		{
+			RaiseGear
+			{
+				active = True
+				guiActive = True
+				guiIcon = Raise Gear
+				guiName = Raise Gear
+				category = Raise Gear
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+			LowerGear
+			{
+				active = True
+				guiActive = True
+				guiIcon = Lower Gear
+				guiName = Lower Gear
+				category = Lower Gear
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+			ReverseMotorEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle Reverse Motor
+				guiName = Toggle Reverse Motor
+				category = Toggle Reverse Motor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			EnableMotorEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Enable Motor
+				guiName = Enable Motor
+				category = Enable Motor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableMotorEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = Disable Motor
+				guiName = Disable Motor
+				category = Disable Motor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			brakesOnEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Brakes On
+				guiName = Brakes On
+				category = Brakes On
+				guiActiveUnfocused = True
+				unfocusedRange = 6
+				externalToEVAOnly = True
+			}
+			brakesOffEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Brakes Off
+				guiName = Brakes Off
+				category = Brakes Off
+				guiActiveUnfocused = True
+				unfocusedRange = 6
+				externalToEVAOnly = True
+			}
+			increaseFrictionEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = increase friction (d)
+				guiName = increase friction (d)
+				category = increase friction (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseFrictionEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = decrease friction (d)
+				guiName = decrease friction (d)
+				category = decrease friction (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			suspensionGUIEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = adjust suspension (d)
+				guiName = adjust suspension (d)
+				category = adjust suspension (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleGearAction
+			{
+				actionGroup = Gear
+			}
+			ReverseMotorAction
+			{
+				actionGroup = None
+			}
+			ToggleMotorAction
+			{
+				actionGroup = Custom07
+			}
+			BrakesAction
+			{
+				actionGroup = Brakes
+			}
+		}
+	}
+	MODULE
+	{
+		name = FSpartTurner
+		isEnabled = True
+		steerMultiplier = 10
+		steeringEnabled = False
+		altInputModeEnabled = False
+		reversedInput = False
+		ignoreTrim = True
+		EVENTS
+		{
+			toggleSteering
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle Steering
+				guiName = Toggle Steering
+				category = Toggle Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleAltInputMode
+			{
+				active = True
+				guiActive = True
+				guiIcon = QE or AD to steer
+				guiName = QE or AD to steer
+				category = QE or AD to steer
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleIgnoreTrim
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle Ignore trim
+				guiName = Toggle Ignore trim
+				category = Toggle Ignore trim
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleReverseInput
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle Reverse Steering
+				guiName = Toggle Reverse Steering
+				category = Toggle Reverse Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			increaseSteering
+			{
+				active = True
+				guiActive = True
+				guiIcon = Increase Steering
+				guiName = Increase Steering
+				category = Increase Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseSteering
+			{
+				active = True
+				guiActive = True
+				guiIcon = Decrease Steering
+				guiName = Decrease Steering
+				category = Decrease Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleSpeedAdjustedSteeringEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Dynamic Steering
+				guiName = Dynamic Steering
+				category = Dynamic Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			toggleSteeringAction
+			{
+				actionGroup = None
+			}
+			toggleInvertAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = FSfloatGearbay_4294686618
+	partName = Part
+	pos = 6.595035,2.694677,-10.13795
+	rot = 0.6942922,-0.001145729,0.001145705,0.7196916
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	link = FSfloatEndTail_4294686446
+	link = strutConnector_4294685856
+	sym = FSfloatGearbay_4294686746
+	attN = top,FSfloatStraight_4294686768
+	attN = bottom,FSfloatEndTail_4294686446
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSbuoyancy
+		isEnabled = True
+		EVENTS
+		{
+			increaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = increase buoyancy (d)
+				guiName = increase buoyancy (d)
+				category = increase buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = decrease buoyancy (d)
+				guiName = decrease buoyancy (d)
+				category = decrease buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FSwheel
+		isEnabled = True
+		deploymentState = Deployed
+		brakesEngaged = False
+		motorEnabled = False
+		reverseMotor = False
+		reverseMotorSet = False
+		motorStartsReversed = True
+		EVENTS
+		{
+			RaiseGear
+			{
+				active = True
+				guiActive = True
+				guiIcon = Raise Gear
+				guiName = Raise Gear
+				category = Raise Gear
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+			LowerGear
+			{
+				active = True
+				guiActive = True
+				guiIcon = Lower Gear
+				guiName = Lower Gear
+				category = Lower Gear
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+			ReverseMotorEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle Reverse Motor
+				guiName = Toggle Reverse Motor
+				category = Toggle Reverse Motor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			EnableMotorEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Enable Motor
+				guiName = Enable Motor
+				category = Enable Motor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableMotorEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = Disable Motor
+				guiName = Disable Motor
+				category = Disable Motor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			brakesOnEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Brakes On
+				guiName = Brakes On
+				category = Brakes On
+				guiActiveUnfocused = True
+				unfocusedRange = 6
+				externalToEVAOnly = True
+			}
+			brakesOffEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Brakes Off
+				guiName = Brakes Off
+				category = Brakes Off
+				guiActiveUnfocused = True
+				unfocusedRange = 6
+				externalToEVAOnly = True
+			}
+			increaseFrictionEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = increase friction (d)
+				guiName = increase friction (d)
+				category = increase friction (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseFrictionEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = decrease friction (d)
+				guiName = decrease friction (d)
+				category = decrease friction (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			suspensionGUIEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = adjust suspension (d)
+				guiName = adjust suspension (d)
+				category = adjust suspension (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleGearAction
+			{
+				actionGroup = Gear
+			}
+			ReverseMotorAction
+			{
+				actionGroup = None
+			}
+			ToggleMotorAction
+			{
+				actionGroup = Custom07
+			}
+			BrakesAction
+			{
+				actionGroup = Brakes
+			}
+		}
+	}
+	MODULE
+	{
+		name = FSpartTurner
+		isEnabled = True
+		steerMultiplier = 10
+		steeringEnabled = False
+		altInputModeEnabled = False
+		reversedInput = False
+		ignoreTrim = True
+		EVENTS
+		{
+			toggleSteering
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle Steering
+				guiName = Toggle Steering
+				category = Toggle Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleAltInputMode
+			{
+				active = True
+				guiActive = True
+				guiIcon = QE or AD to steer
+				guiName = QE or AD to steer
+				category = QE or AD to steer
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleIgnoreTrim
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle Ignore trim
+				guiName = Toggle Ignore trim
+				category = Toggle Ignore trim
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleReverseInput
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle Reverse Steering
+				guiName = Toggle Reverse Steering
+				category = Toggle Reverse Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			increaseSteering
+			{
+				active = True
+				guiActive = True
+				guiIcon = Increase Steering
+				guiName = Increase Steering
+				category = Increase Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseSteering
+			{
+				active = True
+				guiActive = True
+				guiIcon = Decrease Steering
+				guiName = Decrease Steering
+				category = Decrease Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleSpeedAdjustedSteeringEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Dynamic Steering
+				guiName = Dynamic Steering
+				category = Dynamic Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			toggleSteeringAction
+			{
+				actionGroup = None
+			}
+			toggleInvertAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = FSfloatEndTail_4294686490
+	partName = Part
+	pos = -6.598979,2.651133,-11.34954
+	rot = 0.6942923,0.001145711,-0.001145721,0.7196916
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	sym = FSfloatEndTail_4294686446
+	attN = bottom,FSfloatGearbay_4294686746
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSrudder
+		isEnabled = True
+		EVENTS
+		{
+			increasePower
+			{
+				active = True
+				guiActive = False
+				guiIcon = Increase Power
+				guiName = Increase Power
+				category = Increase Power
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreasePower
+			{
+				active = True
+				guiActive = False
+				guiIcon = Decrease Power
+				guiName = Decrease Power
+				category = Decrease Power
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			increaseRange
+			{
+				active = True
+				guiActive = False
+				guiIcon = Increase Range
+				guiName = Increase Range
+				category = Increase Range
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseRange
+			{
+				active = True
+				guiActive = False
+				guiIcon = Decrease Range
+				guiName = Decrease Range
+				category = Decrease Range
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			cycleForceAxis
+			{
+				active = True
+				guiActive = False
+				guiIcon = Cycle Force Axis
+				guiName = Cycle Force Axis
+				category = Cycle Force Axis
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleRequiresWaterContact
+			{
+				active = True
+				guiActive = False
+				guiIcon = Toggle Req. Water Contact
+				guiName = Toggle Req. Water Contact
+				category = Toggle Req. Water Contact
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			toggleDebugMode
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FSbuoyancy
+		isEnabled = True
+		EVENTS
+		{
+			increaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = increase buoyancy (d)
+				guiName = increase buoyancy (d)
+				category = increase buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = decrease buoyancy (d)
+				guiName = decrease buoyancy (d)
+				category = decrease buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = FSfloatEndTail_4294686446
+	partName = Part
+	pos = 6.598966,2.651134,-11.34954
+	rot = 0.6942926,-0.001145726,0.001145707,0.7196913
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	sym = FSfloatEndTail_4294686490
+	attN = bottom,FSfloatGearbay_4294686618
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSrudder
+		isEnabled = True
+		EVENTS
+		{
+			increasePower
+			{
+				active = True
+				guiActive = False
+				guiIcon = Increase Power
+				guiName = Increase Power
+				category = Increase Power
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreasePower
+			{
+				active = True
+				guiActive = False
+				guiIcon = Decrease Power
+				guiName = Decrease Power
+				category = Decrease Power
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			increaseRange
+			{
+				active = True
+				guiActive = False
+				guiIcon = Increase Range
+				guiName = Increase Range
+				category = Increase Range
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseRange
+			{
+				active = True
+				guiActive = False
+				guiIcon = Decrease Range
+				guiName = Decrease Range
+				category = Decrease Range
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			cycleForceAxis
+			{
+				active = True
+				guiActive = False
+				guiIcon = Cycle Force Axis
+				guiName = Cycle Force Axis
+				category = Cycle Force Axis
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleRequiresWaterContact
+			{
+				active = True
+				guiActive = False
+				guiIcon = Toggle Req. Water Contact
+				guiName = Toggle Req. Water Contact
+				category = Toggle Req. Water Contact
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			toggleDebugMode
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FSbuoyancy
+		isEnabled = True
+		EVENTS
+		{
+			increaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = increase buoyancy (d)
+				guiName = increase buoyancy (d)
+				category = increase buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = decrease buoyancy (d)
+				guiName = decrease buoyancy (d)
+				category = decrease buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = FSfloatStrut_4294686402
+	partName = Part
+	pos = 3.136184E-07,2.8159,-16.57032
+	rot = -0.7728255,-5.407078E-08,-6.927903E-08,-0.6346186
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	link = FSfloatEndTail_4294686370
+	link = FSfloatEnd_4294686326
+	srfN = srfAttach,FSbomberFuselageTail_4294688552
+	attN = top,FSfloatEnd_4294686326
+	attN = bottom,FSfloatEndTail_4294686370
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSbuoyancy
+		isEnabled = True
+		EVENTS
+		{
+			increaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = increase buoyancy (d)
+				guiName = increase buoyancy (d)
+				category = increase buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = decrease buoyancy (d)
+				guiName = decrease buoyancy (d)
+				category = decrease buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = FSfloatEndTail_4294686370
+	partName = Part
+	pos = 3.163829E-07,2.939321,-17.19271
+	rot = 0.7728256,-1.547869E-09,1.547782E-09,0.6346186
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	attN = bottom,FSfloatStrut_4294686402
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSrudder
+		isEnabled = True
+		EVENTS
+		{
+			increasePower
+			{
+				active = True
+				guiActive = False
+				guiIcon = Increase Power
+				guiName = Increase Power
+				category = Increase Power
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreasePower
+			{
+				active = True
+				guiActive = False
+				guiIcon = Decrease Power
+				guiName = Decrease Power
+				category = Decrease Power
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			increaseRange
+			{
+				active = True
+				guiActive = False
+				guiIcon = Increase Range
+				guiName = Increase Range
+				category = Increase Range
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseRange
+			{
+				active = True
+				guiActive = False
+				guiIcon = Decrease Range
+				guiName = Decrease Range
+				category = Decrease Range
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			cycleForceAxis
+			{
+				active = True
+				guiActive = False
+				guiIcon = Cycle Force Axis
+				guiName = Cycle Force Axis
+				category = Cycle Force Axis
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleRequiresWaterContact
+			{
+				active = True
+				guiActive = False
+				guiIcon = Toggle Req. Water Contact
+				guiName = Toggle Req. Water Contact
+				category = Toggle Req. Water Contact
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			toggleDebugMode
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FSbuoyancy
+		isEnabled = True
+		EVENTS
+		{
+			increaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = increase buoyancy (d)
+				guiName = increase buoyancy (d)
+				category = increase buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = decrease buoyancy (d)
+				guiName = decrease buoyancy (d)
+				category = decrease buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = FSfloatEnd_4294686326
+	partName = Part
+	pos = 3.120406E-07,2.745459,-16.21512
+	rot = 0.7728256,-1.547869E-09,1.547782E-09,0.6346186
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	attN = bottom,FSfloatStrut_4294686402
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSbuoyancy
+		isEnabled = True
+		EVENTS
+		{
+			increaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = increase buoyancy (d)
+				guiName = increase buoyancy (d)
+				category = increase buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseBuoyancyEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = decrease buoyancy (d)
+				guiName = decrease buoyancy (d)
+				category = decrease buoyancy (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutConnector_4294686304
+	partName = StrutConnector
+	pos = -1.202239,4.677861,-1.891781
+	rot = -0.7010574,-0.092296,-0.09229594,-0.7010574
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	cData = tgt: FSfloatGearbay_25; pos: -5.451711,0.8775743,-0.1236384; dir: -0.987043,0.1588864,-0.02238497
+	sym = strutConnector_4294686248
+	srfN = srfAttach,FSbomberCockpit_4294689030
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = strutConnector_4294686248
+	partName = StrutConnector
+	pos = 1.202239,4.677861,-1.891781
+	rot = 0.09229598,0.7010574,0.7010574,0.09229603
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	cData = tgt: FSfloatGearbay_49; pos: -5.451688,0.8775701,0.1236369; dir: -0.9870432,0.1588865,0.02238483
+	sym = strutConnector_4294686304
+	srfN = srfAttach,FSbomberCockpit_4294689030
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = strutConnector_4294686192
+	partName = StrutConnector
+	pos = -1.079784,4.376586,-11.06923
+	rot = -0.6830127,-0.1830127,-0.1830127,-0.6830127
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	cData = tgt: FSfloatEndTail_32; pos: -5.475562,-0.2148123,-1.577639; dir: -0.960228,-0.03767021,-0.2766645
+	sym = strutConnector_4294686136
+	srfN = srfAttach,FSbomberFuselageEmpty_4294688574
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = strutConnector_4294686136
+	partName = StrutConnector
+	pos = 1.079784,4.376586,-11.06923
+	rot = 0.1830126,0.6830128,0.6830128,0.1830126
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	cData = tgt: FSfloatEndTail_56; pos: -5.47564,-0.214817,1.577661; dir: -0.9602283,-0.03767014,0.2766644
+	sym = strutConnector_4294686192
+	srfN = srfAttach,FSbomberFuselageEmpty_4294688574
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = strutConnector_4294686080
+	partName = StrutConnector
+	pos = -6.275701,4.27824,-8.083599
+	rot = -0.05547701,-0.740018,-0.6570091,-0.1327966
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	cData = tgt: FSfloatStraight_30; pos: 0.4609202,-1.362459,-1.276108; dir: 0.2397113,-0.7085767,-0.6636696
+	sym = strutConnector_4294686024
+	srfN = srfAttach,FSbomberWing_4294688394
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = strutConnector_4294686024
+	partName = StrutConnector
+	pos = 6.27569,4.27824,-8.083599
+	rot = -0.6570091,-0.1327966,-0.05547702,-0.740018
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	cData = tgt: FSfloatStraight_54; pos: 0.4609146,-1.362448,1.276098; dir: 0.2397114,-0.7085766,0.6636699
+	sym = strutConnector_4294686080
+	srfN = srfAttach,FSbomberWing_4294687908
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = strutConnector_4294685968
+	partName = StrutConnector
+	pos = -8.290232,4.704806,-6.202754
+	rot = 0.6649122,0.04625529,-0.04131932,0.744342
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	cData = tgt: FSfloatStraight_22; pos: 1.10048,1.472992,1.808412; dir: 0.4267132,0.5711541,0.7012124
+	sym = strutConnector_4294685912
+	srfN = srfAttach,FSbomberWing_4294688394
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = strutConnector_4294685912
+	partName = StrutConnector
+	pos = 8.290215,4.704806,-6.202755
+	rot = -0.04131934,0.7443421,0.6649122,0.04625525
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	cData = tgt: FSfloatStraight_46; pos: 1.100481,1.472985,-1.808407; dir: 0.4267134,0.5711542,-0.7012129
+	sym = strutConnector_4294685968
+	srfN = srfAttach,FSbomberWing_4294687908
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = strutConnector_4294685856
+	partName = StrutConnector
+	pos = 6.212081,2.797287,-10.33335
+	rot = -0.7019843,0.12301,0.06161537,-0.698778
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	cData = tgt: FSbomberFuselageEmpty_1; pos: -5.171047,6.008224,0.2445698; dir: -0.652017,0.757577,0.03083734
+	sym = strutConnector_4294685800
+	srfN = srfAttach,FSfloatGearbay_4294686618
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = strutConnector_4294685800
+	partName = StrutConnector
+	pos = -6.212091,2.797286,-10.33336
+	rot = -0.06161538,0.6987783,0.701984,-0.12301
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	cData = tgt: FSbomberFuselageEmpty_1; pos: -5.171058,6.00823,-0.2445776; dir: -0.6520176,0.7575777,-0.03083819
+	sym = strutConnector_4294685856
+	srfN = srfAttach,FSfloatGearbay_4294686746
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = strutConnector_4294685744
+	partName = StrutConnector
+	pos = 6.171543,3.19831,-2.162443
+	rot = -0.6800853,0.1913323,0.1747622,-0.6858094
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	cData = tgt: FSbomberWingExtender_41; pos: -4.059284,-5.907626,1.342714; dir: -0.5566376,-0.8100947,0.1841227
+	sym = strutConnector_4294685688
+	srfN = srfAttach,FSfloatStraight_4294687200
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = strutConnector_4294685688
+	partName = StrutConnector
+	pos = -6.171555,3.198308,-2.162436
+	rot = -0.1747623,0.6858094,0.6800851,-0.1913324
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	cData = tgt: FSbomberWingExtender_17; pos: -4.059286,-5.907617,-1.34271; dir: -0.5566381,-0.8100953,-0.1841221
+	sym = strutConnector_4294685744
+	srfN = srfAttach,FSfloatStraight_4294687222
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = strutConnector_4294685632
+	partName = StrutConnector
+	pos = -0.1180658,4.559372,-18.27291
+	rot = 0.6007203,0.3758025,0.4834597,0.5139791
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	cData = tgt: FSfloatEndTail_11; pos: -0.9571287,1.313772,0.6041644; dir: -0.5519426,0.7576123,0.3484005
+	sym = strutConnector_4294685576
+	srfN = srfAttach,FSbomberFuselageTail_4294688552
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = strutConnector_4294685576
+	partName = StrutConnector
+	pos = 0.1180658,4.559372,-18.27291
+	rot = 0.4834598,0.5139791,0.6007203,0.3758023
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	cData = tgt: FSfloatEndTail_11; pos: -0.9571285,1.313772,-0.6041633; dir: -0.5519427,0.7576127,-0.3484008
+	sym = strutConnector_4294685632
+	srfN = srfAttach,FSbomberFuselageTail_4294688552
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
