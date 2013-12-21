@@ -1,0 +1,2923 @@
+TAG All
+ICON All
+SHOW SPH True
+SHOW VAB True
+TAG Pods
+SHOW SPH True
+SHOW VAB True
+TAG Manned
+SHOW SPH True
+SHOW VAB True
+ADD PART FSbomberCockpit
+ADD PART FSfighterCockpit
+ADD PART FScopterCockpit
+ADD PART FSapacheCockpit
+ADD PART FSbiplaneCockpit
+ADD PART mk1pod
+ADD PART Mark1Cockpit
+ADD PART landerCabinSmall
+ADD PART Mark1-2Pod
+ADD PART Mark2Cockpit
+ADD PART mk2LanderCabin
+ADD PART mark3Cockpit
+ADD PART cupola
+END TAG
+TAG Unmanned
+SHOW SPH True
+SHOW VAB True
+ADD PART RocketBuilder
+ADD PART exLaunchPad2
+ADD PART mumech.MJ2.Pod
+ADD PART mumech.MJ2.AR202
+ADD PART probeCoreHex
+ADD PART probeCoreOcto
+ADD PART probeCoreOcto2
+ADD PART probeCoreCube
+ADD PART probeStackSmall
+ADD PART probeStackLarge
+ADD PART probeCoreSphere
+ADD PART computerCore
+END TAG
+TAG Seats
+SHOW SPH True
+SHOW VAB True
+ADD PART seatExternalCmd
+END TAG
+END TAG
+TAG Propulsion
+SHOW SPH True
+SHOW VAB True
+TAG Aluminium
+SHOW SPH True
+SHOW VAB True
+ADD PART AluminiumHybrid1
+END TAG
+TAG Deuterium
+SHOW SPH True
+SHOW VAB True
+ADD PART vista
+END TAG
+TAG ElectricCharge
+SHOW SPH True
+SHOW VAB True
+ADD PART FSnoseEngineElectric
+ADD PART FSpropellerFolding
+ADD PART FSPropellerEngineElectric
+ADD PART FScopterRotorFenestron
+ADD PART FScopterRotorFenestronBothFins
+ADD PART FScopterRotorFenestronNoFins
+ADD PART FScopterRotorTail
+ADD PART FScopterRotorTail2
+ADD PART FScopterRotorMainElectric
+ADD PART cl.small.ionEngine
+ADD PART ionEngine
+END TAG
+TAG FSCoolant
+SHOW SPH True
+SHOW VAB True
+ADD PART FSnoseEngineElectric
+ADD PART FSpropellerFolding
+ADD PART FSPropellerEngineElectric
+ADD PART FScopterRotorFenestron
+ADD PART FScopterRotorFenestronBothFins
+ADD PART FScopterRotorFenestronNoFins
+ADD PART FScopterRotorTail
+ADD PART FScopterRotorTail2
+ADD PART FScopterRotorMainElectric
+END TAG
+TAG IntakeAir
+SHOW SPH True
+SHOW VAB True
+ADD PART FSnoseEngine
+ADD PART FSlancasterEngine
+ADD PART FSlancasterEngineGear
+ADD PART FSoblongTailJet
+ADD PART FSPropellerEngine
+ADD PART FSPropellerEnginePush
+ADD PART FScopterRotorMain
+ADD PART FScopterRotorMainLarge
+ADD PART FSVTOLengine
+ADD PART FSVTOLengineLarge
+ADD PART FSswampEngine
+ADD PART JetEngine
+ADD PART turboFanEngine
+END TAG
+TAG IntakeAtm
+SHOW SPH True
+SHOW VAB True
+ADD PART ThermalTurbojet
+END TAG
+TAG Kethane
+SHOW SPH True
+SHOW VAB True
+ADD PART kethane.turbine
+END TAG
+TAG KIntakeAir
+SHOW SPH True
+SHOW VAB True
+ADD PART kethane.turbine
+END TAG
+TAG LiquidFuel
+SHOW SPH True
+SHOW VAB True
+ADD PART exLaunchPad2
+ADD PART FSnoseEngine
+ADD PART FSlancasterEngine
+ADD PART FSlancasterEngineGear
+ADD PART FSoblongTailJet
+ADD PART FSPropellerEngine
+ADD PART FSPropellerEnginePush
+ADD PART FScopterRotorMain
+ADD PART FScopterRotorMainLarge
+ADD PART FSVTOLengine
+ADD PART FSVTOLengineLarge
+ADD PART FSswampEngine
+ADD PART cl.large.nuclearEngine
+ADD PART 3m.JoolV
+ADD PART 3m.JoolV.secondstage.engine
+ADD PART SDHI.Rockomax.LV-909.NoFairing
+ADD PART JetEngine
+ADD PART microEngine
+ADD PART radialEngineMini
+ADD PART liquidEngine3
+ADD PART nuclearEngine
+ADD PART liquidEngine
+ADD PART liquidEngine2
+ADD PART liquidEngine1-2
+ADD PART liquidEngine2-2
+ADD PART engineLargeSkipper
+ADD PART smallRadialEngine
+ADD PART liquidEngineMini
+ADD PART radialLiquidEngine1-2
+ADD PART toroidalAerospike
+ADD PART turboFanEngine
+ADD PART smallMPD
+ADD PART smallThermalRocketNozzle
+ADD PART MPD
+ADD PART ThermalRocketNozzle
+ADD PART bigThermalRocketNozzle
+ADD PART vista
+END TAG
+TAG LqdMethane
+SHOW SPH True
+SHOW VAB True
+ADD PART FNMethaneEngine
+END TAG
+TAG Megajoules
+SHOW SPH True
+SHOW VAB True
+ADD PART vista
+END TAG
+TAG MJPropellant
+SHOW SPH True
+SHOW VAB True
+ADD PART mumech.MJ2.Pod
+END TAG
+TAG Oxidizer
+SHOW SPH True
+SHOW VAB True
+ADD PART exLaunchPad2
+ADD PART cl.large.nuclearEngine
+ADD PART 3m.JoolV
+ADD PART 3m.JoolV.secondstage.engine
+ADD PART SDHI.Rockomax.LV-909.NoFairing
+ADD PART microEngine
+ADD PART radialEngineMini
+ADD PART liquidEngine3
+ADD PART nuclearEngine
+ADD PART liquidEngine
+ADD PART liquidEngine2
+ADD PART liquidEngine1-2
+ADD PART liquidEngine2-2
+ADD PART engineLargeSkipper
+ADD PART smallRadialEngine
+ADD PART liquidEngineMini
+ADD PART radialLiquidEngine1-2
+ADD PART toroidalAerospike
+ADD PART smallThermalRocketNozzle
+ADD PART ThermalRocketNozzle
+ADD PART bigThermalRocketNozzle
+ADD PART FNMethaneEngine
+ADD PART AluminiumHybrid1
+END TAG
+TAG RCS
+SHOW SPH True
+SHOW VAB True
+ADD PART mumech.MJ2.Pod
+ADD PART FLY.RCSBlock
+ADD PART linearRcs
+ADD PART RCSBlock
+END TAG
+TAG SolidFuel
+SHOW SPH True
+SHOW VAB True
+ADD PART cl.small.escapeTower
+ADD PART 3m.JoolV.SRB
+ADD PART 3m.JoolV.LAS
+ADD PART SDHI.2.5.Mk1-2AeroShroud
+ADD PART solidBooster1-1
+ADD PART solidBooster
+ADD PART sepMotor1
+END TAG
+TAG Tritium
+SHOW SPH True
+SHOW VAB True
+ADD PART vista
+END TAG
+TAG XenonGas
+SHOW SPH True
+SHOW VAB True
+ADD PART cl.small.ionEngine
+ADD PART ionEngine
+END TAG
+END TAG
+TAG Storage
+SHOW SPH True
+SHOW VAB True
+TAG AblativeShielding
+SHOW SPH True
+SHOW VAB True
+ADD PART SDHI.2.5.Heatshield
+END TAG
+TAG Actinides
+SHOW SPH True
+SHOW VAB True
+ADD PART NuclearReactor125
+ADD PART NuclearReactor250
+ADD PART NuclearReactor375
+ADD PART NuclearReactor0625
+END TAG
+TAG Alumina
+SHOW SPH True
+SHOW VAB True
+ADD PART FNRefinery
+END TAG
+TAG Ammonia
+SHOW SPH True
+SHOW VAB True
+ADD PART FNAmmoniaTank
+ADD PART FNRefinery
+END TAG
+TAG Antimatter
+SHOW SPH True
+SHOW VAB True
+ADD PART AntimatterTank125
+ADD PART AntimatterTank250
+ADD PART AntimatterTank375
+END TAG
+TAG Argon
+SHOW SPH True
+SHOW VAB True
+ADD PART BigXenonTank
+END TAG
+TAG CarbonDioxide
+SHOW SPH True
+SHOW VAB True
+ADD PART FSCrewFuselage
+ADD PART Large.Crewed.Lab
+ADD PART crewCabin
+ADD PART HexCanLifeSupport
+ADD PART HexCanLifeSupportLarge
+ADD PART HexCanLifeSupportSmall
+ADD PART HexCanOxygen
+ADD PART HexCanOxygenLarge
+ADD PART HexCanOxygenSmall
+ADD PART TacLifeSupportContainer
+ADD PART TacLifeSupportContainerLarge
+ADD PART TacLifeSupportContainerSmall
+ADD PART TacOxygenContainer
+ADD PART TacOxygenContainerLarge
+ADD PART TacOxygenContainerSmall
+ADD PART scienceModule
+END TAG
+TAG ChargedParticles
+SHOW SPH True
+SHOW VAB True
+ADD PART FusionReactor125
+ADD PART FusionReactor0625
+END TAG
+TAG DepletedFuel
+SHOW SPH True
+SHOW VAB True
+ADD PART HexCanThoriumFl4
+ADD PART HexCanUraniumFl6
+END TAG
+TAG Deuterium
+SHOW SPH True
+SHOW VAB True
+ADD PART FusionReactor125
+ADD PART FusionReactor0625
+ADD PART HexCanDeutTritLarge
+END TAG
+TAG ElectricCharge
+SHOW SPH True
+SHOW VAB True
+ADD PART FSoblongFuselageBattery
+ADD PART FSbattery
+ADD PART kOSMachine1m
+ADD PART Romfarer.LazorSystem
+ADD PART Romfarer.LazorSystemStackBig
+ADD PART Romfarer.LazorSystemStack
+ADD PART roverBody
+ADD PART batteryPack
+ADD PART batteryBank
+ADD PART batteryBankMini
+ADD PART ksp.r.largeBatteryPack
+ADD PART batteryBankLarge
+ADD PART Brayton1
+ADD PART Brayton2
+ADD PART Brayton3
+ADD PART tinyBrayton
+ADD PART phasedArray1
+ADD PART microwaveReceiver
+ADD PART microwaveTransmitter
+END TAG
+TAG ExoticMatter
+SHOW SPH True
+SHOW VAB True
+ADD PART WarpDrive2
+ADD PART WarpDrive
+ADD PART WarpDrive3
+END TAG
+TAG Food
+SHOW SPH True
+SHOW VAB True
+ADD PART FSCrewFuselage
+ADD PART Large.Crewed.Lab
+ADD PART crewCabin
+ADD PART TacFoodContainer
+ADD PART TacFoodContainerLarge
+ADD PART TacFoodContainerSmall
+ADD PART HexCanFood
+ADD PART HexCanFoodLarge
+ADD PART HexCanFoodSmall
+ADD PART HexCanLifeSupport
+ADD PART HexCanLifeSupportLarge
+ADD PART HexCanLifeSupportSmall
+ADD PART TacLifeSupportContainer
+ADD PART TacLifeSupportContainerLarge
+ADD PART TacLifeSupportContainerSmall
+ADD PART scienceModule
+END TAG
+TAG H2Peroxide
+SHOW SPH True
+SHOW VAB True
+ADD PART FNRefinery
+END TAG
+TAG Helium-3
+SHOW SPH True
+SHOW VAB True
+ADD PART FusionReactor125
+ADD PART FusionReactor0625
+ADD PART HexCanHe3Large
+END TAG
+TAG IntakeAir
+SHOW SPH True
+SHOW VAB True
+ADD PART FSairTank
+END TAG
+TAG Kethane
+SHOW SPH True
+SHOW VAB True
+ADD PART kethane.tankExternal
+ADD PART kethane.tank2mSmall
+ADD PART kethane.tank2mMedium
+ADD PART kethane.tank2mLarge
+ADD PART kethane.tank2mExtralarge
+ADD PART kethane.tank1mStandard
+END TAG
+TAG LiquidFuel
+SHOW SPH True
+SHOW VAB True
+ADD PART FSbomberFuselage
+ADD PART FSbomberFuselageEmpty
+ADD PART FSoblongFuel
+ADD PART FSoblongFuselageRocketFuel
+ADD PART FSCrewFuselage
+ADD PART FSdropTank
+ADD PART FSjerrycan
+ADD PART cl.large.tripleFuelTank
+ADD PART cl.radial.cylTankFuel
+ADD PART cl.radial.sphereTankFuel
+ADD PART JoolV.2stagetank
+ADD PART JoolV.maintank
+ADD PART fuelTankSmallFlat
+ADD PART fuelTankSmall
+ADD PART fuelTank
+ADD PART fuelTank.long
+ADD PART MK1Fuselage
+ADD PART mk2Fuselage
+ADD PART mk2SpacePlaneAdapter
+ADD PART mk3Fuselage
+ADD PART mk3spacePlaneAdapter
+ADD PART miniFuelTank
+ADD PART fuelTank3-2
+ADD PART fuelTank2-2
+ADD PART fuelTank1-2
+ADD PART fuelTank4-2
+ADD PART toroidalFuelTank
+ADD PART 25PureLiquidTank
+ADD PART 375PureLiquidTank
+END TAG
+TAG Lithium
+SHOW SPH True
+SHOW VAB True
+ADD PART HexCanLithium
+END TAG
+TAG LqdMethane
+SHOW SPH True
+SHOW VAB True
+ADD PART FNMethaneTank3-2
+ADD PART FNMethaneTank3-1
+END TAG
+TAG LqdWater
+SHOW SPH True
+SHOW VAB True
+ADD PART FNRefinery
+ADD PART FNLiquidWaterTank
+END TAG
+TAG Megajoules
+SHOW SPH True
+SHOW VAB True
+ADD PART Brayton1
+ADD PART Brayton2
+ADD PART Brayton3
+ADD PART tinyBrayton
+ADD PART phasedArray1
+ADD PART microwaveReceiver
+ADD PART microwaveThermalEnergyReceiverL
+ADD PART microwaveThermalEnergyReceiverM
+ADD PART microwaveThermalEnergyReceiverS
+ADD PART microwaveTransmitter
+END TAG
+TAG Metal
+SHOW SPH True
+SHOW VAB True
+ADD PART HexCanMetal
+ADD PART HexCanMetalHuge
+ADD PART HexCanMetalLarge
+ADD PART HexCanMetalSmall
+ADD PART metalBin
+ADD PART SmallSmelter
+ADD PART Smelter
+END TAG
+TAG MonoPropellant
+SHOW SPH True
+SHOW VAB True
+ADD PART cl.large.shortMonoTank
+ADD PART RCSTank1-2
+ADD PART rcsTankMini
+ADD PART RCSFuelTank
+ADD PART rcsTankRadialLong
+ADD PART radialRCSTank
+END TAG
+TAG Ore
+SHOW SPH True
+SHOW VAB True
+ADD PART HexCanOre
+ADD PART HexCanOreHuge
+ADD PART HexCanOreLarge
+ADD PART HexCanOreSmall
+ADD PART oreBin
+ADD PART SmallSmelter
+ADD PART Smelter
+END TAG
+TAG Oxidizer
+SHOW SPH True
+SHOW VAB True
+ADD PART FSoblongFuselageRocketFuel
+ADD PART FSoxidizerTank
+ADD PART cl.large.tripleFuelTank
+ADD PART cl.radial.cylTankOxy
+ADD PART cl.radial.sphereTankOxy
+ADD PART JoolV.2stagetank
+ADD PART JoolV.maintank
+ADD PART fuelTankSmallFlat
+ADD PART fuelTankSmall
+ADD PART fuelTank
+ADD PART fuelTank.long
+ADD PART miniFuelTank
+ADD PART fuelTank3-2
+ADD PART fuelTank2-2
+ADD PART fuelTank1-2
+ADD PART fuelTank4-2
+ADD PART toroidalFuelTank
+ADD PART FNMethaneTank3-2
+ADD PART FNMethaneTank3-1
+END TAG
+TAG Oxygen
+SHOW SPH True
+SHOW VAB True
+ADD PART FSCrewFuselage
+ADD PART Large.Crewed.Lab
+ADD PART crewCabin
+ADD PART HexCanLifeSupport
+ADD PART HexCanLifeSupportLarge
+ADD PART HexCanLifeSupportSmall
+ADD PART HexCanOxygen
+ADD PART HexCanOxygenLarge
+ADD PART HexCanOxygenSmall
+ADD PART TacLifeSupportContainer
+ADD PART TacLifeSupportContainerLarge
+ADD PART TacLifeSupportContainerSmall
+ADD PART TacOxygenContainer
+ADD PART TacOxygenContainerLarge
+ADD PART TacOxygenContainerSmall
+ADD PART scienceModule
+END TAG
+TAG RocketParts
+SHOW SPH True
+SHOW VAB True
+ADD PART HexCanRocketParts
+ADD PART HexCanRocketPartsHuge
+ADD PART HexCanRocketPartsLarge
+ADD PART HexCanRocketPartsSmall
+END TAG
+TAG ThermalPower
+SHOW SPH True
+SHOW VAB True
+ADD PART NuclearReactor125
+ADD PART AntimatterReactor125
+ADD PART FusionReactor125
+ADD PART NuclearReactor250
+ADD PART AntimatterReactor250
+ADD PART NuclearReactor375
+ADD PART AntimatterReactor375
+ADD PART NuclearReactor0625
+ADD PART FusionReactor0625
+ADD PART microwaveThermalEnergyReceiverL
+ADD PART microwaveThermalEnergyReceiverM
+ADD PART microwaveThermalEnergyReceiverS
+END TAG
+TAG ThF4
+SHOW SPH True
+SHOW VAB True
+ADD PART NuclearReactor125
+ADD PART NuclearReactor250
+ADD PART NuclearReactor375
+ADD PART NuclearReactor0625
+ADD PART HexCanThoriumFl4
+END TAG
+TAG Tritium
+SHOW SPH True
+SHOW VAB True
+ADD PART FusionReactor125
+ADD PART FusionReactor0625
+ADD PART HexCanDeutTritLarge
+END TAG
+TAG UF4
+SHOW SPH True
+SHOW VAB True
+ADD PART NuclearReactor125
+ADD PART NuclearReactor250
+ADD PART NuclearReactor375
+ADD PART NuclearReactor0625
+ADD PART HexCanUraniumFl6
+END TAG
+TAG Waste
+SHOW SPH True
+SHOW VAB True
+ADD PART FSCrewFuselage
+ADD PART Large.Crewed.Lab
+ADD PART crewCabin
+ADD PART TacFoodContainer
+ADD PART TacFoodContainerLarge
+ADD PART TacFoodContainerSmall
+ADD PART HexCanFood
+ADD PART HexCanFoodLarge
+ADD PART HexCanFoodSmall
+ADD PART HexCanLifeSupport
+ADD PART HexCanLifeSupportLarge
+ADD PART HexCanLifeSupportSmall
+ADD PART TacLifeSupportContainer
+ADD PART TacLifeSupportContainerLarge
+ADD PART TacLifeSupportContainerSmall
+ADD PART scienceModule
+END TAG
+TAG WasteHeat
+SHOW SPH True
+SHOW VAB True
+ADD PART NuclearReactor125
+ADD PART AntimatterReactor125
+ADD PART circradiatorKT
+ADD PART FusionReactor125
+ADD PART NuclearReactor250
+ADD PART AntimatterReactor250
+ADD PART circradiatorKT2
+ADD PART NuclearReactor375
+ADD PART AntimatterReactor375
+ADD PART NuclearReactor0625
+ADD PART FusionReactor0625
+ADD PART circradiatorKT3
+ADD PART phasedArray1
+ADD PART radiator1
+ADD PART radiator2
+ADD PART microwaveReceiver
+ADD PART microwaveTransmitter
+ADD PART RadialRadiatorzzz
+ADD PART radiator0
+ADD PART RadialRadiatorzzz2
+END TAG
+TAG WasteWater
+SHOW SPH True
+SHOW VAB True
+ADD PART FSCrewFuselage
+ADD PART Large.Crewed.Lab
+ADD PART crewCabin
+ADD PART HexCanDrinkingWater
+ADD PART HexCanDrinkingWaterLarge
+ADD PART HexCanDrinkingWaterSmall
+ADD PART HexCanLifeSupport
+ADD PART HexCanLifeSupportLarge
+ADD PART HexCanLifeSupportSmall
+ADD PART TacLifeSupportContainer
+ADD PART TacLifeSupportContainerLarge
+ADD PART TacLifeSupportContainerSmall
+ADD PART TacWaterContainer
+ADD PART TacWaterContainerLarge
+ADD PART TacWaterContainerSmall
+ADD PART scienceModule
+END TAG
+TAG Water
+SHOW SPH True
+SHOW VAB True
+ADD PART FSCrewFuselage
+ADD PART Large.Crewed.Lab
+ADD PART crewCabin
+ADD PART HexCanDrinkingWater
+ADD PART HexCanDrinkingWaterLarge
+ADD PART HexCanDrinkingWaterSmall
+ADD PART HexCanLifeSupport
+ADD PART HexCanLifeSupportLarge
+ADD PART HexCanLifeSupportSmall
+ADD PART TacLifeSupportContainer
+ADD PART TacLifeSupportContainerLarge
+ADD PART TacLifeSupportContainerSmall
+ADD PART TacWaterContainer
+ADD PART TacWaterContainerLarge
+ADD PART TacWaterContainerSmall
+ADD PART scienceModule
+END TAG
+TAG XenonGas
+SHOW SPH True
+SHOW VAB True
+ADD PART cl.small.xenonTank
+ADD PART xenonTank
+ADD PART xenonTankRadial
+END TAG
+TAG Transfer
+SHOW SPH True
+SHOW VAB True
+ADD PART fuelLine
+END TAG
+END TAG
+TAG Structural
+SHOW SPH True
+SHOW VAB True
+TAG Main
+SHOW SPH True
+SHOW VAB True
+ADD PART exLaunchPad
+ADD PART exRunway
+ADD PART FSbombBay
+ADD PART FSbomberFuselageTail
+ADD PART FSoblongNose
+ADD PART FSoblongFuselage
+ADD PART FSoblongFuselageHalf
+ADD PART FSoblongToRoundAdapter
+ADD PART FSoblongTail
+ADD PART FStailBoom
+ADD PART FSbiPlaneTail
+ADD PART FSstrutConnectorWood
+ADD PART FSfloatGearbay
+ADD PART FSfloatEnd
+ADD PART FSfloatStraight
+ADD PART FSfloatStrut
+ADD PART FSfloatEndTail
+ADD PART FSstrutConnectorWire
+ADD PART SerCom1m
+ADD PART SerCom2
+ADD PART 3m.JoolV.2to1adapter
+ADD PART 3m.JoolV.3to2adapter
+ADD PART stackPoint1
+ADD PART strutCube
+ADD PART strutConnector
+ADD PART adapterSmallMiniTall
+ADD PART adapterSmallMiniShort
+ADD PART structuralPanel1
+ADD PART structuralPanel2
+ADD PART structuralIBeam2
+ADD PART structuralIBeam3
+ADD PART structuralIBeam1
+ADD PART trussAdapter
+ADD PART trussPiece1x
+ADD PART trussPiece3x
+ADD PART noseConeAdapter
+ADD PART strutOcto
+ADD PART largeAdapter
+ADD PART largeAdapter2
+ADD PART stationHub
+ADD PART smallHardpoint
+ADD PART Mk1FuselageStructural
+ADD PART structuralPylon
+ADD PART structuralMiniNode
+ADD PART stackTriCoupler
+ADD PART stackBiCoupler
+ADD PART adapterLargeSmallBi
+ADD PART stackQuadCoupler
+ADD PART adapterLargeSmallTri
+ADD PART adapterLargeSmallQuad
+END TAG
+TAG Decoupler
+SHOW SPH True
+SHOW VAB True
+ADD PART 0625.Heatshield
+ADD PART 1.25.Heatshield
+ADD PART 3.75.Heatshield
+ADD PART 6.25.Heatshield
+ADD PART 2.5.Heatshield
+ADD PART decoupler.ftr.small
+ADD PART decoupler.ftr.2M
+ADD PART decoupler.ftr
+ADD PART decoupler.ftr-3m
+ADD PART decoupler.ftr.4m
+ADD PART FSdropTankMount
+ADD PART KzProcFairingFuselage2
+ADD PART KzProcFairingSide2
+ADD PART KzProcFairingBase0.625
+ADD PART KzProcFairingBase1.25
+ADD PART KzProcFairingBase2.5
+ADD PART KzProcFairingBase3.75
+ADD PART KzProcFairingBase5
+ADD PART KzProcFairingFuselage1
+ADD PART KzProcFairingSide1
+ADD PART KzProcFairingBaseRing0.625
+ADD PART KzProcFairingBaseRing1.25
+ADD PART KzProcFairingBaseRing2.5
+ADD PART KzProcFairingBaseRing3.75
+ADD PART KzProcFairingBaseRing5
+ADD PART KzInterstageAdapter
+ADD PART 3m.JoolV.1mdecoupler
+ADD PART 3m.JoolV.2mdecoupler
+ADD PART 3m.JoolV.3mdecoupler
+ADD PART SDHI.2.5.AvionicsRing
+ADD PART SDHI.2.5.ServiceModule
+ADD PART SDHI.2.5.ServiceModuleAdapter
+ADD PART SDHI.2.5.ServiceModuleFairing
+ADD PART SDHI.2.5.Mk1-2AeroShroud
+ADD PART radialDecoupler1-2
+ADD PART decoupler1-2
+ADD PART stackDecoupler
+ADD PART stackSeparator
+ADD PART stackSeparatorMini
+ADD PART stackDecouplerMini
+ADD PART stackSeparatorBig
+ADD PART launchClamp1
+ADD PART radialDecoupler
+ADD PART radialDecoupler2
+END TAG
+END TAG
+TAG Aero
+SHOW SPH True
+SHOW VAB True
+TAG Control Surfaces
+SHOW SPH True
+SHOW VAB True
+ADD PART FSbomberWing
+ADD PART FSwinglet
+ADD PART FStailWing
+ADD PART FStailWingLarge
+ADD PART FSfighterWing
+END TAG
+TAG Winglets
+SHOW SPH True
+SHOW VAB True
+ADD PART FSbomberWingExtender
+ADD PART Proceduralwing2
+ADD PART Proceduralwing2EndPiece
+ADD PART ProceduralwingBac9
+ADD PART winglet
+ADD PART deltaWing
+ADD PART structuralWing
+ADD PART sweptWing
+ADD PART tailfin
+ADD PART wingConnector
+END TAG
+TAG Intakes
+SHOW SPH True
+SHOW VAB True
+ADD PART FSnoseEngineElectric
+ADD PART FSpropellerFolding
+ADD PART FSlancasterEngine
+ADD PART FSlancasterEngineGear
+ADD PART FSoblongNoseIntake
+ADD PART FSPropellerEngine
+ADD PART FSPropellerEngineElectric
+ADD PART FSPropellerEnginePush
+ADD PART FScopterRotorFenestron
+ADD PART FScopterRotorFenestronBothFins
+ADD PART FScopterRotorFenestronNoFins
+ADD PART FScopterRotorTail
+ADD PART FScopterRotorTail2
+ADD PART FScopterRotorMain
+ADD PART FScopterRotorMainElectric
+ADD PART FScopterRotorMainLarge
+ADD PART FSVTOLengine
+ADD PART FSVTOLengineLarge
+ADD PART FSswampEngine
+ADD PART CircularIntake
+ADD PART nacelleBody
+ADD PART ramAirIntake
+ADD PART airScoop
+END TAG
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART FSengineMount
+ADD PART FSfighterJetElevator
+ADD PART FSfighterJetRudder
+ADD PART FSfighterJetWing
+ADD PART FSbiPlaneAileron
+ADD PART FSbiPlaneElevator
+ADD PART FSbiPlaneRudder
+ADD PART FSbiPlaneWingCenter
+ADD PART FSbiPlaneWingMain
+ADD PART FSbiPlaneWingRound
+ADD PART FSbiPlaneWingShort
+ADD PART FSbiPlaneWingTip
+ADD PART pCtrlSrf1
+ADD PART B9.Aero.Wing.ControlSurface.SH.4m
+ADD PART AdvancedCanard
+ADD PART noseCone
+ADD PART R8winglet
+ADD PART winglet3
+ADD PART radialEngineBody
+ADD PART rocketNoseCone
+ADD PART smallCtrlSrf
+ADD PART CanardController
+ADD PART StandardCtrlSrf
+ADD PART standardNoseCone
+ADD PART airplaneTail
+ADD PART atmosphericScoop2
+ADD PART atmosphericScoop
+ADD PART radial.atmospheric.scoop2
+ADD PART radial.atmospheric.scoop1
+END TAG
+END TAG
+TAG Utility
+SHOW SPH True
+SHOW VAB True
+TAG Docking
+SHOW SPH True
+SHOW VAB True
+ADD PART exLaunchPad2
+ADD PART SDHI.ParaDock.1.ClampOTron
+ADD PART SDHI.ParaDock.2.IACBM
+ADD PART dockingPort2
+ADD PART dockingPort3
+ADD PART dockingPort1
+ADD PART dockingPortLarge
+ADD PART dockingPortLateral
+END TAG
+TAG Generators
+SHOW SPH True
+SHOW VAB True
+TAG Solar Panels
+SHOW SPH True
+SHOW VAB True
+ADD PART largeSolarPanel
+ADD PART solarPanels4
+ADD PART solarPanels3
+ADD PART solarPanels5
+ADD PART solarPanels2
+ADD PART solarPanels1
+END TAG
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART mumech.MJ2.Pod
+ADD PART SDHI.2.5.AvionicsRing
+ADD PART SDHI.2.5.ServiceModule
+ADD PART rtg
+ADD PART launchClamp1
+END TAG
+END TAG
+TAG Landing
+SHOW SPH True
+SHOW VAB True
+TAG Parachutes
+SHOW SPH True
+SHOW VAB True
+ADD PART parachuteSingle
+ADD PART parachuteLarge
+ADD PART parachuteDrogue
+ADD PART parachuteRadial
+END TAG
+TAG Wheels
+SHOW SPH True
+SHOW VAB True
+ADD PART roverWheel1
+ADD PART roverWheel2
+ADD PART roverWheel3
+ADD PART wheelMed
+END TAG
+TAG Landing Gears
+SHOW SPH True
+SHOW VAB True
+ADD PART FSapacheLandingGear
+ADD PART FSapacheLandingGearFlip
+ADD PART SmallGearBay
+END TAG
+END TAG
+TAG Light
+SHOW SPH True
+SHOW VAB True
+ADD PART FScopterCockpit
+ADD PART SDHI.ParaDock.1.ClampOTron
+ADD PART SDHI.ParaDock.2.IACBM
+ADD PART spotLight1
+ADD PART spotLight2
+ADD PART SmallGearBay
+END TAG
+TAG Control
+SHOW SPH True
+SHOW VAB True
+ADD PART FSairBrake
+ADD PART fsgyroscope
+ADD PART FSapacheNoseASAS
+ADD PART fstrimgadget
+ADD PART fsmovecraftgadget
+ADD PART cl.mini.asas
+ADD PART cl.mini.sas
+ADD PART cl.large.sasModule
+ADD PART asasmodule1-2
+ADD PART advSasModule
+ADD PART sasModule
+END TAG
+TAG Ladders
+SHOW SPH True
+SHOW VAB True
+ADD PART ladder1
+ADD PART telescopicLadder
+ADD PART telescopicLadderBay
+END TAG
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART Auger
+ADD PART SmallAuger
+ADD PART ELRecycleBin
+ADD PART ELRecycleBin.Large
+ADD PART ExOrbitalDock
+ADD PART FSfighterLandingGear
+ADD PART FSbomberLandingGear
+ADD PART FSfighterTailGear
+ADD PART FSbiPlaneWheelPair
+ADD PART FSbiplaneGear
+ADD PART FSbiPlaneSkid
+ADD PART KAS.Hook.Anchor
+ADD PART KAS.ContainerBay1
+ADD PART KAS.Container1
+ADD PART KAS.Container2
+ADD PART KAS.Hook.Magnet
+ADD PART KAS.Hook.GrapplingHook
+ADD PART KAS.Pylon1
+ADD PART KAS.HookSupport
+ADD PART KAS.Winch3
+ADD PART KAS.Winch1
+ADD PART KAS.Pipe1
+ADD PART KAS.CPort1
+ADD PART KAS.CPort2
+ADD PART KAS.Strut1
+ADD PART KAS.Winch4
+ADD PART KAS.Winch2
+ADD PART kethane.1m.converter
+ADD PART kethane.2m.converter
+ADD PART kethane.generator
+ADD PART kethane.smallDrill
+ADD PART kethane.heavyDrill
+ADD PART AdjustableRail
+ADD PART AdjustableRailHalf
+ADD PART AdjustableRailFourth
+ADD PART IRHingeClosed
+ADD PART IRHingeClosedHalf
+ADD PART IRHingeClosedFourth
+ADD PART dockingwasher.jr
+ADD PART dockingwasher.freejr
+ADD PART dockingwasher.freesr
+ADD PART dockingwasher.sr
+ADD PART dockingwasher.std
+ADD PART dockingwasher.free
+ADD PART GantryLarge
+ADD PART GantrySmall
+ADD PART GantryExtraSmall
+ADD PART Gantry
+ADD PART GantryLargeVariant
+ADD PART GantrySmallVariant
+ADD PART GantryExtraSmallVariant
+ADD PART GantryVariant
+ADD PART IRPiston
+ADD PART IRPistonHalf
+ADD PART IRPistonFourth
+ADD PART IR.Rotatron
+ADD PART IR.RotatronHalf
+ADD PART IR.RotatronFourth
+ADD PART IR.Rotatronmk2
+ADD PART IRHingeOpen
+ADD PART IRHingeOpenHalf
+ADD PART IRHingeOpenFourth
+ADD PART IR.HingeIndustrial
+ADD PART IRHingeTall
+ADD PART IRHingeTallHalf
+ADD PART IRHingeTallHalfND
+ADD PART IRHingeTallFourth
+ADD PART IRHingeTallFourthND
+ADD PART IRHingeTallND
+ADD PART TelescopeFullA
+ADD PART TelescopeFullB
+ADD PART TelescopeFullC
+ADD PART TelescopeHalfA
+ADD PART TelescopeHalfB
+ADD PART TelescopeHalfC
+ADD PART TelescopeFourthA
+ADD PART TelescopeFourthB
+ADD PART TelescopeFourthC
+ADD PART IR.RotatronVTOL
+ADD PART RC.combo.small
+ADD PART RC.combo.small.stack
+ADD PART RC.combo.large
+ADD PART RC.combo.large.stack
+ADD PART RC.drag.small
+ADD PART RC.drag.small.stack
+ADD PART RC.drag.large
+ADD PART RC.drag.large.stack
+ADD PART RC.drag.radial
+ADD PART RC.drogue.small
+ADD PART RC.drogue.small.stack
+ADD PART RC.drogue.large
+ADD PART RC.drogue.large.stack
+ADD PART RC.drogue.radial
+ADD PART RC.main.small
+ADD PART RC.main.small.stack
+ADD PART RC.main.large
+ADD PART RC.main.large.stack
+ADD PART RC.main.radial
+ADD PART landingLeg1
+ADD PART landingLeg1-2
+ADD PART miniLandingLeg
+ADD PART TacAirFilter
+ADD PART TacCarbonExtractor
+ADD PART TacCarbonExtractorLarge
+ADD PART TacWaterPurifier
+ADD PART TacWaterPurifierLarge
+ADD PART TacWaterSplitter
+ADD PART AntimatterCollector
+END TAG
+END TAG
+TAG Science
+SHOW SPH True
+SHOW VAB True
+TAG Sensors
+SHOW SPH True
+SHOW VAB True
+ADD PART 6.25.Heatshield
+ADD PART sensorThermometer
+ADD PART sensorAccelerometer
+ADD PART sensorGravimeter
+ADD PART sensorBarometer
+END TAG
+TAG Antennas
+SHOW SPH True
+SHOW VAB True
+ADD PART longAntenna
+ADD PART commDish
+END TAG
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART Magnetometer
+ADD PART OMD
+ADD PART fsinfopopup
+ADD PART kethane.sensor.1m
+ADD PART kethane.highGain
+ADD PART kethane.kerbalBlender
+ADD PART Romfarer.Lazor.Blue
+ADD PART Buran Manipulator
+ADD PART Romfarer.Lazor.Green
+ADD PART ISS CanadArm2
+ADD PART Romfarer.Lazor.Magenta
+ADD PART Romfarer.Lazor.Red
+ADD PART Romfarer.Lazor.Yellow
+ADD PART mediumDishAntenna
+ADD PART GooExperiment
+ADD PART science.module
+ADD PART avionicsNoseCone
+ADD PART DTMagnetometer
+ADD PART sensorGammaRaySpectrometer
+ADD PART FNGCMS
+ADD PART FNLCMS
+END TAG
+END TAG
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART RAPIER
+END TAG
+END TAG
+TAG DeadlyReentry
+SHOW SPH True
+SHOW VAB True
+TAG Structural
+SHOW SPH True
+SHOW VAB True
+TAG Decoupler
+SHOW SPH True
+SHOW VAB True
+ADD PART 0625.Heatshield
+ADD PART 1.25.Heatshield
+ADD PART 2.5.Heatshield
+ADD PART 3.75.Heatshield
+ADD PART 6.25.Heatshield
+ADD PART decoupler.ftr.small
+ADD PART decoupler.ftr.2M
+ADD PART decoupler.ftr
+ADD PART decoupler.ftr-3m
+ADD PART decoupler.ftr.4m
+END TAG
+END TAG
+TAG Science
+SHOW SPH True
+SHOW VAB True
+TAG Sensors
+SHOW SPH True
+SHOW VAB True
+ADD PART 6.25.Heatshield
+END TAG
+END TAG
+END TAG
+TAG ExtraplanetaryLaunchpads
+SHOW SPH True
+SHOW VAB True
+TAG Pods
+SHOW SPH True
+SHOW VAB True
+TAG Unmanned
+SHOW SPH True
+SHOW VAB True
+ADD PART exLaunchPad2
+ADD PART RocketBuilder
+END TAG
+END TAG
+TAG Propulsion
+SHOW SPH True
+SHOW VAB True
+TAG LiquidFuel
+SHOW SPH True
+SHOW VAB True
+ADD PART exLaunchPad2
+END TAG
+TAG Oxidizer
+SHOW SPH True
+SHOW VAB True
+ADD PART exLaunchPad2
+END TAG
+END TAG
+TAG Storage
+SHOW SPH True
+SHOW VAB True
+TAG Metal
+SHOW SPH True
+SHOW VAB True
+ADD PART HexCanMetalHuge
+ADD PART HexCanMetalLarge
+ADD PART HexCanMetal
+ADD PART HexCanMetalSmall
+ADD PART metalBin
+ADD PART SmallSmelter
+END TAG
+TAG Ore
+SHOW SPH True
+SHOW VAB True
+ADD PART HexCanOreHuge
+ADD PART HexCanOreLarge
+ADD PART HexCanOre
+ADD PART HexCanOreSmall
+ADD PART oreBin
+ADD PART SmallSmelter
+END TAG
+TAG RocketParts
+SHOW SPH True
+SHOW VAB True
+ADD PART HexCanRocketPartsHuge
+ADD PART HexCanRocketPartsLarge
+ADD PART HexCanRocketParts
+ADD PART HexCanRocketPartsSmall
+END TAG
+END TAG
+TAG Structural
+SHOW SPH True
+SHOW VAB True
+TAG Main
+SHOW SPH True
+SHOW VAB True
+ADD PART exLaunchPad
+ADD PART exRunway
+END TAG
+END TAG
+TAG Utility
+SHOW SPH True
+SHOW VAB True
+TAG Docking
+SHOW SPH True
+SHOW VAB True
+ADD PART exLaunchPad2
+END TAG
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART ExOrbitalDock
+ADD PART ELRecycleBin
+ADD PART ELRecycleBin.Large
+END TAG
+END TAG
+TAG Science
+SHOW SPH True
+SHOW VAB True
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART Magnetometer
+ADD PART OMD
+END TAG
+END TAG
+END TAG
+TAG Firespitter
+SHOW SPH True
+SHOW VAB True
+TAG Pods
+SHOW SPH True
+SHOW VAB True
+TAG Manned
+SHOW SPH True
+SHOW VAB True
+ADD PART FSbiplaneCockpit
+ADD PART FSapacheCockpit
+ADD PART FSbomberCockpit
+ADD PART FScopterCockpit
+ADD PART FSfighterCockpit
+END TAG
+END TAG
+TAG Propulsion
+SHOW SPH True
+SHOW VAB True
+TAG ElectricCharge
+SHOW SPH True
+SHOW VAB True
+ADD PART FScopterRotorFenestron
+ADD PART FScopterRotorFenestronBothFins
+ADD PART FScopterRotorFenestronNoFins
+ADD PART FScopterRotorMainElectric
+ADD PART FScopterRotorTail
+ADD PART FScopterRotorTail2
+ADD PART FSnoseEngineElectric
+ADD PART FSPropellerEngineElectric
+ADD PART FSpropellerFolding
+END TAG
+TAG FSCoolant
+SHOW SPH True
+SHOW VAB True
+ADD PART FScopterRotorFenestron
+ADD PART FScopterRotorFenestronBothFins
+ADD PART FScopterRotorFenestronNoFins
+ADD PART FScopterRotorMainElectric
+ADD PART FScopterRotorTail
+ADD PART FScopterRotorTail2
+ADD PART FSnoseEngineElectric
+ADD PART FSPropellerEngineElectric
+ADD PART FSpropellerFolding
+END TAG
+TAG IntakeAir
+SHOW SPH True
+SHOW VAB True
+ADD PART FScopterRotorMain
+ADD PART FScopterRotorMainLarge
+ADD PART FSlancasterEngine
+ADD PART FSlancasterEngineGear
+ADD PART FSnoseEngine
+ADD PART FSoblongTailJet
+ADD PART FSPropellerEngine
+ADD PART FSPropellerEnginePush
+ADD PART FSswampEngine
+ADD PART FSVTOLengine
+ADD PART FSVTOLengineLarge
+END TAG
+TAG LiquidFuel
+SHOW SPH True
+SHOW VAB True
+ADD PART FScopterRotorMain
+ADD PART FScopterRotorMainLarge
+ADD PART FSlancasterEngine
+ADD PART FSlancasterEngineGear
+ADD PART FSnoseEngine
+ADD PART FSoblongTailJet
+ADD PART FSPropellerEngine
+ADD PART FSPropellerEnginePush
+ADD PART FSswampEngine
+ADD PART FSVTOLengine
+ADD PART FSVTOLengineLarge
+END TAG
+END TAG
+TAG Storage
+SHOW SPH True
+SHOW VAB True
+TAG CarbonDioxide
+SHOW SPH True
+SHOW VAB True
+ADD PART FSCrewFuselage
+END TAG
+TAG ElectricCharge
+SHOW SPH True
+SHOW VAB True
+ADD PART FSoblongFuselageBattery
+ADD PART FSbattery
+END TAG
+TAG Food
+SHOW SPH True
+SHOW VAB True
+ADD PART FSCrewFuselage
+END TAG
+TAG IntakeAir
+SHOW SPH True
+SHOW VAB True
+ADD PART FSairTank
+END TAG
+TAG LiquidFuel
+SHOW SPH True
+SHOW VAB True
+ADD PART FSdropTank
+ADD PART FSjerrycan
+ADD PART FSbomberFuselage
+ADD PART FSbomberFuselageEmpty
+ADD PART FSCrewFuselage
+ADD PART FSoblongFuel
+ADD PART FSoblongFuselageRocketFuel
+END TAG
+TAG Oxidizer
+SHOW SPH True
+SHOW VAB True
+ADD PART FSoxidizerTank
+ADD PART FSoblongFuselageRocketFuel
+END TAG
+TAG Oxygen
+SHOW SPH True
+SHOW VAB True
+ADD PART FSCrewFuselage
+END TAG
+TAG Waste
+SHOW SPH True
+SHOW VAB True
+ADD PART FSCrewFuselage
+END TAG
+TAG WasteWater
+SHOW SPH True
+SHOW VAB True
+ADD PART FSCrewFuselage
+END TAG
+TAG Water
+SHOW SPH True
+SHOW VAB True
+ADD PART FSCrewFuselage
+END TAG
+END TAG
+TAG Structural
+SHOW SPH True
+SHOW VAB True
+TAG Main
+SHOW SPH True
+SHOW VAB True
+ADD PART FSbiPlaneTail
+ADD PART FSstrutConnectorWire
+ADD PART FSstrutConnectorWood
+ADD PART FSbombBay
+ADD PART FSbomberFuselageTail
+ADD PART FSoblongFuselage
+ADD PART FSoblongFuselageHalf
+ADD PART FSoblongNose
+ADD PART FSoblongTail
+ADD PART FSoblongToRoundAdapter
+ADD PART FStailBoom
+ADD PART FSfloatEnd
+ADD PART FSfloatEndTail
+ADD PART FSfloatGearbay
+ADD PART FSfloatStraight
+ADD PART FSfloatStrut
+END TAG
+TAG Decoupler
+SHOW SPH True
+SHOW VAB True
+ADD PART FSdropTankMount
+END TAG
+END TAG
+TAG Aero
+SHOW SPH True
+SHOW VAB True
+TAG Control Surfaces
+SHOW SPH True
+SHOW VAB True
+ADD PART FSbomberWing
+ADD PART FSfighterWing
+ADD PART FStailWing
+ADD PART FStailWingLarge
+ADD PART FSwinglet
+END TAG
+TAG Winglets
+SHOW SPH True
+SHOW VAB True
+ADD PART FSbomberWingExtender
+END TAG
+TAG Intakes
+SHOW SPH True
+SHOW VAB True
+ADD PART FSoblongNoseIntake
+ADD PART FScopterRotorFenestron
+ADD PART FScopterRotorFenestronBothFins
+ADD PART FScopterRotorFenestronNoFins
+ADD PART FScopterRotorMain
+ADD PART FScopterRotorMainElectric
+ADD PART FScopterRotorMainLarge
+ADD PART FScopterRotorTail
+ADD PART FScopterRotorTail2
+ADD PART FSlancasterEngine
+ADD PART FSlancasterEngineGear
+ADD PART FSnoseEngineElectric
+ADD PART FSPropellerEngine
+ADD PART FSPropellerEngineElectric
+ADD PART FSPropellerEnginePush
+ADD PART FSpropellerFolding
+ADD PART FSswampEngine
+ADD PART FSVTOLengine
+ADD PART FSVTOLengineLarge
+END TAG
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART FSfighterJetElevator
+ADD PART FSfighterJetRudder
+ADD PART FSfighterJetWing
+ADD PART FSbiPlaneAileron
+ADD PART FSbiPlaneElevator
+ADD PART FSbiPlaneRudder
+ADD PART FSbiPlaneWingCenter
+ADD PART FSbiPlaneWingMain
+ADD PART FSbiPlaneWingRound
+ADD PART FSbiPlaneWingShort
+ADD PART FSbiPlaneWingTip
+ADD PART FSengineMount
+END TAG
+END TAG
+TAG Utility
+SHOW SPH True
+SHOW VAB True
+TAG Landing
+SHOW SPH True
+SHOW VAB True
+TAG Landing Gears
+SHOW SPH True
+SHOW VAB True
+ADD PART FSapacheLandingGear
+ADD PART FSapacheLandingGearFlip
+END TAG
+END TAG
+TAG Light
+SHOW SPH True
+SHOW VAB True
+ADD PART FScopterCockpit
+END TAG
+TAG Control
+SHOW SPH True
+SHOW VAB True
+ADD PART FSairBrake
+ADD PART FSapacheNoseASAS
+ADD PART fsgyroscope
+ADD PART fsmovecraftgadget
+ADD PART fstrimgadget
+END TAG
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART FSbiPlaneSkid
+ADD PART FSbiPlaneWheelPair
+ADD PART FSbiplaneGear
+ADD PART FSbomberLandingGear
+ADD PART FSfighterLandingGear
+ADD PART FSfighterTailGear
+END TAG
+END TAG
+TAG Science
+SHOW SPH True
+SHOW VAB True
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART fsinfopopup
+END TAG
+END TAG
+END TAG
+TAG KAS
+ICON KAS
+SHOW SPH True
+SHOW VAB True
+TAG Utility
+SHOW SPH True
+SHOW VAB True
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART KAS.Container1
+ADD PART KAS.Container2
+ADD PART KAS.ContainerBay1
+ADD PART KAS.CPort1
+ADD PART KAS.CPort2
+ADD PART KAS.HookSupport
+ADD PART KAS.Hook.Anchor
+ADD PART KAS.Hook.GrapplingHook
+ADD PART KAS.Hook.Magnet
+ADD PART KAS.Pipe1
+ADD PART KAS.Pylon1
+ADD PART KAS.Strut1
+ADD PART KAS.Winch1
+ADD PART KAS.Winch2
+ADD PART KAS.Winch3
+ADD PART KAS.Winch4
+END TAG
+END TAG
+END TAG
+TAG Keramzit
+SHOW SPH True
+SHOW VAB True
+TAG Structural
+SHOW SPH True
+SHOW VAB True
+TAG Decoupler
+SHOW SPH True
+SHOW VAB True
+ADD PART KzInterstageAdapter
+ADD PART KzProcFairingBase0.625
+ADD PART KzProcFairingBase1.25
+ADD PART KzProcFairingBase2.5
+ADD PART KzProcFairingBase3.75
+ADD PART KzProcFairingBase5
+ADD PART KzProcFairingBaseRing0.625
+ADD PART KzProcFairingBaseRing1.25
+ADD PART KzProcFairingBaseRing2.5
+ADD PART KzProcFairingBaseRing3.75
+ADD PART KzProcFairingBaseRing5
+ADD PART KzProcFairingFuselage1
+ADD PART KzProcFairingFuselage2
+ADD PART KzProcFairingSide1
+ADD PART KzProcFairingSide2
+END TAG
+END TAG
+END TAG
+TAG Kethane
+SHOW SPH True
+SHOW VAB True
+TAG Propulsion
+SHOW SPH True
+SHOW VAB True
+TAG Kethane
+SHOW SPH True
+SHOW VAB True
+ADD PART kethane.turbine
+END TAG
+TAG KIntakeAir
+SHOW SPH True
+SHOW VAB True
+ADD PART kethane.turbine
+END TAG
+END TAG
+TAG Storage
+SHOW SPH True
+SHOW VAB True
+TAG Kethane
+SHOW SPH True
+SHOW VAB True
+ADD PART kethane.tank1mLarge
+ADD PART kethane.tank1mStandard
+ADD PART kethane.tank2mExtralarge
+ADD PART kethane.tank2mLarge
+ADD PART kethane.tank2mMedium
+ADD PART kethane.tank2mSmall
+ADD PART kethane.tankExternal
+END TAG
+END TAG
+TAG Utility
+SHOW SPH True
+SHOW VAB True
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART kethane.1m.converter
+ADD PART kethane.2m.converter
+ADD PART kethane.generator
+ADD PART kethane.heavyDrill
+ADD PART kethane.smallDrill
+END TAG
+END TAG
+TAG Science
+SHOW SPH True
+SHOW VAB True
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART kethane.highGain
+ADD PART kethane.kerbalBlender
+ADD PART kethane.sensor.1m
+END TAG
+END TAG
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART kethane.radialDrill
+END TAG
+END TAG
+TAG KSPX
+SHOW SPH True
+SHOW VAB True
+TAG Propulsion
+SHOW SPH True
+SHOW VAB True
+TAG ElectricCharge
+SHOW SPH True
+SHOW VAB True
+ADD PART cl.small.ionEngine
+END TAG
+TAG LiquidFuel
+SHOW SPH True
+SHOW VAB True
+ADD PART cl.large.nuclearEngine
+END TAG
+TAG Oxidizer
+SHOW SPH True
+SHOW VAB True
+ADD PART cl.large.nuclearEngine
+END TAG
+TAG SolidFuel
+SHOW SPH True
+SHOW VAB True
+ADD PART cl.small.escapeTower
+END TAG
+TAG XenonGas
+SHOW SPH True
+SHOW VAB True
+ADD PART cl.small.ionEngine
+END TAG
+END TAG
+TAG Storage
+SHOW SPH True
+SHOW VAB True
+TAG LiquidFuel
+SHOW SPH True
+SHOW VAB True
+ADD PART cl.large.tripleFuelTank
+ADD PART cl.radial.cylTankFuel
+ADD PART cl.radial.sphereTankFuel
+END TAG
+TAG MonoPropellant
+SHOW SPH True
+SHOW VAB True
+ADD PART cl.large.shortMonoTank
+END TAG
+TAG Oxidizer
+SHOW SPH True
+SHOW VAB True
+ADD PART cl.large.tripleFuelTank
+ADD PART cl.radial.cylTankOxy
+ADD PART cl.radial.sphereTankOxy
+END TAG
+TAG XenonGas
+SHOW SPH True
+SHOW VAB True
+ADD PART cl.small.xenonTank
+END TAG
+END TAG
+TAG Utility
+SHOW SPH True
+SHOW VAB True
+TAG Control
+SHOW SPH True
+SHOW VAB True
+ADD PART cl.large.sasModule
+ADD PART cl.mini.asas
+ADD PART cl.mini.sas
+END TAG
+END TAG
+END TAG
+TAG RealChute
+SHOW SPH True
+SHOW VAB True
+TAG Utility
+SHOW SPH True
+SHOW VAB True
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART RC.combo.large
+ADD PART RC.combo.small
+ADD PART RC.combo.large.stack
+ADD PART RC.combo.small.stack
+ADD PART RC.main.large
+ADD PART RC.drogue.large
+ADD PART RC.drag.large
+ADD PART RC.main.large.stack
+ADD PART RC.drogue.large.stack
+ADD PART RC.drag.large.stack
+ADD PART RC.main.radial
+ADD PART RC.drogue.radial
+ADD PART RC.drag.radial
+ADD PART RC.main.small
+ADD PART RC.drogue.small
+ADD PART RC.drag.small
+ADD PART RC.main.small.stack
+ADD PART RC.drogue.small.stack
+ADD PART RC.drag.small.stack
+END TAG
+END TAG
+END TAG
+TAG SDHI
+SHOW SPH True
+SHOW VAB True
+TAG Propulsion
+SHOW SPH True
+SHOW VAB True
+TAG LiquidFuel
+SHOW SPH True
+SHOW VAB True
+ADD PART SDHI.Rockomax.LV-909.NoFairing
+END TAG
+TAG Oxidizer
+SHOW SPH True
+SHOW VAB True
+ADD PART SDHI.Rockomax.LV-909.NoFairing
+END TAG
+TAG SolidFuel
+SHOW SPH True
+SHOW VAB True
+ADD PART SDHI.2.5.Mk1-2AeroShroud
+END TAG
+END TAG
+TAG Storage
+SHOW SPH True
+SHOW VAB True
+TAG AblativeShielding
+SHOW SPH True
+SHOW VAB True
+ADD PART SDHI.2.5.Heatshield
+END TAG
+END TAG
+TAG Structural
+SHOW SPH True
+SHOW VAB True
+TAG Decoupler
+SHOW SPH True
+SHOW VAB True
+ADD PART SDHI.2.5.AvionicsRing
+ADD PART SDHI.2.5.Mk1-2AeroShroud
+ADD PART SDHI.2.5.ServiceModule
+ADD PART SDHI.2.5.ServiceModuleAdapter
+ADD PART SDHI.2.5.ServiceModuleFairing
+END TAG
+END TAG
+TAG Utility
+SHOW SPH True
+SHOW VAB True
+TAG Docking
+SHOW SPH True
+SHOW VAB True
+ADD PART SDHI.ParaDock.1.ClampOTron
+ADD PART SDHI.ParaDock.2.IACBM
+END TAG
+TAG Generators
+SHOW SPH True
+SHOW VAB True
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART SDHI.2.5.AvionicsRing
+ADD PART SDHI.2.5.ServiceModule
+END TAG
+END TAG
+TAG Light
+SHOW SPH True
+SHOW VAB True
+ADD PART SDHI.ParaDock.1.ClampOTron
+ADD PART SDHI.ParaDock.2.IACBM
+END TAG
+END TAG
+END TAG
+TAG Squad
+ICON Squad
+SHOW SPH True
+SHOW VAB True
+TAG Pods
+SHOW SPH True
+SHOW VAB True
+TAG Manned
+SHOW SPH True
+SHOW VAB True
+ADD PART cupola
+ADD PART landerCabinSmall
+ADD PART Mark1Cockpit
+ADD PART Mark2Cockpit
+ADD PART mark3Cockpit
+ADD PART Mark1-2Pod
+ADD PART mk1pod
+ADD PART mk2LanderCabin
+END TAG
+TAG Unmanned
+SHOW SPH True
+SHOW VAB True
+ADD PART probeCoreCube
+ADD PART probeCoreHex
+ADD PART probeCoreOcto
+ADD PART probeCoreOcto2
+ADD PART probeCoreSphere
+ADD PART probeStackLarge
+ADD PART probeStackSmall
+END TAG
+TAG Seats
+SHOW SPH True
+SHOW VAB True
+ADD PART seatExternalCmd
+END TAG
+END TAG
+TAG Propulsion
+SHOW SPH True
+SHOW VAB True
+TAG ElectricCharge
+SHOW SPH True
+SHOW VAB True
+ADD PART ionEngine
+END TAG
+TAG IntakeAir
+SHOW SPH True
+SHOW VAB True
+ADD PART JetEngine
+ADD PART turboFanEngine
+END TAG
+TAG LiquidFuel
+SHOW SPH True
+SHOW VAB True
+ADD PART engineLargeSkipper
+ADD PART JetEngine
+ADD PART liquidEngine
+ADD PART liquidEngine1-2
+ADD PART liquidEngine2
+ADD PART liquidEngine2-2
+ADD PART liquidEngine3
+ADD PART liquidEngineMini
+ADD PART microEngine
+ADD PART nuclearEngine
+ADD PART radialEngineMini
+ADD PART radialLiquidEngine1-2
+ADD PART smallRadialEngine
+ADD PART toroidalAerospike
+ADD PART turboFanEngine
+END TAG
+TAG Oxidizer
+SHOW SPH True
+SHOW VAB True
+ADD PART engineLargeSkipper
+ADD PART liquidEngine
+ADD PART liquidEngine1-2
+ADD PART liquidEngine2
+ADD PART liquidEngine2-2
+ADD PART liquidEngine3
+ADD PART liquidEngineMini
+ADD PART microEngine
+ADD PART nuclearEngine
+ADD PART radialEngineMini
+ADD PART radialLiquidEngine1-2
+ADD PART smallRadialEngine
+ADD PART toroidalAerospike
+END TAG
+TAG RCS
+SHOW SPH True
+SHOW VAB True
+ADD PART linearRcs
+ADD PART RCSBlock
+END TAG
+TAG SolidFuel
+SHOW SPH True
+SHOW VAB True
+ADD PART sepMotor1
+ADD PART solidBooster
+ADD PART solidBooster1-1
+END TAG
+TAG XenonGas
+SHOW SPH True
+SHOW VAB True
+ADD PART ionEngine
+END TAG
+END TAG
+TAG Storage
+SHOW SPH True
+SHOW VAB True
+TAG CarbonDioxide
+SHOW SPH True
+SHOW VAB True
+ADD PART crewCabin
+ADD PART Large.Crewed.Lab
+END TAG
+TAG ElectricCharge
+SHOW SPH True
+SHOW VAB True
+ADD PART batteryBank
+ADD PART batteryBankLarge
+ADD PART batteryBankMini
+ADD PART batteryPack
+ADD PART ksp.r.largeBatteryPack
+ADD PART roverBody
+END TAG
+TAG Food
+SHOW SPH True
+SHOW VAB True
+ADD PART crewCabin
+ADD PART Large.Crewed.Lab
+END TAG
+TAG LiquidFuel
+SHOW SPH True
+SHOW VAB True
+ADD PART fuelTank
+ADD PART fuelTank1-2
+ADD PART fuelTank2-2
+ADD PART fuelTank3-2
+ADD PART fuelTank4-2
+ADD PART fuelTankSmall
+ADD PART fuelTankSmallFlat
+ADD PART fuelTank.long
+ADD PART miniFuelTank
+ADD PART MK1Fuselage
+ADD PART mk2Fuselage
+ADD PART mk2SpacePlaneAdapter
+ADD PART mk3Fuselage
+ADD PART mk3spacePlaneAdapter
+ADD PART toroidalFuelTank
+END TAG
+TAG MonoPropellant
+SHOW SPH True
+SHOW VAB True
+ADD PART radialRCSTank
+ADD PART RCSFuelTank
+ADD PART RCSTank1-2
+ADD PART rcsTankMini
+ADD PART rcsTankRadialLong
+END TAG
+TAG Oxidizer
+SHOW SPH True
+SHOW VAB True
+ADD PART fuelTank
+ADD PART fuelTank1-2
+ADD PART fuelTank2-2
+ADD PART fuelTank3-2
+ADD PART fuelTank4-2
+ADD PART fuelTankSmall
+ADD PART fuelTankSmallFlat
+ADD PART fuelTank.long
+ADD PART miniFuelTank
+ADD PART toroidalFuelTank
+END TAG
+TAG Oxygen
+SHOW SPH True
+SHOW VAB True
+ADD PART crewCabin
+ADD PART Large.Crewed.Lab
+END TAG
+TAG Waste
+SHOW SPH True
+SHOW VAB True
+ADD PART crewCabin
+ADD PART Large.Crewed.Lab
+END TAG
+TAG WasteWater
+SHOW SPH True
+SHOW VAB True
+ADD PART crewCabin
+ADD PART Large.Crewed.Lab
+END TAG
+TAG Water
+SHOW SPH True
+SHOW VAB True
+ADD PART crewCabin
+ADD PART Large.Crewed.Lab
+END TAG
+TAG XenonGas
+SHOW SPH True
+SHOW VAB True
+ADD PART xenonTank
+ADD PART xenonTankRadial
+END TAG
+TAG Transfer
+SHOW SPH True
+SHOW VAB True
+ADD PART fuelLine
+END TAG
+END TAG
+TAG Structural
+SHOW SPH True
+SHOW VAB True
+TAG Main
+SHOW SPH True
+SHOW VAB True
+ADD PART noseConeAdapter
+ADD PART Mk1FuselageStructural
+ADD PART adapterLargeSmallBi
+ADD PART adapterLargeSmallQuad
+ADD PART adapterLargeSmallTri
+ADD PART adapterSmallMiniShort
+ADD PART adapterSmallMiniTall
+ADD PART smallHardpoint
+ADD PART stationHub
+ADD PART structuralIBeam1
+ADD PART structuralIBeam2
+ADD PART structuralIBeam3
+ADD PART structuralMiniNode
+ADD PART structuralPanel1
+ADD PART structuralPanel2
+ADD PART structuralPylon
+ADD PART strutConnector
+ADD PART strutCube
+ADD PART strutOcto
+ADD PART trussAdapter
+ADD PART trussPiece1x
+ADD PART trussPiece3x
+ADD PART largeAdapter
+ADD PART largeAdapter2
+ADD PART stackBiCoupler
+ADD PART stackPoint1
+ADD PART stackQuadCoupler
+ADD PART stackTriCoupler
+END TAG
+TAG Decoupler
+SHOW SPH True
+SHOW VAB True
+ADD PART decoupler1-2
+ADD PART launchClamp1
+ADD PART radialDecoupler
+ADD PART radialDecoupler1-2
+ADD PART radialDecoupler2
+ADD PART stackDecoupler
+ADD PART stackDecouplerMini
+ADD PART stackSeparator
+ADD PART stackSeparatorBig
+ADD PART stackSeparatorMini
+END TAG
+END TAG
+TAG Aero
+SHOW SPH True
+SHOW VAB True
+TAG Winglets
+SHOW SPH True
+SHOW VAB True
+ADD PART deltaWing
+ADD PART sweptWing
+ADD PART tailfin
+ADD PART wingConnector
+ADD PART winglet
+ADD PART structuralWing
+END TAG
+TAG Intakes
+SHOW SPH True
+SHOW VAB True
+ADD PART nacelleBody
+ADD PART airScoop
+ADD PART CircularIntake
+ADD PART ramAirIntake
+END TAG
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART AdvancedCanard
+ADD PART StandardCtrlSrf
+ADD PART airplaneTail
+ADD PART CanardController
+ADD PART noseCone
+ADD PART rocketNoseCone
+ADD PART smallCtrlSrf
+ADD PART standardNoseCone
+ADD PART R8winglet
+ADD PART winglet3
+ADD PART radialEngineBody
+END TAG
+END TAG
+TAG Utility
+SHOW SPH True
+SHOW VAB True
+TAG Docking
+SHOW SPH True
+SHOW VAB True
+ADD PART dockingPort1
+ADD PART dockingPort2
+ADD PART dockingPort3
+ADD PART dockingPortLarge
+ADD PART dockingPortLateral
+END TAG
+TAG Generators
+SHOW SPH True
+SHOW VAB True
+TAG Solar Panels
+SHOW SPH True
+SHOW VAB True
+ADD PART largeSolarPanel
+ADD PART solarPanels1
+ADD PART solarPanels2
+ADD PART solarPanels3
+ADD PART solarPanels4
+ADD PART solarPanels5
+END TAG
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART rtg
+ADD PART launchClamp1
+END TAG
+END TAG
+TAG Landing
+SHOW SPH True
+SHOW VAB True
+TAG Parachutes
+SHOW SPH True
+SHOW VAB True
+ADD PART parachuteDrogue
+ADD PART parachuteLarge
+ADD PART parachuteRadial
+ADD PART parachuteSingle
+END TAG
+TAG Wheels
+SHOW SPH True
+SHOW VAB True
+ADD PART roverWheel1
+ADD PART roverWheel2
+ADD PART roverWheel3
+ADD PART wheelMed
+END TAG
+TAG Landing Gears
+SHOW SPH True
+SHOW VAB True
+ADD PART SmallGearBay
+END TAG
+END TAG
+TAG Light
+SHOW SPH True
+SHOW VAB True
+ADD PART spotLight1
+ADD PART spotLight2
+ADD PART SmallGearBay
+END TAG
+TAG Control
+SHOW SPH True
+SHOW VAB True
+ADD PART advSasModule
+ADD PART asasmodule1-2
+ADD PART sasModule
+END TAG
+TAG Ladders
+SHOW SPH True
+SHOW VAB True
+ADD PART ladder1
+ADD PART telescopicLadder
+ADD PART telescopicLadderBay
+END TAG
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART landingLeg1
+ADD PART landingLeg1-2
+ADD PART miniLandingLeg
+END TAG
+END TAG
+TAG Science
+SHOW SPH True
+SHOW VAB True
+TAG Sensors
+SHOW SPH True
+SHOW VAB True
+ADD PART sensorAccelerometer
+ADD PART sensorBarometer
+ADD PART sensorGravimeter
+ADD PART sensorThermometer
+END TAG
+TAG Antennas
+SHOW SPH True
+SHOW VAB True
+ADD PART commDish
+ADD PART longAntenna
+END TAG
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART avionicsNoseCone
+ADD PART GooExperiment
+ADD PART science.module
+ADD PART mediumDishAntenna
+END TAG
+END TAG
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART RAPIER
+END TAG
+END TAG
+TAG ThunderAerospace
+SHOW SPH True
+SHOW VAB True
+TAG Storage
+SHOW SPH True
+SHOW VAB True
+TAG CarbonDioxide
+SHOW SPH True
+SHOW VAB True
+ADD PART TacLifeSupportContainer
+ADD PART TacLifeSupportContainerLarge
+ADD PART TacLifeSupportContainerSmall
+ADD PART TacOxygenContainer
+ADD PART TacOxygenContainerLarge
+ADD PART TacOxygenContainerSmall
+ADD PART HexCanOxygenLarge
+ADD PART HexCanOxygen
+ADD PART HexCanOxygenSmall
+ADD PART HexCanLifeSupportLarge
+ADD PART HexCanLifeSupport
+ADD PART HexCanLifeSupportSmall
+END TAG
+TAG Food
+SHOW SPH True
+SHOW VAB True
+ADD PART TacFoodContainer
+ADD PART TacFoodContainerLarge
+ADD PART TacFoodContainerSmall
+ADD PART TacLifeSupportContainer
+ADD PART TacLifeSupportContainerLarge
+ADD PART TacLifeSupportContainerSmall
+ADD PART HexCanFoodLarge
+ADD PART HexCanFood
+ADD PART HexCanFoodSmall
+ADD PART HexCanLifeSupportLarge
+ADD PART HexCanLifeSupport
+ADD PART HexCanLifeSupportSmall
+END TAG
+TAG Oxygen
+SHOW SPH True
+SHOW VAB True
+ADD PART TacLifeSupportContainer
+ADD PART TacLifeSupportContainerLarge
+ADD PART TacLifeSupportContainerSmall
+ADD PART TacOxygenContainer
+ADD PART TacOxygenContainerLarge
+ADD PART TacOxygenContainerSmall
+ADD PART HexCanOxygenLarge
+ADD PART HexCanOxygen
+ADD PART HexCanOxygenSmall
+ADD PART HexCanLifeSupportLarge
+ADD PART HexCanLifeSupport
+ADD PART HexCanLifeSupportSmall
+END TAG
+TAG Waste
+SHOW SPH True
+SHOW VAB True
+ADD PART TacFoodContainer
+ADD PART TacFoodContainerLarge
+ADD PART TacFoodContainerSmall
+ADD PART TacLifeSupportContainer
+ADD PART TacLifeSupportContainerLarge
+ADD PART TacLifeSupportContainerSmall
+ADD PART HexCanFoodLarge
+ADD PART HexCanFood
+ADD PART HexCanFoodSmall
+ADD PART HexCanLifeSupportLarge
+ADD PART HexCanLifeSupport
+ADD PART HexCanLifeSupportSmall
+END TAG
+TAG WasteWater
+SHOW SPH True
+SHOW VAB True
+ADD PART TacLifeSupportContainer
+ADD PART TacLifeSupportContainerLarge
+ADD PART TacLifeSupportContainerSmall
+ADD PART TacWaterContainer
+ADD PART TacWaterContainerLarge
+ADD PART TacWaterContainerSmall
+ADD PART HexCanDrinkingWaterLarge
+ADD PART HexCanDrinkingWater
+ADD PART HexCanDrinkingWaterSmall
+ADD PART HexCanLifeSupportLarge
+ADD PART HexCanLifeSupport
+ADD PART HexCanLifeSupportSmall
+END TAG
+TAG Water
+SHOW SPH True
+SHOW VAB True
+ADD PART TacLifeSupportContainer
+ADD PART TacLifeSupportContainerLarge
+ADD PART TacLifeSupportContainerSmall
+ADD PART TacWaterContainer
+ADD PART TacWaterContainerLarge
+ADD PART TacWaterContainerSmall
+ADD PART HexCanDrinkingWaterLarge
+ADD PART HexCanDrinkingWater
+ADD PART HexCanDrinkingWaterSmall
+ADD PART HexCanLifeSupportLarge
+ADD PART HexCanLifeSupport
+ADD PART HexCanLifeSupportSmall
+END TAG
+END TAG
+TAG Utility
+SHOW SPH True
+SHOW VAB True
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART TacAirFilter
+ADD PART TacCarbonExtractor
+ADD PART TacCarbonExtractorLarge
+ADD PART TacWaterPurifier
+ADD PART TacWaterPurifierLarge
+ADD PART TacWaterSplitter
+END TAG
+END TAG
+END TAG
+TAG WarpPlugin
+SHOW SPH True
+SHOW VAB True
+TAG Pods
+SHOW SPH True
+SHOW VAB True
+TAG Unmanned
+SHOW SPH True
+SHOW VAB True
+ADD PART computerCore
+END TAG
+END TAG
+TAG Propulsion
+SHOW SPH True
+SHOW VAB True
+TAG Aluminium
+SHOW SPH True
+SHOW VAB True
+ADD PART AluminiumHybrid1
+END TAG
+TAG Deuterium
+SHOW SPH True
+SHOW VAB True
+ADD PART vista
+END TAG
+TAG IntakeAtm
+SHOW SPH True
+SHOW VAB True
+ADD PART ThermalTurbojet
+END TAG
+TAG LiquidFuel
+SHOW SPH True
+SHOW VAB True
+ADD PART MPD
+ADD PART smallMPD
+ADD PART ThermalRocketNozzle
+ADD PART smallThermalRocketNozzle
+ADD PART bigThermalRocketNozzle
+ADD PART vista
+END TAG
+TAG LqdMethane
+SHOW SPH True
+SHOW VAB True
+ADD PART FNMethaneEngine
+END TAG
+TAG Megajoules
+SHOW SPH True
+SHOW VAB True
+ADD PART vista
+END TAG
+TAG Oxidizer
+SHOW SPH True
+SHOW VAB True
+ADD PART AluminiumHybrid1
+ADD PART FNMethaneEngine
+ADD PART ThermalRocketNozzle
+ADD PART smallThermalRocketNozzle
+ADD PART bigThermalRocketNozzle
+END TAG
+TAG Tritium
+SHOW SPH True
+SHOW VAB True
+ADD PART vista
+END TAG
+END TAG
+TAG Storage
+SHOW SPH True
+SHOW VAB True
+TAG Actinides
+SHOW SPH True
+SHOW VAB True
+ADD PART NuclearReactor375
+ADD PART NuclearReactor250
+ADD PART NuclearReactor0625
+ADD PART NuclearReactor125
+END TAG
+TAG Alumina
+SHOW SPH True
+SHOW VAB True
+ADD PART FNRefinery
+END TAG
+TAG Ammonia
+SHOW SPH True
+SHOW VAB True
+ADD PART FNAmmoniaTank
+ADD PART FNRefinery
+END TAG
+TAG Antimatter
+SHOW SPH True
+SHOW VAB True
+ADD PART AntimatterTank125
+ADD PART AntimatterTank250
+ADD PART AntimatterTank375
+END TAG
+TAG Argon
+SHOW SPH True
+SHOW VAB True
+ADD PART BigXenonTank
+END TAG
+TAG CarbonDioxide
+SHOW SPH True
+SHOW VAB True
+ADD PART scienceModule
+END TAG
+TAG ChargedParticles
+SHOW SPH True
+SHOW VAB True
+ADD PART FusionReactor0625
+ADD PART FusionReactor125
+END TAG
+TAG DepletedFuel
+SHOW SPH True
+SHOW VAB True
+ADD PART HexCanThoriumFl4
+ADD PART HexCanUraniumFl6
+END TAG
+TAG Deuterium
+SHOW SPH True
+SHOW VAB True
+ADD PART FusionReactor0625
+ADD PART FusionReactor125
+ADD PART HexCanDeutTritLarge
+END TAG
+TAG ElectricCharge
+SHOW SPH True
+SHOW VAB True
+ADD PART Brayton2
+ADD PART Brayton3
+ADD PART Brayton1
+ADD PART tinyBrayton
+ADD PART microwaveReceiver
+ADD PART phasedArray1
+ADD PART microwaveTransmitter
+END TAG
+TAG ExoticMatter
+SHOW SPH True
+SHOW VAB True
+ADD PART WarpDrive
+ADD PART WarpDrive2
+ADD PART WarpDrive3
+END TAG
+TAG Food
+SHOW SPH True
+SHOW VAB True
+ADD PART scienceModule
+END TAG
+TAG H2Peroxide
+SHOW SPH True
+SHOW VAB True
+ADD PART FNRefinery
+END TAG
+TAG Helium-3
+SHOW SPH True
+SHOW VAB True
+ADD PART FusionReactor0625
+ADD PART FusionReactor125
+ADD PART HexCanHe3Large
+END TAG
+TAG IntakeAtm
+SHOW SPH True
+SHOW VAB True
+ADD PART warpAtmIntake
+ADD PART warpAtmIntake2
+END TAG
+TAG LiquidFuel
+SHOW SPH True
+SHOW VAB True
+ADD PART 25PureLiquidTank
+ADD PART 375PureLiquidTank
+END TAG
+TAG Lithium
+SHOW SPH True
+SHOW VAB True
+ADD PART HexCanLithium
+END TAG
+TAG LqdMethane
+SHOW SPH True
+SHOW VAB True
+ADD PART FNMethaneTank3-1
+ADD PART FNMethaneTank3-2
+END TAG
+TAG LqdWater
+SHOW SPH True
+SHOW VAB True
+ADD PART FNLiquidWaterTank
+ADD PART FNRefinery
+END TAG
+TAG Megajoules
+SHOW SPH True
+SHOW VAB True
+ADD PART Brayton2
+ADD PART Brayton3
+ADD PART Brayton1
+ADD PART tinyBrayton
+ADD PART microwaveReceiver
+ADD PART microwaveThermalEnergyReceiverL
+ADD PART microwaveThermalEnergyReceiverM
+ADD PART microwaveThermalEnergyReceiverS
+ADD PART phasedArray1
+ADD PART microwaveTransmitter
+END TAG
+TAG Oxidizer
+SHOW SPH True
+SHOW VAB True
+ADD PART FNMethaneTank3-1
+ADD PART FNMethaneTank3-2
+END TAG
+TAG Oxygen
+SHOW SPH True
+SHOW VAB True
+ADD PART scienceModule
+END TAG
+TAG ThermalPower
+SHOW SPH True
+SHOW VAB True
+ADD PART AntimatterReactor125
+ADD PART AntimatterReactor250
+ADD PART AntimatterReactor375
+ADD PART NuclearReactor375
+ADD PART NuclearReactor250
+ADD PART NuclearReactor0625
+ADD PART NuclearReactor125
+ADD PART FusionReactor0625
+ADD PART FusionReactor125
+ADD PART microwaveThermalEnergyReceiverL
+ADD PART microwaveThermalEnergyReceiverM
+ADD PART microwaveThermalEnergyReceiverS
+END TAG
+TAG ThF4
+SHOW SPH True
+SHOW VAB True
+ADD PART NuclearReactor375
+ADD PART NuclearReactor250
+ADD PART NuclearReactor0625
+ADD PART NuclearReactor125
+ADD PART HexCanThoriumFl4
+END TAG
+TAG Tritium
+SHOW SPH True
+SHOW VAB True
+ADD PART FusionReactor0625
+ADD PART FusionReactor125
+ADD PART HexCanDeutTritLarge
+END TAG
+TAG UF4
+SHOW SPH True
+SHOW VAB True
+ADD PART NuclearReactor375
+ADD PART NuclearReactor250
+ADD PART NuclearReactor0625
+ADD PART NuclearReactor125
+ADD PART HexCanUraniumFl6
+END TAG
+TAG Waste
+SHOW SPH True
+SHOW VAB True
+ADD PART scienceModule
+END TAG
+TAG WasteHeat
+SHOW SPH True
+SHOW VAB True
+ADD PART AntimatterReactor125
+ADD PART AntimatterReactor250
+ADD PART AntimatterReactor375
+ADD PART circradiatorKT
+ADD PART circradiatorKT2
+ADD PART circradiatorKT3
+ADD PART radiator0
+ADD PART radiator1
+ADD PART radiator2
+ADD PART NuclearReactor375
+ADD PART NuclearReactor250
+ADD PART NuclearReactor0625
+ADD PART NuclearReactor125
+ADD PART RadialRadiatorzzz
+ADD PART RadialRadiatorzzz2
+ADD PART FusionReactor0625
+ADD PART FusionReactor125
+ADD PART microwaveReceiver
+ADD PART phasedArray1
+ADD PART microwaveTransmitter
+END TAG
+TAG WasteWater
+SHOW SPH True
+SHOW VAB True
+ADD PART scienceModule
+END TAG
+TAG Water
+SHOW SPH True
+SHOW VAB True
+ADD PART scienceModule
+END TAG
+END TAG
+TAG Aero
+SHOW SPH True
+SHOW VAB True
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART atmosphericScoop
+ADD PART atmosphericScoop2
+ADD PART radial.atmospheric.scoop1
+ADD PART radial.atmospheric.scoop2
+END TAG
+END TAG
+TAG Utility
+SHOW SPH True
+SHOW VAB True
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART AntimatterCollector
+END TAG
+END TAG
+TAG Science
+SHOW SPH True
+SHOW VAB True
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART DTMagnetometer
+ADD PART sensorGammaRaySpectrometer
+ADD PART FNGCMS
+ADD PART FNLCMS
+END TAG
+END TAG
+END TAG
+TAG Small Mods
+ICON SmallMods
+SHOW SPH True
+SHOW VAB True
+TAG kOS
+SHOW SPH True
+SHOW VAB True
+TAG Storage
+SHOW SPH True
+SHOW VAB True
+TAG ElectricCharge
+SHOW SPH True
+SHOW VAB True
+ADD PART kOSMachine1m
+END TAG
+END TAG
+END TAG
+TAG MagicSmokeIndustries
+SHOW SPH True
+SHOW VAB True
+TAG Utility
+SHOW SPH True
+SHOW VAB True
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART AdjustableRail
+ADD PART AdjustableRailHalf
+ADD PART AdjustableRailFourth
+ADD PART dockingwasher.std
+ADD PART dockingwasher.sr
+ADD PART dockingwasher.jr
+ADD PART dockingwasher.free
+ADD PART dockingwasher.freejr
+ADD PART dockingwasher.freesr
+ADD PART GantryLarge
+ADD PART Gantry
+ADD PART GantrySmall
+ADD PART GantryExtraSmall
+ADD PART GantryLargeVariant
+ADD PART GantryVariant
+ADD PART GantrySmallVariant
+ADD PART GantryExtraSmallVariant
+ADD PART IRHingeClosed
+ADD PART IRHingeClosedHalf
+ADD PART IRHingeClosedFourth
+ADD PART IR.HingeIndustrial
+ADD PART IRHingeOpen
+ADD PART IRHingeOpenHalf
+ADD PART IRHingeOpenFourth
+ADD PART IRHingeTall
+ADD PART IRHingeTallHalf
+ADD PART IRHingeTallFourth
+ADD PART IRHingeTallND
+ADD PART IRHingeTallHalfND
+ADD PART IRHingeTallFourthND
+ADD PART IRPiston
+ADD PART IRPistonHalf
+ADD PART IRPistonFourth
+ADD PART IR.Rotatron
+ADD PART IR.RotatronHalf
+ADD PART IR.RotatronFourth
+ADD PART IR.Rotatronmk2
+ADD PART IR.RotatronVTOL
+ADD PART TelescopeFullA
+ADD PART TelescopeFullB
+ADD PART TelescopeFullC
+ADD PART TelescopeHalfA
+ADD PART TelescopeHalfB
+ADD PART TelescopeHalfC
+ADD PART TelescopeFourthA
+ADD PART TelescopeFourthB
+ADD PART TelescopeFourthC
+END TAG
+END TAG
+END TAG
+TAG MechJeb2
+ICON MechJeb2
+SHOW SPH True
+SHOW VAB True
+TAG Pods
+SHOW SPH True
+SHOW VAB True
+TAG Unmanned
+SHOW SPH True
+SHOW VAB True
+ADD PART mumech.MJ2.AR202
+ADD PART mumech.MJ2.Pod
+END TAG
+END TAG
+TAG Propulsion
+SHOW SPH True
+SHOW VAB True
+TAG MJPropellant
+SHOW SPH True
+SHOW VAB True
+ADD PART mumech.MJ2.Pod
+END TAG
+TAG RCS
+SHOW SPH True
+SHOW VAB True
+ADD PART mumech.MJ2.Pod
+END TAG
+END TAG
+TAG Utility
+SHOW SPH True
+SHOW VAB True
+TAG Generators
+SHOW SPH True
+SHOW VAB True
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART mumech.MJ2.Pod
+END TAG
+END TAG
+END TAG
+END TAG
+TAG NothkeSerCom
+SHOW SPH True
+SHOW VAB True
+TAG Structural
+SHOW SPH True
+SHOW VAB True
+TAG Main
+SHOW SPH True
+SHOW VAB True
+ADD PART SerCom1m
+ADD PART SerCom2
+END TAG
+END TAG
+END TAG
+TAG Parts
+SHOW SPH True
+SHOW VAB True
+TAG Propulsion
+SHOW SPH True
+SHOW VAB True
+TAG LiquidFuel
+SHOW SPH True
+SHOW VAB True
+ADD PART 3m.JoolV.secondstage.engine
+ADD PART 3m.JoolV
+END TAG
+TAG Oxidizer
+SHOW SPH True
+SHOW VAB True
+ADD PART 3m.JoolV.secondstage.engine
+ADD PART 3m.JoolV
+END TAG
+TAG RCS
+SHOW SPH True
+SHOW VAB True
+ADD PART FLY.RCSBlock
+END TAG
+TAG SolidFuel
+SHOW SPH True
+SHOW VAB True
+ADD PART 3m.JoolV.LAS
+ADD PART 3m.JoolV.SRB
+END TAG
+END TAG
+TAG Storage
+SHOW SPH True
+SHOW VAB True
+TAG LiquidFuel
+SHOW SPH True
+SHOW VAB True
+ADD PART JoolV.2stagetank
+ADD PART JoolV.maintank
+END TAG
+TAG Oxidizer
+SHOW SPH True
+SHOW VAB True
+ADD PART JoolV.2stagetank
+ADD PART JoolV.maintank
+END TAG
+END TAG
+TAG Structural
+SHOW SPH True
+SHOW VAB True
+TAG Main
+SHOW SPH True
+SHOW VAB True
+ADD PART 3m.JoolV.2to1adapter
+ADD PART 3m.JoolV.3to2adapter
+END TAG
+TAG Decoupler
+SHOW SPH True
+SHOW VAB True
+ADD PART 3m.JoolV.1mdecoupler
+ADD PART 3m.JoolV.2mdecoupler
+ADD PART 3m.JoolV.3mdecoupler
+END TAG
+END TAG
+END TAG
+TAG ProceduralDynamics
+SHOW SPH True
+SHOW VAB True
+TAG Aero
+SHOW SPH True
+SHOW VAB True
+TAG Winglets
+SHOW SPH True
+SHOW VAB True
+ADD PART Proceduralwing2
+ADD PART Proceduralwing2EndPiece
+ADD PART ProceduralwingBac9
+END TAG
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART pCtrlSrf1
+ADD PART B9.Aero.Wing.ControlSurface.SH.4m
+END TAG
+END TAG
+END TAG
+TAG Romfarer
+SHOW SPH True
+SHOW VAB True
+TAG Storage
+SHOW SPH True
+SHOW VAB True
+TAG ElectricCharge
+SHOW SPH True
+SHOW VAB True
+ADD PART Romfarer.LazorSystem
+ADD PART Romfarer.LazorSystemStack
+ADD PART Romfarer.LazorSystemStackBig
+END TAG
+END TAG
+TAG Science
+SHOW SPH True
+SHOW VAB True
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART Romfarer.Lazor.Blue
+ADD PART Romfarer.Lazor.Green
+ADD PART Romfarer.Lazor.Magenta
+ADD PART Romfarer.Lazor.Red
+ADD PART Romfarer.Lazor.Yellow
+ADD PART Buran Manipulator
+ADD PART ISS CanadArm2
+END TAG
+END TAG
+END TAG
+END TAG
