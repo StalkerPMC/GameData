@@ -1,3 +1,16 @@
+Version 0.9.1
+-Methane tank replaced and new smaller tank more suitable for landers
+-Fixed Reactor and Generator Upgrades
+-Fixed loading of warp plugin settings
+-MJ treatment of plasma engines improved
+-Megajoule display now responds to F2 and is hidden for vessels with no appropriate power supply
+-Improvements to atmospheric engine code
+-Tritium breeding option can now be selected - due to stock problem this will only function while ship is unfocused or at moderate time acceleration
+-Expanding refinery in VAB workaround
+-More info on radiators
+-Atmospheric intake removed from VAB
+-DT magnetometer rerunnable
+
 Version 0.9
 -New Megajoule power supply/consumption display!
 -Massively expanded resource system including atmopsheric and oceanic resources definitions - aluminium and water mining integrated into existing planetary resource system
