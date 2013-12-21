@@ -1,0 +1,3 @@
+﻿You have installed the TacLifeSupport, version 0.7.0.3 ('85fab4b'+'44ff255' clean).
+
+See the Readme.txt and LICENSE.txt files for more information.
