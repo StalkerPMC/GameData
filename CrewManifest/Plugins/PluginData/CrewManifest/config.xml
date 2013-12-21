@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <config>
     <rect name="ManifestPosition">
-        <xmin>4</xmin>
-        <xmax>323</xmax>
-        <ymin>39</ymin>
-        <ymax>541</ymax>
+        <xmin>36</xmin>
+        <xmax>355</xmax>
+        <ymin>268</ymin>
+        <ymax>770</ymax>
     </rect>
     <rect name="TransferPosition">
         <xmin>331</xmin>
