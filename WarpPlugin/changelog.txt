@@ -1,3 +1,10 @@
+Version 0.9.2
+-Added 62.5cm thermal rocket and plasma thruster.
+-Added 2.5m thermal turbojet.
+-Reverted to 0.9 atmospheric code and fixed application, engine atmospheric performance should now be optimal
+-Added tweakable option for reactors to start disabled in the VAB
+-Unupgraded generator efficiency raised to a theoretical maximum of 31%
+
 Version 0.9.1
 -Methane tank replaced and new smaller tank more suitable for landers
 -Fixed Reactor and Generator Upgrades
