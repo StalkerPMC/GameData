@@ -1,0 +1,107 @@
+v0.31
+-----
+
+- KSP 0.23 compatibility
+- Added OKEB-250 solar array
+- Fixed centre of mass of many parts
+- Fixed incorrect shroud attach node on both PIT engines
+- VariableIspEngine should now correctly update GUI on load
+- Fixed some model bugs on the plasma engines
+
+v0.3
+-----
+
+- Major changes to fission reactor functionality
+-- Now surface attachable
+-- Have seperate, interchangeable radiators
+-- Take heat dissipation from any surface attached radiators to calculate maximum output
+-- Run on EnrichedUranium and produce DepletedUranium
+-- Can be refuelled from fission containers
+- Added containers (one for each standard size) for EnrichedUranium
+- Improved the KR-XL solar array: fixed look in VAB, fixed flickering during flight, decreased mass slightly
+- Rebalanced all electric engine fuel tank capacities and masses slightly
+- Added new solar panel based on Juno probe panels
+- Matched KP-01 and XP-XL models direction to everything else
+
+v0.24
+-----
+
+- Fixed capacitors being able to recharge with no resources available
+- Fixed radial attach adapter storing argon
+- Added 1.25m radial attach adapter (retexture of 0.625m version at the moment)
+- Added 2.5m VASIMR engine
+- Added shrouds to all plasma engines (VASIMRs, PITs, MPDTs)
+
+v0.23
+-----
+
+- Fixed capacitors drawing power when recharged
+- Fixed capacitors not discharging when Ec reserve is full
+- Reduced capacitor charge rates
+- Fixed surface attach points on several inline fuel tanks
+- Added 4 new stack connectors, 1 new radial connector
+- Adjusted surface attach points on radial argon tanks
+- Added placeholder sound loops to MPDTs, PITs, VASIMR
+- Plasma engines (MPDTs, PITs, VASIMR) now do exhaust damage
+
+v0.22
+-----
+
+- Added capacitors
+-- 2 radial models, 3 inline models
+- Added new 1.25m hydrogen tank
+- Added new 1.25m short argon tank
+- Added new 0.625m nuclear generator
+- Fixed all fuel tanks' volumes
+- Fixed reactors not showing correct generation numbers in the VAB/SPH
+- Increased the breaking force and torque on several argon tanks
+
+v0.21
+-----
+
+- Fixed inverted thrust on PIT engines
+
+v0.20
+-----
+
+- Compatability with KSP 0.22
+- Added small and large pulsed inductive thrusters (argon fuelled)
+- Added DS4G thruster (xenon fuelled)
+- Added hydrogen and argon tanks
+- Updated engine descriptions to include approximate maximum Ec usage
+- Changed VASIMR fuel to argon
+- Changed MPDT fuel to hydrogen
+- Improved colour matching of battery banks with stock parts
+- All small engines masses reduced by approximately 50%
+- Reactor mass normalized to have similar mass:Ec ratios
+- Rebalanced all engine masses, Ec and fuel usages
+_ Tweaked temperature tolerances and breaking thresholds of most parts
+- Improved attach nodes of several parts
+- Increased the size of solar panel attachment knobs
+- Rebalanced all xenon fuel tanks to be volume-correct and to obey standard xenon fuel to dry mass ratio
+
+v0.12
+-----
+
+- Added 3 solar panels
+- Added 3 inline battery packs
+- Improved look of low-res texture replacements
+
+
+v0.11
+-----
+
+- Fixed offset thrust on VASIMR engine
+- Increased power generation of small reactor to 75 Ec/s
+- Both fission reactors have some Ec storage capacity (equivalent to 1 or 2s of generation)
+- Changed xenon tank capacities to more correctly reflect their volumes
+- Fixed radial attach rotation for XE-100 fuel tank
+- Fixed really messed up rotations for XE-400 fuel tank
+- Fixed attach node for XE-100R fuel tank
+- Changed reactor stack nodes to legacy mode, improves their stacking
+
+
+v0.1
+----
+
+- Initial release
