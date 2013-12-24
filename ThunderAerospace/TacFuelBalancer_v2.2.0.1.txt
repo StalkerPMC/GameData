@@ -1,3 +1,0 @@
-﻿You have installed the TacFuelBalancer, version 2.2.0.1 ('3cdc811'+'e6eeaa9' clean).
-
-See the Readme.txt and LICENSE.txt files for more information.
