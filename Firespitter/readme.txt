@@ -9,6 +9,19 @@ The included sounds were taken from  a free sample off http://www.Sounddogs.com,
 and helicopter sound from http://free-loops.com/7162-helicopter-sounds.html. Electric sound: http://soundbible.com/500-Electric-Motor-2.html
 Mustang sound from this video: http://www.youtube.com/watch?v=-yTHDQZL1dE
 
+v6.1.1
+-Fixed some FAR Values. Included two example craft re-tweaked for FAR.
+-A surprise
+
+v6.1
+
+-FAR values added to biplane wings and F-86 wings (FAR is optional as always!)
+-CoM indicator bug fixed, replace engines on existing craft for a fix. (Removed 0/0 electric resource node from engines)
+-Some wings have had module changes, which will reset the texture selection. For craft already in flight, you can EVA a Kerbal an Repaint the part.
+-All example craft renamed with the prefix FS to make them easier to find
+-Guide PDF updated
+-Added Normal map (etc) switching support to FStextureSwitch
+
 v6.0
 Watch the video! http://www.youtube.com/watch?v=mhYmNTkQylM
 

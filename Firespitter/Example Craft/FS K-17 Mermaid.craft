@@ -1,11 +1,11 @@
-ship = K-17 Mermaid
-version = 0.21.1
+ship = FS K-17 Mermaid
+version = 0.23.0
 description = 
 type = SPH
 PART
 {
-	part = FSbomberCockpit_4294689030
-	partName = CommandPod
+	part = FSbomberCockpit_4294745760
+	partName = Part
 	pos = 0,5,0
 	rot = 0.7071068,0,0,0.7071068
 	attRot = 0,0,0,1
@@ -15,10 +15,10 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = FSbomberFuselageEmpty_4294688730
-	link = strutConnector_4294686304
-	link = strutConnector_4294686248
-	attN = bottom,FSbomberFuselageEmpty_4294688730
+	link = FSbomberFuselageEmpty_4294745448
+	link = strutConnector_4294743028
+	link = strutConnector_4294742972
+	attN = bottom,FSbomberFuselageEmpty_4294745448
 	EVENTS
 	{
 	}
@@ -61,8 +61,45 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleReactionWheel
+		isEnabled = True
+		stateString = 
+		WheelState = Active
+		EVENTS
+		{
+			OnToggle
+			{
+				active = True
+				guiActive = True
+				guiIcon = Toggle Torque
+				guiName = Toggle Torque
+				category = Toggle Torque
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			Activate
+			{
+				actionGroup = None
+			}
+			Deactivate
+			{
+				actionGroup = None
+			}
+			Toggle
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
 		name = ModuleAnimateGeneric
 		isEnabled = True
+		status = Locked
 		animSwitch = True
 		animTime = 0
 		animSpeed = 1
@@ -104,15 +141,160 @@ PART
 		name = FStextureSwitch
 		isEnabled = True
 		selectedTexture = 0
+		selectedTextureURL = Firespitter/Parts/Command/FS_bomberCockpit/noseArt/ozymandius_model003
+		selectedMapURL = 
 		EVENTS
 		{
+			listAllObjects
+			{
+				active = True
+				guiActive = False
+				guiIcon = Debug: Log Objects
+				guiName = Debug: Log Objects
+				category = Debug: Log Objects
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
 			nextTextureEvent
 			{
 				active = True
-				guiActive = True
+				guiActive = False
+				guiActiveEditor = True
 				guiIcon = Next Texture
 				guiName = Next Texture
 				category = Next Texture
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			nextTextureEVAEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = Repaint
+				guiName = Repaint
+				category = Repaint
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleScienceExperiment
+		isEnabled = True
+		Deployed = False
+		Inoperable = False
+		EVENTS
+		{
+			DeployExperiment
+			{
+				active = True
+				guiActive = True
+				guiIcon = Deploy
+				guiName = Deploy
+				category = Deploy
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			CollectDataExternalEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = 
+				guiName = 
+				category = 
+				guiActiveUnfocused = True
+				unfocusedRange = 1.5
+				externalToEVAOnly = True
+			}
+			ReviewDataEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Review Data
+				guiName = Review Data
+				category = Review Data
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ResetExperiment
+			{
+				active = True
+				guiActive = True
+				guiIcon = Reset
+				guiName = Reset
+				category = Reset
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ResetExperimentExternal
+			{
+				active = True
+				guiActive = False
+				guiIcon = Reset
+				guiName = Reset
+				category = Reset
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+			}
+			ResetAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleScienceContainer
+		isEnabled = True
+		EVENTS
+		{
+			StoreDataExternalEvent
+			{
+				active = False
+				guiActive = False
+				guiIcon = 
+				guiName = Store Experiments (0)
+				category = 
+				guiActiveUnfocused = True
+				unfocusedRange = 2.5
+				externalToEVAOnly = True
+			}
+			CollectDataExternalEvent
+			{
+				active = False
+				guiActive = False
+				guiIcon = 
+				guiName = Take Data (0)
+				category = 
+				guiActiveUnfocused = True
+				unfocusedRange = 2.5
+				externalToEVAOnly = True
+			}
+			ReviewDataEvent
+			{
+				active = False
+				guiActive = True
+				guiIcon = Review Data
+				guiName = Review Stored Data (0)
+				category = Review Data
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
@@ -125,7 +307,7 @@ PART
 	MODULE
 	{
 		name = ModuleTripLogger
-		isEnabled = False
+		isEnabled = True
 		EVENTS
 		{
 		}
@@ -148,12 +330,22 @@ PART
 		{
 		}
 	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 50
+		maxAmount = 50
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
 }
 PART
 {
-	part = FSbomberFuselageEmpty_4294688730
+	part = FSbomberFuselageEmpty_4294745448
 	partName = Part
-	pos = 0,5,-4.275055
+	pos = 0,5,-4.275056
 	rot = 0.7071068,0,0,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -162,24 +354,34 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = FSbomberFuselage_4294688708
-	link = fsgyroscope_4294688498
-	link = fsinfopopup_4294688466
-	link = fstrimgadget_4294688440
-	attN = top,FSbomberCockpit_4294689030
-	attN = bottom,FSbomberFuselage_4294688708
+	link = FSbomberFuselage_4294745426
+	link = fsgyroscope_4294745216
+	link = fsinfopopup_4294745182
+	link = fstrimgadget_4294745156
+	attN = top,FSbomberCockpit_4294745760
+	attN = bottom,FSbomberFuselage_4294745426
 	EVENTS
 	{
 	}
 	ACTIONS
 	{
 	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 0
+		maxAmount = 500
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
 }
 PART
 {
-	part = FSbomberFuselage_4294688708
+	part = FSbomberFuselage_4294745426
 	partName = Part
-	pos = 0,5,-8.025125
+	pos = 0,5,-8.025126
 	rot = 0.7071068,0,0,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -188,25 +390,35 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = strutConnector_4294688686
-	link = strutConnector_4294688630
-	link = FSbomberFuselageEmpty_4294688574
-	link = FSbomberWingExtender_4294688414
-	link = FSbomberWingExtender_4294687928
-	attN = top,FSbomberFuselageEmpty_4294688730
-	attN = bottom,FSbomberFuselageEmpty_4294688574
+	link = strutConnector_4294745404
+	link = strutConnector_4294745348
+	link = FSbomberFuselageEmpty_4294745292
+	link = FSbomberWingExtender_4294745130
+	link = FSbomberWingExtender_4294744648
+	attN = top,FSbomberFuselageEmpty_4294745448
+	attN = bottom,FSbomberFuselageEmpty_4294745292
 	EVENTS
 	{
 	}
 	ACTIONS
 	{
 	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 500
+		maxAmount = 500
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
 }
 PART
 {
-	part = strutConnector_4294688686
+	part = strutConnector_4294745404
 	partName = StrutConnector
-	pos = 0.7232874,3.991328,-7.231216
+	pos = 0.7232874,3.991328,-7.231218
 	rot = 0.3210208,0.6300362,0.6300366,0.3210204
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -215,8 +427,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = strutConnector_4294688630
-	srfN = srfAttach,FSbomberFuselage_4294688708
+	sym = strutConnector_4294745348
+	srfN = srfAttach,FSbomberFuselage_4294745426
 	EVENTS
 	{
 	}
@@ -226,9 +438,9 @@ PART
 }
 PART
 {
-	part = strutConnector_4294688630
+	part = strutConnector_4294745348
 	partName = StrutConnector
-	pos = -0.7232874,3.991328,-7.231216
+	pos = -0.7232874,3.991328,-7.231218
 	rot = 0.6300365,0.3210205,0.3210208,0.6300362
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -237,8 +449,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = strutConnector_4294688686
-	srfN = srfAttach,FSbomberFuselage_4294688708
+	sym = strutConnector_4294745404
+	srfN = srfAttach,FSbomberFuselage_4294745426
 	EVENTS
 	{
 	}
@@ -248,7 +460,7 @@ PART
 }
 PART
 {
-	part = FSbomberFuselageEmpty_4294688574
+	part = FSbomberFuselageEmpty_4294745292
 	partName = Part
 	pos = 0,5,-11.775
 	rot = 0.7071068,0,0,0.7071068
@@ -259,22 +471,32 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = FSbomberFuselageTail_4294688552
-	link = strutConnector_4294686192
-	link = strutConnector_4294686136
-	srfN = srfAttach,FSbomberFuselage_4294688708
-	attN = top,FSbomberFuselage_4294688708
-	attN = bottom,FSbomberFuselageTail_4294688552
+	link = FSbomberFuselageTail_4294745270
+	link = strutConnector_4294742916
+	link = strutConnector_4294742860
+	srfN = srfAttach,FSbomberFuselage_4294745426
+	attN = top,FSbomberFuselage_4294745426
+	attN = bottom,FSbomberFuselageTail_4294745270
 	EVENTS
 	{
 	}
 	ACTIONS
 	{
 	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 0
+		maxAmount = 500
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
 }
 PART
 {
-	part = FSbomberFuselageTail_4294688552
+	part = FSbomberFuselageTail_4294745270
 	partName = Part
 	pos = 0,5,-15.71004
 	rot = 0.7071068,0,0,0.7071068
@@ -285,13 +507,13 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = FStailWingLarge_4294688532
-	link = FStailWingLarge_4294687442
-	link = FStailWingLarge_4294687408
-	link = FSfloatStrut_4294686402
-	link = strutConnector_4294685632
-	link = strutConnector_4294685576
-	attN = top,FSbomberFuselageEmpty_4294688574
+	link = FStailWingLarge_4294745250
+	link = FStailWingLarge_4294744166
+	link = FStailWingLarge_4294744132
+	link = FSfloatStrut_4294743126
+	link = strutConnector_4294742356
+	link = strutConnector_4294742300
+	attN = top,FSbomberFuselageEmpty_4294745292
 	EVENTS
 	{
 	}
@@ -301,7 +523,7 @@ PART
 }
 PART
 {
-	part = FStailWingLarge_4294688532
+	part = FStailWingLarge_4294745250
 	partName = ControlSurface
 	pos = -1.043081E-07,6.838124,-17.83326
 	rot = -0.4721529,-0.5263762,-0.472153,-0.5263759
@@ -312,7 +534,7 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	srfN = srfAttach,FSbomberFuselageTail_4294688552
+	srfN = srfAttach,FSbomberFuselageTail_4294745270
 	EVENTS
 	{
 	}
@@ -324,12 +546,20 @@ PART
 		name = FSwingletRangeAdjustment
 		isEnabled = True
 		currentControlRange = 15
+		currentControlRange_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 50
+			stepIncrement = 0.02
+		}
 		EVENTS
 		{
 			decreaseRangeEvent
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Decrease control range
 				guiName = Decrease control range
 				category = Decrease control range
@@ -341,6 +571,7 @@ PART
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Increase control range
 				guiName = Increase control range
 				category = Increase control range
@@ -379,9 +610,9 @@ PART
 }
 PART
 {
-	part = fsgyroscope_4294688498
-	partName = AdvSASModule
-	pos = 0,6.241255,-2.550151
+	part = fsgyroscope_4294745216
+	partName = Part
+	pos = 0,6.241255,-2.550152
 	rot = -5.154563E-08,4.214685E-07,1,-4.371141E-08
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -390,19 +621,30 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	srfN = ,FSbomberFuselageEmpty_4294688730
+	srfN = ,FSbomberFuselageEmpty_4294745448
 	EVENTS
 	{
 	}
 	ACTIONS
 	{
 	}
+	MODULE
+	{
+		name = ModuleSAS
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
 }
 PART
 {
-	part = fsinfopopup_4294688466
+	part = fsinfopopup_4294745182
 	partName = Part
-	pos = -2.181543E-07,6.280087,-3.018047
+	pos = -2.181543E-07,6.280087,-3.018048
 	rot = 1.192488E-08,-1,0,0
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -411,7 +653,7 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	srfN = srfAttach,FSbomberFuselageEmpty_4294688730
+	srfN = srfAttach,FSbomberFuselageEmpty_4294745448
 	EVENTS
 	{
 	}
@@ -448,6 +690,7 @@ PART
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Show Info
 				guiName = Show Info
 				category = Show Info
@@ -467,9 +710,9 @@ PART
 }
 PART
 {
-	part = fstrimgadget_4294688440
+	part = fstrimgadget_4294745156
 	partName = Part
-	pos = 0,6.241213,-3.586127
+	pos = 0,6.241213,-3.586128
 	rot = -4.371139E-08,1,0,0
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -478,7 +721,7 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	srfN = srfAttach,FSbomberFuselageEmpty_4294688730
+	srfN = srfAttach,FSbomberFuselageEmpty_4294745448
 	EVENTS
 	{
 	}
@@ -499,6 +742,7 @@ PART
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Toggle Popup
 				guiName = Toggle Pitch Popup
 				category = Toggle Popup
@@ -549,6 +793,7 @@ PART
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Toggle Popup
 				guiName = Toggle Roll Popup
 				category = Toggle Popup
@@ -599,6 +844,7 @@ PART
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Toggle Popup
 				guiName = Toggle Yaw Popup
 				category = Toggle Popup
@@ -638,9 +884,9 @@ PART
 }
 PART
 {
-	part = FSbomberWingExtender_4294688414
+	part = FSbomberWingExtender_4294745130
 	partName = Winglet
-	pos = -2.791296,4.282097,-7.227777
+	pos = -2.791296,4.282097,-7.227779
 	rot = 0.0313416,0.7486847,0.6616121,0.02754015
 	attRot = -0.0260453,-0.05585436,-0.42009,0.9053878
 	mir = 1,1,1
@@ -649,11 +895,11 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	link = FSbomberWing_4294688394
-	link = FSengineMount_4294688120
-	link = spotLight1_4294687962
-	sym = FSbomberWingExtender_4294687928
-	srfN = srfAttach,FSbomberFuselage_4294688708
+	link = FSbomberWing_4294745110
+	link = FSengineMount_4294744838
+	link = spotLight1_4294744682
+	sym = FSbomberWingExtender_4294744648
+	srfN = srfAttach,FSbomberFuselage_4294745426
 	EVENTS
 	{
 	}
@@ -663,9 +909,9 @@ PART
 }
 PART
 {
-	part = FSbomberWing_4294688394
+	part = FSbomberWing_4294745110
 	partName = ControlSurface
-	pos = -7.867673,4.704806,-7.242483
+	pos = -7.867674,4.704806,-7.242485
 	rot = 0.03134162,0.7486848,0.661612,0.02753991
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -674,13 +920,13 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	link = FSengineMount_4294688354
-	link = FSairBrake_4294688196
-	link = FSairBrake_4294688158
-	link = strutConnector_4294686080
-	link = strutConnector_4294685968
-	sym = FSbomberWing_4294687908
-	srfN = srfAttach,FSbomberWingExtender_4294688414
+	link = FSengineMount_4294745070
+	link = FSairBrake_4294744914
+	link = FSairBrake_4294744876
+	link = strutConnector_4294742804
+	link = strutConnector_4294742692
+	sym = FSbomberWing_4294744628
+	srfN = srfAttach,FSbomberWingExtender_4294745130
 	EVENTS
 	{
 	}
@@ -692,12 +938,20 @@ PART
 		name = FSwingletRangeAdjustment
 		isEnabled = True
 		currentControlRange = 15
+		currentControlRange_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 50
+			stepIncrement = 0.02
+		}
 		EVENTS
 		{
 			decreaseRangeEvent
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Decrease control range
 				guiName = Decrease control range
 				category = Decrease control range
@@ -709,6 +963,7 @@ PART
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Increase control range
 				guiName = Increase control range
 				category = Increase control range
@@ -747,9 +1002,9 @@ PART
 }
 PART
 {
-	part = FSengineMount_4294688354
+	part = FSengineMount_4294745070
 	partName = Strut
-	pos = -6.756561,4.824644,-5.925572
+	pos = -6.756561,4.824644,-5.925573
 	rot = -0.6936395,0.02888086,0.03011058,-0.7191131
 	attRot = -0.9990477,2.817797E-08,1.299958E-09,0.04361936
 	mir = 1,1,1
@@ -758,11 +1013,11 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	link = FSPropellerEngine_4294688334
-	link = FSfloatStrut_4294687374
-	sym = FSengineMount_4294687868
-	srfN = srfAttach,FSbomberWing_4294688394
-	attN = top,FSPropellerEngine_4294688334
+	link = FSPropellerEngine_4294745050
+	link = FSfloatStrut_4294744098
+	sym = FSengineMount_4294744588
+	srfN = srfAttach,FSbomberWing_4294745110
+	attN = top,FSPropellerEngine_4294745050
 	EVENTS
 	{
 	}
@@ -772,9 +1027,9 @@ PART
 }
 PART
 {
-	part = FSPropellerEngine_4294688334
+	part = FSPropellerEngine_4294745050
 	partName = Part
-	pos = -6.754353,4.849111,-5.244759
+	pos = -6.754354,4.849111,-5.24476
 	rot = 0.6942917,0.001145799,-0.001145645,0.7196922
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -783,8 +1038,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	sym = FSPropellerEngine_4294687848
-	attN = top,FSengineMount_4294688354
+	sym = FSPropellerEngine_4294744568
+	attN = top,FSengineMount_4294745070
 	EVENTS
 	{
 	}
@@ -806,11 +1061,20 @@ PART
 	{
 		name = ModuleEngines
 		isEnabled = True
+		staged = False
+		flameout = False
 		EngineIgnited = False
 		engineShutdown = False
 		currentThrottle = 0
-		flameout = False
-		staged = False
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
 		EVENTS
 		{
 			Activate
@@ -957,6 +1221,7 @@ PART
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Set Reverse Thrust
 				guiName = Set Reverse Thrust
 				category = Set Reverse Thrust
@@ -1014,13 +1279,23 @@ PART
 		{
 		}
 	}
+	RESOURCE
+	{
+		name = IntakeAir
+		amount = 0
+		maxAmount = 15
+		flowState = True
+		isTweakable = False
+		hideFlow = False
+		flowMode = Both
+	}
 }
 PART
 {
-	part = FSairBrake_4294688196
+	part = FSairBrake_4294744914
 	partName = Part
-	pos = -7.802899,4.837903,-7.279865
-	rot = 0.0416356,0.9972305,-0.06156972,-0.002688234
+	pos = -7.8029,4.837903,-7.279867
+	rot = 0.0416356,0.9972305,-0.06156972,-0.002688233
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -1028,8 +1303,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = FSairBrake_4294687710
-	srfN = srfAttach,FSbomberWing_4294688394
+	sym = FSairBrake_4294744432
+	srfN = srfAttach,FSbomberWing_4294745110
 	EVENTS
 	{
 	}
@@ -1074,10 +1349,10 @@ PART
 }
 PART
 {
-	part = FSairBrake_4294688158
+	part = FSairBrake_4294744876
 	partName = Part
-	pos = -7.250711,4.790792,-7.287341
-	rot = 0.04163552,0.9972305,-0.06156968,-0.002688234
+	pos = -7.250712,4.790792,-7.287343
+	rot = 0.04163552,0.9972305,-0.06156968,-0.002688233
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -1085,8 +1360,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = FSairBrake_4294687672
-	srfN = srfAttach,FSbomberWing_4294688394
+	sym = FSairBrake_4294744394
+	srfN = srfAttach,FSbomberWing_4294745110
 	EVENTS
 	{
 	}
@@ -1131,9 +1406,9 @@ PART
 }
 PART
 {
-	part = FSengineMount_4294688120
+	part = FSengineMount_4294744838
 	partName = Strut
-	pos = -3.921355,4.863307,-5.87416
+	pos = -3.921355,4.863307,-5.874161
 	rot = 0.0800261,0.7245516,0.6831529,0.04385221
 	attRot = 0.5416747,-0.4545192,-0.4545193,0.541675
 	mir = 1,1,1
@@ -1142,10 +1417,10 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	link = FSPropellerEngine_4294688100
-	sym = FSengineMount_4294687634
-	srfN = srfAttach,FSbomberWingExtender_4294688414
-	attN = top,FSPropellerEngine_4294688100
+	link = FSPropellerEngine_4294744818
+	sym = FSengineMount_4294744356
+	srfN = srfAttach,FSbomberWingExtender_4294745130
+	attN = top,FSPropellerEngine_4294744818
 	EVENTS
 	{
 	}
@@ -1155,9 +1430,9 @@ PART
 }
 PART
 {
-	part = FSPropellerEngine_4294688100
+	part = FSPropellerEngine_4294744818
 	partName = Part
-	pos = -3.883173,4.899959,-5.194962
+	pos = -3.883173,4.899959,-5.194963
 	rot = 0.687538,0.01983196,-0.01983179,0.7256066
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -1166,8 +1441,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	sym = FSPropellerEngine_4294687614
-	attN = top,FSengineMount_4294688120
+	sym = FSPropellerEngine_4294744336
+	attN = top,FSengineMount_4294744838
 	EVENTS
 	{
 	}
@@ -1189,11 +1464,20 @@ PART
 	{
 		name = ModuleEngines
 		isEnabled = True
+		staged = False
+		flameout = False
 		EngineIgnited = False
 		engineShutdown = False
 		currentThrottle = 0
-		flameout = False
-		staged = False
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
 		EVENTS
 		{
 			Activate
@@ -1340,6 +1624,7 @@ PART
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Set Reverse Thrust
 				guiName = Set Reverse Thrust
 				category = Set Reverse Thrust
@@ -1397,12 +1682,22 @@ PART
 		{
 		}
 	}
+	RESOURCE
+	{
+		name = IntakeAir
+		amount = 0
+		maxAmount = 15
+		flowState = True
+		isTweakable = False
+		hideFlow = False
+		flowMode = Both
+	}
 }
 PART
 {
-	part = spotLight1_4294687962
+	part = spotLight1_4294744682
 	partName = Part
-	pos = -2.029562,4.887764,-5.271569
+	pos = -2.029562,4.887764,-5.27157
 	rot = -0.05607205,0.8780035,-0.4723416,-0.05347363
 	attRot = -0.4766915,0.8311134,-0.1918553,0.2126205
 	mir = 1,1,1
@@ -1411,8 +1706,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = spotLight1_4294687476
-	srfN = srfAttach,FSbomberWingExtender_4294688414
+	sym = spotLight1_4294744200
+	srfN = srfAttach,FSbomberWingExtender_4294745130
 	EVENTS
 	{
 	}
@@ -1430,6 +1725,7 @@ PART
 			{
 				active = False
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Lights Off
 				guiName = Lights Off
 				category = Lights Off
@@ -1441,6 +1737,7 @@ PART
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Lights On
 				guiName = Lights On
 				category = Lights On
@@ -1468,9 +1765,9 @@ PART
 }
 PART
 {
-	part = FSbomberWingExtender_4294687928
+	part = FSbomberWingExtender_4294744648
 	partName = Winglet
-	pos = 2.791296,4.282097,-7.227777
+	pos = 2.791296,4.282097,-7.227779
 	rot = -0.6616123,-0.02754019,-0.03134162,-0.7486846
 	attRot = 0.0260453,0.05585436,0.42009,0.9053878
 	mir = 1,1,1
@@ -1479,11 +1776,11 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	link = FSbomberWing_4294687908
-	link = FSengineMount_4294687634
-	link = spotLight1_4294687476
-	sym = FSbomberWingExtender_4294688414
-	srfN = srfAttach,FSbomberFuselage_4294688708
+	link = FSbomberWing_4294744628
+	link = FSengineMount_4294744356
+	link = spotLight1_4294744200
+	sym = FSbomberWingExtender_4294745130
+	srfN = srfAttach,FSbomberFuselage_4294745426
 	EVENTS
 	{
 	}
@@ -1493,9 +1790,9 @@ PART
 }
 PART
 {
-	part = FSbomberWing_4294687908
+	part = FSbomberWing_4294744628
 	partName = ControlSurface
-	pos = 7.867649,4.704806,-7.242483
+	pos = 7.867649,4.704806,-7.242485
 	rot = -0.661612,-0.02753993,-0.03134166,-0.7486849
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -1504,13 +1801,13 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	link = FSengineMount_4294687868
-	link = FSairBrake_4294687710
-	link = FSairBrake_4294687672
-	link = strutConnector_4294686024
-	link = strutConnector_4294685912
-	sym = FSbomberWing_4294688394
-	srfN = srfAttach,FSbomberWingExtender_4294687928
+	link = FSengineMount_4294744588
+	link = FSairBrake_4294744432
+	link = FSairBrake_4294744394
+	link = strutConnector_4294742748
+	link = strutConnector_4294742636
+	sym = FSbomberWing_4294745110
+	srfN = srfAttach,FSbomberWingExtender_4294744648
 	EVENTS
 	{
 	}
@@ -1522,12 +1819,20 @@ PART
 		name = FSwingletRangeAdjustment
 		isEnabled = True
 		currentControlRange = 15
+		currentControlRange_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 50
+			stepIncrement = 0.02
+		}
 		EVENTS
 		{
 			decreaseRangeEvent
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Decrease control range
 				guiName = Decrease control range
 				category = Decrease control range
@@ -1539,6 +1844,7 @@ PART
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Increase control range
 				guiName = Increase control range
 				category = Increase control range
@@ -1577,9 +1883,9 @@ PART
 }
 PART
 {
-	part = FSengineMount_4294687868
+	part = FSengineMount_4294744588
 	partName = Strut
-	pos = 6.756544,4.824644,-5.925573
+	pos = 6.756544,4.824644,-5.925574
 	rot = 0.6936398,0.02888081,0.03011056,0.7191128
 	attRot = -0.9990477,2.817797E-08,1.299958E-09,0.04361936
 	mir = 1,1,1
@@ -1588,11 +1894,11 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	link = FSPropellerEngine_4294687848
-	link = FSfloatStrut_4294687342
-	sym = FSengineMount_4294688354
-	srfN = srfAttach,FSbomberWing_4294687908
-	attN = top,FSPropellerEngine_4294687848
+	link = FSPropellerEngine_4294744568
+	link = FSfloatStrut_4294744066
+	sym = FSengineMount_4294745070
+	srfN = srfAttach,FSbomberWing_4294744628
+	attN = top,FSPropellerEngine_4294744568
 	EVENTS
 	{
 	}
@@ -1602,9 +1908,9 @@ PART
 }
 PART
 {
-	part = FSPropellerEngine_4294687848
+	part = FSPropellerEngine_4294744568
 	partName = Part
-	pos = 6.754342,4.84911,-5.244763
+	pos = 6.754342,4.84911,-5.244764
 	rot = 0.6942917,-0.001145786,0.001145648,0.7196921
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -1613,8 +1919,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	sym = FSPropellerEngine_4294688334
-	attN = top,FSengineMount_4294687868
+	sym = FSPropellerEngine_4294745050
+	attN = top,FSengineMount_4294744588
 	EVENTS
 	{
 	}
@@ -1636,11 +1942,20 @@ PART
 	{
 		name = ModuleEngines
 		isEnabled = True
+		staged = False
+		flameout = False
 		EngineIgnited = False
 		engineShutdown = False
 		currentThrottle = 0
-		flameout = False
-		staged = False
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
 		EVENTS
 		{
 			Activate
@@ -1787,6 +2102,7 @@ PART
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Set Reverse Thrust
 				guiName = Set Reverse Thrust
 				category = Set Reverse Thrust
@@ -1844,12 +2160,22 @@ PART
 		{
 		}
 	}
+	RESOURCE
+	{
+		name = IntakeAir
+		amount = 0
+		maxAmount = 15
+		flowState = True
+		isTweakable = False
+		hideFlow = False
+		flowMode = Both
+	}
 }
 PART
 {
-	part = FSairBrake_4294687710
+	part = FSairBrake_4294744432
 	partName = Part
-	pos = 7.802874,4.837903,-7.279865
+	pos = 7.802874,4.837903,-7.279867
 	rot = -0.04163557,0.9972305,-0.06156981,0.002688221
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -1858,8 +2184,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = FSairBrake_4294688196
-	srfN = srfAttach,FSbomberWing_4294687908
+	sym = FSairBrake_4294744914
+	srfN = srfAttach,FSbomberWing_4294744628
 	EVENTS
 	{
 	}
@@ -1904,9 +2230,9 @@ PART
 }
 PART
 {
-	part = FSairBrake_4294687672
+	part = FSairBrake_4294744394
 	partName = Part
-	pos = 7.250685,4.790792,-7.287341
+	pos = 7.250685,4.790792,-7.287343
 	rot = -0.04163551,0.9972305,-0.06156977,0.002688221
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -1915,8 +2241,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = FSairBrake_4294688158
-	srfN = srfAttach,FSbomberWing_4294687908
+	sym = FSairBrake_4294744876
+	srfN = srfAttach,FSbomberWing_4294744628
 	EVENTS
 	{
 	}
@@ -1961,9 +2287,9 @@ PART
 }
 PART
 {
-	part = FSengineMount_4294687634
+	part = FSengineMount_4294744356
 	partName = Strut
-	pos = 3.921355,4.863307,-5.874159
+	pos = 3.921355,4.863307,-5.87416
 	rot = -0.08002613,0.7245516,0.6831529,-0.04385223
 	attRot = 0.5416747,-0.4545192,-0.4545193,0.541675
 	mir = 1,1,1
@@ -1972,10 +2298,10 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	link = FSPropellerEngine_4294687614
-	sym = FSengineMount_4294688120
-	srfN = srfAttach,FSbomberWingExtender_4294687928
-	attN = top,FSPropellerEngine_4294687614
+	link = FSPropellerEngine_4294744336
+	sym = FSengineMount_4294744838
+	srfN = srfAttach,FSbomberWingExtender_4294744648
+	attN = top,FSPropellerEngine_4294744336
 	EVENTS
 	{
 	}
@@ -1985,10 +2311,10 @@ PART
 }
 PART
 {
-	part = FSPropellerEngine_4294687614
+	part = FSPropellerEngine_4294744336
 	partName = Part
-	pos = 3.883172,4.899959,-5.194961
-	rot = 0.6875381,-0.01983196,0.01983176,0.7256067
+	pos = 3.883172,4.899959,-5.194962
+	rot = 0.6875381,-0.01983196,0.01983175,0.7256067
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -1996,8 +2322,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	sym = FSPropellerEngine_4294688100
-	attN = top,FSengineMount_4294687634
+	sym = FSPropellerEngine_4294744818
+	attN = top,FSengineMount_4294744356
 	EVENTS
 	{
 	}
@@ -2019,11 +2345,20 @@ PART
 	{
 		name = ModuleEngines
 		isEnabled = True
+		staged = False
+		flameout = False
 		EngineIgnited = False
 		engineShutdown = False
 		currentThrottle = 0
-		flameout = False
-		staged = False
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
 		EVENTS
 		{
 			Activate
@@ -2170,6 +2505,7 @@ PART
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Set Reverse Thrust
 				guiName = Set Reverse Thrust
 				category = Set Reverse Thrust
@@ -2227,12 +2563,22 @@ PART
 		{
 		}
 	}
+	RESOURCE
+	{
+		name = IntakeAir
+		amount = 0
+		maxAmount = 15
+		flowState = True
+		isTweakable = False
+		hideFlow = False
+		flowMode = Both
+	}
 }
 PART
 {
-	part = spotLight1_4294687476
+	part = spotLight1_4294744200
 	partName = Part
-	pos = 2.029562,4.887764,-5.271567
+	pos = 2.029562,4.887764,-5.271568
 	rot = 0.05607212,0.8780035,-0.4723415,0.05347371
 	attRot = -0.4766915,0.8311134,-0.1918553,0.2126205
 	mir = 1,1,1
@@ -2241,8 +2587,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = spotLight1_4294687962
-	srfN = srfAttach,FSbomberWingExtender_4294687928
+	sym = spotLight1_4294744682
+	srfN = srfAttach,FSbomberWingExtender_4294744648
 	EVENTS
 	{
 	}
@@ -2260,6 +2606,7 @@ PART
 			{
 				active = False
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Lights Off
 				guiName = Lights Off
 				category = Lights Off
@@ -2271,6 +2618,7 @@ PART
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Lights On
 				guiName = Lights On
 				category = Lights On
@@ -2298,7 +2646,7 @@ PART
 }
 PART
 {
-	part = FStailWingLarge_4294687442
+	part = FStailWingLarge_4294744166
 	partName = ControlSurface
 	pos = -1.888708,5.017069,-17.51568
 	rot = 0.002483243,-0.7333516,-0.6797297,-0.01252663
@@ -2309,8 +2657,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = FStailWingLarge_4294687408
-	srfN = srfAttach,FSbomberFuselageTail_4294688552
+	sym = FStailWingLarge_4294744132
+	srfN = srfAttach,FSbomberFuselageTail_4294745270
 	EVENTS
 	{
 	}
@@ -2322,12 +2670,20 @@ PART
 		name = FSwingletRangeAdjustment
 		isEnabled = True
 		currentControlRange = 15
+		currentControlRange_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 50
+			stepIncrement = 0.02
+		}
 		EVENTS
 		{
 			decreaseRangeEvent
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Decrease control range
 				guiName = Decrease control range
 				category = Decrease control range
@@ -2339,6 +2695,7 @@ PART
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Increase control range
 				guiName = Increase control range
 				category = Increase control range
@@ -2377,7 +2734,7 @@ PART
 }
 PART
 {
-	part = FStailWingLarge_4294687408
+	part = FStailWingLarge_4294744132
 	partName = ControlSurface
 	pos = 1.888708,5.017069,-17.51568
 	rot = -0.6797298,-0.01252666,0.002483219,-0.7333515
@@ -2388,8 +2745,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = FStailWingLarge_4294687442
-	srfN = srfAttach,FSbomberFuselageTail_4294688552
+	sym = FStailWingLarge_4294744166
+	srfN = srfAttach,FSbomberFuselageTail_4294745270
 	EVENTS
 	{
 	}
@@ -2401,12 +2758,20 @@ PART
 		name = FSwingletRangeAdjustment
 		isEnabled = True
 		currentControlRange = 15
+		currentControlRange_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 50
+			stepIncrement = 0.02
+		}
 		EVENTS
 		{
 			decreaseRangeEvent
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Decrease control range
 				guiName = Decrease control range
 				category = Decrease control range
@@ -2418,6 +2783,7 @@ PART
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Increase control range
 				guiName = Increase control range
 				category = Increase control range
@@ -2456,9 +2822,9 @@ PART
 }
 PART
 {
-	part = FSfloatStrut_4294687374
+	part = FSfloatStrut_4294744098
 	partName = Part
-	pos = -6.580688,2.853846,-5.708706
+	pos = -6.580688,2.853845,-5.708707
 	rot = 0.6941239,0.01821281,0.01531966,0.7194622
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -2467,12 +2833,12 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	link = FSfloatStraight_4294687310
-	link = FSfloatStraight_4294686878
-	sym = FSfloatStrut_4294687342
-	srfN = srfAttach,FSengineMount_4294688354
-	attN = top,FSfloatStraight_4294687310
-	attN = bottom,FSfloatStraight_4294686878
+	link = FSfloatStraight_4294744034
+	link = FSfloatStraight_4294743602
+	sym = FSfloatStrut_4294744066
+	srfN = srfAttach,FSengineMount_4294745070
+	attN = top,FSfloatStraight_4294744034
+	attN = bottom,FSfloatStraight_4294743602
 	EVENTS
 	{
 	}
@@ -2515,9 +2881,9 @@ PART
 }
 PART
 {
-	part = FSfloatStrut_4294687342
+	part = FSfloatStrut_4294744066
 	partName = Part
-	pos = 6.580678,2.853853,-5.708707
+	pos = 6.580678,2.853853,-5.708708
 	rot = 0.6941239,-0.0182128,-0.01531967,0.7194622
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -2526,12 +2892,12 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	link = FSfloatStraight_4294687288
-	link = FSfloatStraight_4294686856
-	sym = FSfloatStrut_4294687374
-	srfN = srfAttach,FSengineMount_4294687868
-	attN = top,FSfloatStraight_4294687288
-	attN = bottom,FSfloatStraight_4294686856
+	link = FSfloatStraight_4294744012
+	link = FSfloatStraight_4294743580
+	sym = FSfloatStrut_4294744098
+	srfN = srfAttach,FSengineMount_4294744588
+	attN = top,FSfloatStraight_4294744012
+	attN = bottom,FSfloatStraight_4294743580
 	EVENTS
 	{
 	}
@@ -2574,10 +2940,10 @@ PART
 }
 PART
 {
-	part = FSfloatStraight_4294687310
+	part = FSfloatStraight_4294744034
 	partName = Part
-	pos = -6.578505,2.878074,-5.034523
-	rot = 0.6942921,0.001145735,-0.00114569,0.7196918
+	pos = -6.578506,2.878073,-5.034524
+	rot = 0.6942921,0.001145737,-0.001145686,0.7196918
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -2585,10 +2951,10 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = FSfloatStraight_4294687266
-	sym = FSfloatStraight_4294687288
-	attN = top,FSfloatStraight_4294687266
-	attN = bottom,FSfloatStrut_4294687374
+	link = FSfloatStraight_4294743990
+	sym = FSfloatStraight_4294744012
+	attN = top,FSfloatStraight_4294743990
+	attN = bottom,FSfloatStrut_4294744098
 	EVENTS
 	{
 	}
@@ -2631,10 +2997,10 @@ PART
 }
 PART
 {
-	part = FSfloatStraight_4294687288
+	part = FSfloatStraight_4294744012
 	partName = Part
-	pos = 6.578492,2.87808,-5.034527
-	rot = 0.6942921,-0.001145678,0.001145747,0.7196918
+	pos = 6.578492,2.878079,-5.034528
+	rot = 0.6942921,-0.001145672,0.001145752,0.7196918
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -2642,10 +3008,10 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = FSfloatStraight_4294687244
-	sym = FSfloatStraight_4294687310
-	attN = top,FSfloatStraight_4294687244
-	attN = bottom,FSfloatStrut_4294687342
+	link = FSfloatStraight_4294743968
+	sym = FSfloatStraight_4294744034
+	attN = top,FSfloatStraight_4294743968
+	attN = bottom,FSfloatStrut_4294744066
 	EVENTS
 	{
 	}
@@ -2688,9 +3054,9 @@ PART
 }
 PART
 {
-	part = FSfloatStraight_4294687266
+	part = FSfloatStraight_4294743990
 	partName = Part
-	pos = -6.574449,2.923062,-3.782833
+	pos = -6.57445,2.923062,-3.782834
 	rot = 0.6942922,0.001145713,-0.001145716,0.7196917
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -2699,10 +3065,10 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = FSfloatStraight_4294687222
-	sym = FSfloatStraight_4294687244
-	attN = top,FSfloatStraight_4294687222
-	attN = bottom,FSfloatStraight_4294687310
+	link = FSfloatStraight_4294743946
+	sym = FSfloatStraight_4294743968
+	attN = top,FSfloatStraight_4294743946
+	attN = bottom,FSfloatStraight_4294744034
 	EVENTS
 	{
 	}
@@ -2745,9 +3111,9 @@ PART
 }
 PART
 {
-	part = FSfloatStraight_4294687244
+	part = FSfloatStraight_4294743968
 	partName = Part
-	pos = 6.574429,2.923064,-3.782837
+	pos = 6.574429,2.923064,-3.782838
 	rot = 0.6942921,-0.001145733,0.001145703,0.7196918
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -2756,10 +3122,10 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = FSfloatStraight_4294687200
-	sym = FSfloatStraight_4294687266
-	attN = top,FSfloatStraight_4294687200
-	attN = bottom,FSfloatStraight_4294687288
+	link = FSfloatStraight_4294743924
+	sym = FSfloatStraight_4294743990
+	attN = top,FSfloatStraight_4294743924
+	attN = bottom,FSfloatStraight_4294744012
 	EVENTS
 	{
 	}
@@ -2802,10 +3168,10 @@ PART
 }
 PART
 {
-	part = FSfloatStraight_4294687222
+	part = FSfloatStraight_4294743946
 	partName = Part
-	pos = -6.57039,2.968038,-2.531144
-	rot = 0.6942923,0.001145719,-0.00114571,0.7196915
+	pos = -6.570391,2.968037,-2.531145
+	rot = 0.6942924,0.001145719,-0.00114571,0.7196915
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -2813,11 +3179,11 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = FSfloatGearbay_4294687178
-	link = strutConnector_4294685688
-	sym = FSfloatStraight_4294687200
-	attN = top,FSfloatGearbay_4294687178
-	attN = bottom,FSfloatStraight_4294687266
+	link = FSfloatGearbay_4294743902
+	link = strutConnector_4294742412
+	sym = FSfloatStraight_4294743924
+	attN = top,FSfloatGearbay_4294743902
+	attN = bottom,FSfloatStraight_4294743990
 	EVENTS
 	{
 	}
@@ -2860,10 +3226,10 @@ PART
 }
 PART
 {
-	part = FSfloatStraight_4294687200
+	part = FSfloatStraight_4294743924
 	partName = Part
-	pos = 6.570372,2.968048,-2.531153
-	rot = 0.6942922,-0.001145713,0.00114572,0.7196916
+	pos = 6.570372,2.968048,-2.531154
+	rot = 0.6942922,-0.00114571,0.001145723,0.7196916
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -2871,11 +3237,11 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = FSfloatGearbay_4294687050
-	link = strutConnector_4294685744
-	sym = FSfloatStraight_4294687222
-	attN = top,FSfloatGearbay_4294687050
-	attN = bottom,FSfloatStraight_4294687244
+	link = FSfloatGearbay_4294743774
+	link = strutConnector_4294742468
+	sym = FSfloatStraight_4294743946
+	attN = top,FSfloatGearbay_4294743774
+	attN = bottom,FSfloatStraight_4294743968
 	EVENTS
 	{
 	}
@@ -2918,10 +3284,10 @@ PART
 }
 PART
 {
-	part = FSfloatGearbay_4294687178
+	part = FSfloatGearbay_4294743902
 	partName = Part
-	pos = -6.566331,3.013021,-1.279453
-	rot = 0.6942923,0.001145716,-0.001145715,0.7196916
+	pos = -6.566332,3.01302,-1.279452
+	rot = 0.6942923,0.001145713,-0.001145718,0.7196916
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -2929,10 +3295,10 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = FSfloatEnd_4294686922
-	sym = FSfloatGearbay_4294687050
-	attN = top,FSfloatEnd_4294686922
-	attN = bottom,FSfloatStraight_4294687222
+	link = FSfloatEnd_4294743646
+	sym = FSfloatGearbay_4294743774
+	attN = top,FSfloatEnd_4294743646
+	attN = bottom,FSfloatStraight_4294743946
 	EVENTS
 	{
 	}
@@ -2988,6 +3354,7 @@ PART
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Raise Gear
 				guiName = Raise Gear
 				category = Raise Gear
@@ -2999,6 +3366,7 @@ PART
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Lower Gear
 				guiName = Lower Gear
 				category = Lower Gear
@@ -3006,13 +3374,25 @@ PART
 				unfocusedRange = 5
 				externalToEVAOnly = True
 			}
-			ReverseMotorEvent
+			EnableReverseMotorEvent
 			{
 				active = True
 				guiActive = True
-				guiIcon = Toggle Reverse Motor
-				guiName = Toggle Reverse Motor
-				category = Toggle Reverse Motor
+				guiActiveEditor = True
+				guiIcon = Enable Reverse Motor
+				guiName = Enable Reverse Motor
+				category = Enable Reverse Motor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableReverseMotorEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = Disable Reverse Motor
+				guiName = Disable Reverse Motor
+				category = Disable Reverse Motor
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
@@ -3021,6 +3401,7 @@ PART
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Enable Motor
 				guiName = Enable Motor
 				category = Enable Motor
@@ -3043,6 +3424,7 @@ PART
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Brakes On
 				guiName = Brakes On
 				category = Brakes On
@@ -3053,7 +3435,7 @@ PART
 			brakesOffEvent
 			{
 				active = True
-				guiActive = True
+				guiActive = False
 				guiIcon = Brakes Off
 				guiName = Brakes Off
 				category = Brakes Off
@@ -3124,15 +3506,47 @@ PART
 		altInputModeEnabled = False
 		reversedInput = False
 		ignoreTrim = True
+		steerMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 50
+			stepIncrement = 0.02
+		}
 		EVENTS
 		{
 			toggleSteering
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Toggle Steering
-				guiName = Toggle Steering
+				guiName = Enable Steering
 				category = Toggle Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleReverseInput
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Toggle Reverse Steering
+				guiName = Reverse Steering
+				category = Toggle Reverse Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleSpeedAdjustedSteeringEvent
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Dynamic Steering
+				guiName = Disable Dynamic Steering
+				category = Dynamic Steering
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
@@ -3140,7 +3554,7 @@ PART
 			toggleAltInputMode
 			{
 				active = True
-				guiActive = True
+				guiActive = False
 				guiIcon = QE or AD to steer
 				guiName = QE or AD to steer
 				category = QE or AD to steer
@@ -3151,21 +3565,10 @@ PART
 			toggleIgnoreTrim
 			{
 				active = True
-				guiActive = True
+				guiActive = False
 				guiIcon = Toggle Ignore trim
 				guiName = Toggle Ignore trim
 				category = Toggle Ignore trim
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			toggleReverseInput
-			{
-				active = True
-				guiActive = True
-				guiIcon = Toggle Reverse Steering
-				guiName = Toggle Reverse Steering
-				category = Toggle Reverse Steering
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
@@ -3192,17 +3595,6 @@ PART
 				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
-			toggleSpeedAdjustedSteeringEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Dynamic Steering
-				guiName = Dynamic Steering
-				category = Dynamic Steering
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
 		{
@@ -3219,9 +3611,9 @@ PART
 }
 PART
 {
-	part = FSfloatGearbay_4294687050
+	part = FSfloatGearbay_4294743774
 	partName = Part
-	pos = 6.566317,3.013027,-1.279463
+	pos = 6.566317,3.013026,-1.279464
 	rot = 0.6942922,-0.001145729,0.001145705,0.7196916
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -3230,10 +3622,10 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = FSfloatEnd_4294686900
-	sym = FSfloatGearbay_4294687178
-	attN = top,FSfloatEnd_4294686900
-	attN = bottom,FSfloatStraight_4294687200
+	link = FSfloatEnd_4294743624
+	sym = FSfloatGearbay_4294743902
+	attN = top,FSfloatEnd_4294743624
+	attN = bottom,FSfloatStraight_4294743924
 	EVENTS
 	{
 	}
@@ -3289,6 +3681,7 @@ PART
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Raise Gear
 				guiName = Raise Gear
 				category = Raise Gear
@@ -3300,6 +3693,7 @@ PART
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Lower Gear
 				guiName = Lower Gear
 				category = Lower Gear
@@ -3307,13 +3701,25 @@ PART
 				unfocusedRange = 5
 				externalToEVAOnly = True
 			}
-			ReverseMotorEvent
+			EnableReverseMotorEvent
 			{
 				active = True
 				guiActive = True
-				guiIcon = Toggle Reverse Motor
-				guiName = Toggle Reverse Motor
-				category = Toggle Reverse Motor
+				guiActiveEditor = True
+				guiIcon = Enable Reverse Motor
+				guiName = Enable Reverse Motor
+				category = Enable Reverse Motor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableReverseMotorEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = Disable Reverse Motor
+				guiName = Disable Reverse Motor
+				category = Disable Reverse Motor
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
@@ -3322,6 +3728,7 @@ PART
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Enable Motor
 				guiName = Enable Motor
 				category = Enable Motor
@@ -3344,6 +3751,7 @@ PART
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Brakes On
 				guiName = Brakes On
 				category = Brakes On
@@ -3354,7 +3762,7 @@ PART
 			brakesOffEvent
 			{
 				active = True
-				guiActive = True
+				guiActive = False
 				guiIcon = Brakes Off
 				guiName = Brakes Off
 				category = Brakes Off
@@ -3425,15 +3833,47 @@ PART
 		altInputModeEnabled = False
 		reversedInput = False
 		ignoreTrim = True
+		steerMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 50
+			stepIncrement = 0.02
+		}
 		EVENTS
 		{
 			toggleSteering
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Toggle Steering
-				guiName = Toggle Steering
+				guiName = Enable Steering
 				category = Toggle Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleReverseInput
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Toggle Reverse Steering
+				guiName = Reverse Steering
+				category = Toggle Reverse Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleSpeedAdjustedSteeringEvent
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Dynamic Steering
+				guiName = Disable Dynamic Steering
+				category = Dynamic Steering
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
@@ -3441,7 +3881,7 @@ PART
 			toggleAltInputMode
 			{
 				active = True
-				guiActive = True
+				guiActive = False
 				guiIcon = QE or AD to steer
 				guiName = QE or AD to steer
 				category = QE or AD to steer
@@ -3452,21 +3892,10 @@ PART
 			toggleIgnoreTrim
 			{
 				active = True
-				guiActive = True
+				guiActive = False
 				guiIcon = Toggle Ignore trim
 				guiName = Toggle Ignore trim
 				category = Toggle Ignore trim
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			toggleReverseInput
-			{
-				active = True
-				guiActive = True
-				guiIcon = Toggle Reverse Steering
-				guiName = Toggle Reverse Steering
-				category = Toggle Reverse Steering
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
@@ -3493,17 +3922,6 @@ PART
 				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
-			toggleSpeedAdjustedSteeringEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Dynamic Steering
-				guiName = Dynamic Steering
-				category = Dynamic Steering
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
 		{
@@ -3520,9 +3938,9 @@ PART
 }
 PART
 {
-	part = FSfloatEnd_4294686922
+	part = FSfloatEnd_4294743646
 	partName = Part
-	pos = -6.563287,3.046777,-0.3400619
+	pos = -6.563288,3.046776,-0.3400619
 	rot = 0.6942923,0.001145711,-0.001145721,0.7196916
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -3531,8 +3949,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	sym = FSfloatEnd_4294686900
-	attN = bottom,FSfloatGearbay_4294687178
+	sym = FSfloatEnd_4294743624
+	attN = bottom,FSfloatGearbay_4294743902
 	EVENTS
 	{
 	}
@@ -3575,10 +3993,10 @@ PART
 }
 PART
 {
-	part = FSfloatEnd_4294686900
+	part = FSfloatEnd_4294743624
 	partName = Part
 	pos = 6.56327,3.046788,-0.3400691
-	rot = 0.6942926,-0.001145726,0.001145707,0.7196913
+	rot = 0.6942926,-0.001145731,0.001145702,0.7196913
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -3586,8 +4004,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	sym = FSfloatEnd_4294686922
-	attN = bottom,FSfloatGearbay_4294687050
+	sym = FSfloatEnd_4294743646
+	attN = bottom,FSfloatGearbay_4294743774
 	EVENTS
 	{
 	}
@@ -3630,10 +4048,10 @@ PART
 }
 PART
 {
-	part = FSfloatStraight_4294686878
+	part = FSfloatStraight_4294743602
 	partName = Part
-	pos = -6.582872,2.829623,-6.382896
-	rot = 0.6942921,0.001145735,-0.00114569,0.7196918
+	pos = -6.582872,2.829623,-6.382897
+	rot = 0.6942921,0.001145737,-0.001145686,0.7196918
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -3641,10 +4059,10 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = FSfloatStraight_4294686834
-	sym = FSfloatStraight_4294686856
-	attN = top,FSfloatStrut_4294687374
-	attN = bottom,FSfloatStraight_4294686834
+	link = FSfloatStraight_4294743558
+	sym = FSfloatStraight_4294743580
+	attN = top,FSfloatStrut_4294744098
+	attN = bottom,FSfloatStraight_4294743558
 	EVENTS
 	{
 	}
@@ -3687,10 +4105,10 @@ PART
 }
 PART
 {
-	part = FSfloatStraight_4294686856
+	part = FSfloatStraight_4294743580
 	partName = Part
-	pos = 6.582861,2.829623,-6.382897
-	rot = 0.6942921,-0.001145678,0.001145747,0.7196918
+	pos = 6.582861,2.829623,-6.382898
+	rot = 0.6942921,-0.001145672,0.001145752,0.7196918
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -3698,10 +4116,10 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = FSfloatStraight_4294686812
-	sym = FSfloatStraight_4294686878
-	attN = top,FSfloatStrut_4294687342
-	attN = bottom,FSfloatStraight_4294686812
+	link = FSfloatStraight_4294743536
+	sym = FSfloatStraight_4294743602
+	attN = top,FSfloatStrut_4294744066
+	attN = bottom,FSfloatStraight_4294743536
 	EVENTS
 	{
 	}
@@ -3744,9 +4162,9 @@ PART
 }
 PART
 {
-	part = FSfloatStraight_4294686834
+	part = FSfloatStraight_4294743558
 	partName = Part
-	pos = -6.586929,2.784638,-7.634584
+	pos = -6.586929,2.784637,-7.634585
 	rot = 0.6942922,0.001145713,-0.001145716,0.7196917
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -3755,10 +4173,10 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = FSfloatStraight_4294686790
-	sym = FSfloatStraight_4294686812
-	attN = top,FSfloatStraight_4294686878
-	attN = bottom,FSfloatStraight_4294686790
+	link = FSfloatStraight_4294743514
+	sym = FSfloatStraight_4294743536
+	attN = top,FSfloatStraight_4294743602
+	attN = bottom,FSfloatStraight_4294743514
 	EVENTS
 	{
 	}
@@ -3801,9 +4219,9 @@ PART
 }
 PART
 {
-	part = FSfloatStraight_4294686812
+	part = FSfloatStraight_4294743536
 	partName = Part
-	pos = 6.586922,2.784641,-7.634584
+	pos = 6.586922,2.784641,-7.634585
 	rot = 0.6942921,-0.001145733,0.001145703,0.7196918
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -3812,10 +4230,10 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = FSfloatStraight_4294686768
-	sym = FSfloatStraight_4294686834
-	attN = top,FSfloatStraight_4294686856
-	attN = bottom,FSfloatStraight_4294686768
+	link = FSfloatStraight_4294743492
+	sym = FSfloatStraight_4294743558
+	attN = top,FSfloatStraight_4294743580
+	attN = bottom,FSfloatStraight_4294743492
 	EVENTS
 	{
 	}
@@ -3858,10 +4276,10 @@ PART
 }
 PART
 {
-	part = FSfloatStraight_4294686790
+	part = FSfloatStraight_4294743514
 	partName = Part
-	pos = -6.590991,2.739651,-8.886281
-	rot = 0.6942923,0.001145719,-0.00114571,0.7196915
+	pos = -6.590992,2.73965,-8.886283
+	rot = 0.6942924,0.001145719,-0.00114571,0.7196915
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -3869,10 +4287,10 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = FSfloatGearbay_4294686746
-	sym = FSfloatStraight_4294686768
-	attN = top,FSfloatStraight_4294686834
-	attN = bottom,FSfloatGearbay_4294686746
+	link = FSfloatGearbay_4294743470
+	sym = FSfloatStraight_4294743492
+	attN = top,FSfloatStraight_4294743558
+	attN = bottom,FSfloatGearbay_4294743470
 	EVENTS
 	{
 	}
@@ -3915,10 +4333,10 @@ PART
 }
 PART
 {
-	part = FSfloatStraight_4294686768
+	part = FSfloatStraight_4294743492
 	partName = Part
-	pos = 6.590979,2.739656,-8.886277
-	rot = 0.6942922,-0.001145713,0.00114572,0.7196916
+	pos = 6.590979,2.739655,-8.886279
+	rot = 0.6942922,-0.00114571,0.001145723,0.7196916
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -3926,10 +4344,10 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = FSfloatGearbay_4294686618
-	sym = FSfloatStraight_4294686790
-	attN = top,FSfloatStraight_4294686812
-	attN = bottom,FSfloatGearbay_4294686618
+	link = FSfloatGearbay_4294743342
+	sym = FSfloatStraight_4294743514
+	attN = top,FSfloatStraight_4294743536
+	attN = bottom,FSfloatGearbay_4294743342
 	EVENTS
 	{
 	}
@@ -3972,10 +4390,10 @@ PART
 }
 PART
 {
-	part = FSfloatGearbay_4294686746
+	part = FSfloatGearbay_4294743470
 	partName = Part
 	pos = -6.59505,2.694673,-10.13796
-	rot = 0.6942923,0.001145716,-0.001145715,0.7196916
+	rot = 0.6942923,0.001145713,-0.001145718,0.7196916
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -3983,11 +4401,11 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = FSfloatEndTail_4294686490
-	link = strutConnector_4294685800
-	sym = FSfloatGearbay_4294686618
-	attN = top,FSfloatStraight_4294686790
-	attN = bottom,FSfloatEndTail_4294686490
+	link = FSfloatEndTail_4294743214
+	link = strutConnector_4294742524
+	sym = FSfloatGearbay_4294743342
+	attN = top,FSfloatStraight_4294743514
+	attN = bottom,FSfloatEndTail_4294743214
 	EVENTS
 	{
 	}
@@ -4043,6 +4461,7 @@ PART
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Raise Gear
 				guiName = Raise Gear
 				category = Raise Gear
@@ -4054,6 +4473,7 @@ PART
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Lower Gear
 				guiName = Lower Gear
 				category = Lower Gear
@@ -4061,13 +4481,25 @@ PART
 				unfocusedRange = 5
 				externalToEVAOnly = True
 			}
-			ReverseMotorEvent
+			EnableReverseMotorEvent
 			{
 				active = True
 				guiActive = True
-				guiIcon = Toggle Reverse Motor
-				guiName = Toggle Reverse Motor
-				category = Toggle Reverse Motor
+				guiActiveEditor = True
+				guiIcon = Enable Reverse Motor
+				guiName = Enable Reverse Motor
+				category = Enable Reverse Motor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableReverseMotorEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = Disable Reverse Motor
+				guiName = Disable Reverse Motor
+				category = Disable Reverse Motor
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
@@ -4076,6 +4508,7 @@ PART
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Enable Motor
 				guiName = Enable Motor
 				category = Enable Motor
@@ -4098,6 +4531,7 @@ PART
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Brakes On
 				guiName = Brakes On
 				category = Brakes On
@@ -4108,7 +4542,7 @@ PART
 			brakesOffEvent
 			{
 				active = True
-				guiActive = True
+				guiActive = False
 				guiIcon = Brakes Off
 				guiName = Brakes Off
 				category = Brakes Off
@@ -4179,15 +4613,47 @@ PART
 		altInputModeEnabled = False
 		reversedInput = False
 		ignoreTrim = True
+		steerMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 50
+			stepIncrement = 0.02
+		}
 		EVENTS
 		{
 			toggleSteering
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Toggle Steering
-				guiName = Toggle Steering
+				guiName = Enable Steering
 				category = Toggle Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleReverseInput
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Toggle Reverse Steering
+				guiName = Reverse Steering
+				category = Toggle Reverse Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleSpeedAdjustedSteeringEvent
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Dynamic Steering
+				guiName = Disable Dynamic Steering
+				category = Dynamic Steering
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
@@ -4195,7 +4661,7 @@ PART
 			toggleAltInputMode
 			{
 				active = True
-				guiActive = True
+				guiActive = False
 				guiIcon = QE or AD to steer
 				guiName = QE or AD to steer
 				category = QE or AD to steer
@@ -4206,21 +4672,10 @@ PART
 			toggleIgnoreTrim
 			{
 				active = True
-				guiActive = True
+				guiActive = False
 				guiIcon = Toggle Ignore trim
 				guiName = Toggle Ignore trim
 				category = Toggle Ignore trim
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			toggleReverseInput
-			{
-				active = True
-				guiActive = True
-				guiIcon = Toggle Reverse Steering
-				guiName = Toggle Reverse Steering
-				category = Toggle Reverse Steering
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
@@ -4247,17 +4702,6 @@ PART
 				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
-			toggleSpeedAdjustedSteeringEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Dynamic Steering
-				guiName = Dynamic Steering
-				category = Dynamic Steering
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
 		{
@@ -4274,7 +4718,7 @@ PART
 }
 PART
 {
-	part = FSfloatGearbay_4294686618
+	part = FSfloatGearbay_4294743342
 	partName = Part
 	pos = 6.595035,2.694677,-10.13795
 	rot = 0.6942922,-0.001145729,0.001145705,0.7196916
@@ -4285,11 +4729,11 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = FSfloatEndTail_4294686446
-	link = strutConnector_4294685856
-	sym = FSfloatGearbay_4294686746
-	attN = top,FSfloatStraight_4294686768
-	attN = bottom,FSfloatEndTail_4294686446
+	link = FSfloatEndTail_4294743170
+	link = strutConnector_4294742580
+	sym = FSfloatGearbay_4294743470
+	attN = top,FSfloatStraight_4294743492
+	attN = bottom,FSfloatEndTail_4294743170
 	EVENTS
 	{
 	}
@@ -4345,6 +4789,7 @@ PART
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Raise Gear
 				guiName = Raise Gear
 				category = Raise Gear
@@ -4356,6 +4801,7 @@ PART
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Lower Gear
 				guiName = Lower Gear
 				category = Lower Gear
@@ -4363,13 +4809,25 @@ PART
 				unfocusedRange = 5
 				externalToEVAOnly = True
 			}
-			ReverseMotorEvent
+			EnableReverseMotorEvent
 			{
 				active = True
 				guiActive = True
-				guiIcon = Toggle Reverse Motor
-				guiName = Toggle Reverse Motor
-				category = Toggle Reverse Motor
+				guiActiveEditor = True
+				guiIcon = Enable Reverse Motor
+				guiName = Enable Reverse Motor
+				category = Enable Reverse Motor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableReverseMotorEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = Disable Reverse Motor
+				guiName = Disable Reverse Motor
+				category = Disable Reverse Motor
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
@@ -4378,6 +4836,7 @@ PART
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Enable Motor
 				guiName = Enable Motor
 				category = Enable Motor
@@ -4400,6 +4859,7 @@ PART
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Brakes On
 				guiName = Brakes On
 				category = Brakes On
@@ -4410,7 +4870,7 @@ PART
 			brakesOffEvent
 			{
 				active = True
-				guiActive = True
+				guiActive = False
 				guiIcon = Brakes Off
 				guiName = Brakes Off
 				category = Brakes Off
@@ -4481,15 +4941,47 @@ PART
 		altInputModeEnabled = False
 		reversedInput = False
 		ignoreTrim = True
+		steerMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 50
+			stepIncrement = 0.02
+		}
 		EVENTS
 		{
 			toggleSteering
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Toggle Steering
-				guiName = Toggle Steering
+				guiName = Enable Steering
 				category = Toggle Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleReverseInput
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Toggle Reverse Steering
+				guiName = Reverse Steering
+				category = Toggle Reverse Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleSpeedAdjustedSteeringEvent
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Dynamic Steering
+				guiName = Disable Dynamic Steering
+				category = Dynamic Steering
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
@@ -4497,7 +4989,7 @@ PART
 			toggleAltInputMode
 			{
 				active = True
-				guiActive = True
+				guiActive = False
 				guiIcon = QE or AD to steer
 				guiName = QE or AD to steer
 				category = QE or AD to steer
@@ -4508,21 +5000,10 @@ PART
 			toggleIgnoreTrim
 			{
 				active = True
-				guiActive = True
+				guiActive = False
 				guiIcon = Toggle Ignore trim
 				guiName = Toggle Ignore trim
 				category = Toggle Ignore trim
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			toggleReverseInput
-			{
-				active = True
-				guiActive = True
-				guiIcon = Toggle Reverse Steering
-				guiName = Toggle Reverse Steering
-				category = Toggle Reverse Steering
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
@@ -4549,17 +5030,6 @@ PART
 				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
-			toggleSpeedAdjustedSteeringEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Dynamic Steering
-				guiName = Dynamic Steering
-				category = Dynamic Steering
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
 		{
@@ -4576,9 +5046,9 @@ PART
 }
 PART
 {
-	part = FSfloatEndTail_4294686490
+	part = FSfloatEndTail_4294743214
 	partName = Part
-	pos = -6.598979,2.651133,-11.34954
+	pos = -6.59898,2.651133,-11.34954
 	rot = 0.6942923,0.001145711,-0.001145721,0.7196916
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -4587,8 +5057,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	sym = FSfloatEndTail_4294686446
-	attN = bottom,FSfloatGearbay_4294686746
+	sym = FSfloatEndTail_4294743170
+	attN = bottom,FSfloatGearbay_4294743470
 	EVENTS
 	{
 	}
@@ -4712,10 +5182,10 @@ PART
 }
 PART
 {
-	part = FSfloatEndTail_4294686446
+	part = FSfloatEndTail_4294743170
 	partName = Part
 	pos = 6.598966,2.651134,-11.34954
-	rot = 0.6942926,-0.001145726,0.001145707,0.7196913
+	rot = 0.6942926,-0.001145731,0.001145702,0.7196913
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -4723,8 +5193,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	sym = FSfloatEndTail_4294686490
-	attN = bottom,FSfloatGearbay_4294686618
+	sym = FSfloatEndTail_4294743214
+	attN = bottom,FSfloatGearbay_4294743342
 	EVENTS
 	{
 	}
@@ -4848,10 +5318,10 @@ PART
 }
 PART
 {
-	part = FSfloatStrut_4294686402
+	part = FSfloatStrut_4294743126
 	partName = Part
 	pos = 3.136184E-07,2.8159,-16.57032
-	rot = -0.7728255,-5.407078E-08,-6.927903E-08,-0.6346186
+	rot = -0.7728255,-5.407079E-08,-6.927904E-08,-0.6346186
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -4859,11 +5329,11 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	link = FSfloatEndTail_4294686370
-	link = FSfloatEnd_4294686326
-	srfN = srfAttach,FSbomberFuselageTail_4294688552
-	attN = top,FSfloatEnd_4294686326
-	attN = bottom,FSfloatEndTail_4294686370
+	link = FSfloatEndTail_4294743094
+	link = FSfloatEnd_4294743050
+	srfN = srfAttach,FSbomberFuselageTail_4294745270
+	attN = top,FSfloatEnd_4294743050
+	attN = bottom,FSfloatEndTail_4294743094
 	EVENTS
 	{
 	}
@@ -4906,10 +5376,10 @@ PART
 }
 PART
 {
-	part = FSfloatEndTail_4294686370
+	part = FSfloatEndTail_4294743094
 	partName = Part
 	pos = 3.163829E-07,2.939321,-17.19271
-	rot = 0.7728256,-1.547869E-09,1.547782E-09,0.6346186
+	rot = 0.7728256,-1.547873E-09,1.547777E-09,0.6346186
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -4917,7 +5387,7 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	attN = bottom,FSfloatStrut_4294686402
+	attN = bottom,FSfloatStrut_4294743126
 	EVENTS
 	{
 	}
@@ -5041,10 +5511,10 @@ PART
 }
 PART
 {
-	part = FSfloatEnd_4294686326
+	part = FSfloatEnd_4294743050
 	partName = Part
 	pos = 3.120406E-07,2.745459,-16.21512
-	rot = 0.7728256,-1.547869E-09,1.547782E-09,0.6346186
+	rot = 0.7728256,-1.547873E-09,1.547777E-09,0.6346186
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -5052,7 +5522,7 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	attN = bottom,FSfloatStrut_4294686402
+	attN = bottom,FSfloatStrut_4294743126
 	EVENTS
 	{
 	}
@@ -5095,7 +5565,7 @@ PART
 }
 PART
 {
-	part = strutConnector_4294686304
+	part = strutConnector_4294743028
 	partName = StrutConnector
 	pos = -1.202239,4.677861,-1.891781
 	rot = -0.7010574,-0.092296,-0.09229594,-0.7010574
@@ -5106,9 +5576,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: FSfloatGearbay_25; pos: -5.451711,0.8775743,-0.1236384; dir: -0.987043,0.1588864,-0.02238497
-	sym = strutConnector_4294686248
-	srfN = srfAttach,FSbomberCockpit_4294689030
+	cData = tgt: FSfloatGearbay_25; pos: -5.451712,0.8775735,-0.1236383; dir: -0.987043,0.1588864,-0.02238497
+	sym = strutConnector_4294742972
+	srfN = srfAttach,FSbomberCockpit_4294745760
 	EVENTS
 	{
 	}
@@ -5118,10 +5588,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4294686248
+	part = strutConnector_4294742972
 	partName = StrutConnector
 	pos = 1.202239,4.677861,-1.891781
-	rot = 0.09229598,0.7010574,0.7010574,0.09229603
+	rot = 0.092296,0.7010574,0.7010574,0.09229604
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -5129,9 +5599,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: FSfloatGearbay_49; pos: -5.451688,0.8775701,0.1236369; dir: -0.9870432,0.1588865,0.02238483
-	sym = strutConnector_4294686304
-	srfN = srfAttach,FSbomberCockpit_4294689030
+	cData = tgt: FSfloatGearbay_49; pos: -5.45169,0.8775702,0.1236368; dir: -0.9870432,0.1588865,0.02238483
+	sym = strutConnector_4294743028
+	srfN = srfAttach,FSbomberCockpit_4294745760
 	EVENTS
 	{
 	}
@@ -5141,7 +5611,7 @@ PART
 }
 PART
 {
-	part = strutConnector_4294686192
+	part = strutConnector_4294742916
 	partName = StrutConnector
 	pos = -1.079784,4.376586,-11.06923
 	rot = -0.6830127,-0.1830127,-0.1830127,-0.6830127
@@ -5152,9 +5622,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: FSfloatEndTail_32; pos: -5.475562,-0.2148123,-1.577639; dir: -0.960228,-0.03767021,-0.2766645
-	sym = strutConnector_4294686136
-	srfN = srfAttach,FSbomberFuselageEmpty_4294688574
+	cData = tgt: FSfloatEndTail_32; pos: -5.475557,-0.2148132,-1.577638; dir: -0.960228,-0.03767021,-0.2766645
+	sym = strutConnector_4294742860
+	srfN = srfAttach,FSbomberFuselageEmpty_4294745292
 	EVENTS
 	{
 	}
@@ -5164,7 +5634,7 @@ PART
 }
 PART
 {
-	part = strutConnector_4294686136
+	part = strutConnector_4294742860
 	partName = StrutConnector
 	pos = 1.079784,4.376586,-11.06923
 	rot = 0.1830126,0.6830128,0.6830128,0.1830126
@@ -5175,9 +5645,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: FSfloatEndTail_56; pos: -5.47564,-0.214817,1.577661; dir: -0.9602283,-0.03767014,0.2766644
-	sym = strutConnector_4294686192
-	srfN = srfAttach,FSbomberFuselageEmpty_4294688574
+	cData = tgt: FSfloatEndTail_56; pos: -5.475643,-0.2148161,1.577662; dir: -0.9602283,-0.03767014,0.2766644
+	sym = strutConnector_4294742916
+	srfN = srfAttach,FSbomberFuselageEmpty_4294745292
 	EVENTS
 	{
 	}
@@ -5187,9 +5657,9 @@ PART
 }
 PART
 {
-	part = strutConnector_4294686080
+	part = strutConnector_4294742804
 	partName = StrutConnector
-	pos = -6.275701,4.27824,-8.083599
+	pos = -6.275702,4.27824,-8.083601
 	rot = -0.05547701,-0.740018,-0.6570091,-0.1327966
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -5198,9 +5668,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: FSfloatStraight_30; pos: 0.4609202,-1.362459,-1.276108; dir: 0.2397113,-0.7085767,-0.6636696
-	sym = strutConnector_4294686024
-	srfN = srfAttach,FSbomberWing_4294688394
+	cData = tgt: FSfloatStraight_30; pos: 0.460922,-1.362462,-1.276111; dir: 0.2397113,-0.7085767,-0.6636696
+	sym = strutConnector_4294742748
+	srfN = srfAttach,FSbomberWing_4294745110
 	EVENTS
 	{
 	}
@@ -5210,9 +5680,9 @@ PART
 }
 PART
 {
-	part = strutConnector_4294686024
+	part = strutConnector_4294742748
 	partName = StrutConnector
-	pos = 6.27569,4.27824,-8.083599
+	pos = 6.27569,4.27824,-8.083601
 	rot = -0.6570091,-0.1327966,-0.05547702,-0.740018
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -5221,9 +5691,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: FSfloatStraight_54; pos: 0.4609146,-1.362448,1.276098; dir: 0.2397114,-0.7085766,0.6636699
-	sym = strutConnector_4294686080
-	srfN = srfAttach,FSbomberWing_4294687908
+	cData = tgt: FSfloatStraight_54; pos: 0.4609158,-1.362451,1.276101; dir: 0.2397114,-0.7085766,0.6636699
+	sym = strutConnector_4294742804
+	srfN = srfAttach,FSbomberWing_4294744628
 	EVENTS
 	{
 	}
@@ -5233,9 +5703,9 @@ PART
 }
 PART
 {
-	part = strutConnector_4294685968
+	part = strutConnector_4294742692
 	partName = StrutConnector
-	pos = -8.290232,4.704806,-6.202754
+	pos = -8.290233,4.704806,-6.202755
 	rot = 0.6649122,0.04625529,-0.04131932,0.744342
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -5244,9 +5714,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: FSfloatStraight_22; pos: 1.10048,1.472992,1.808412; dir: 0.4267132,0.5711541,0.7012124
-	sym = strutConnector_4294685912
-	srfN = srfAttach,FSbomberWing_4294688394
+	cData = tgt: FSfloatStraight_22; pos: 1.100481,1.472992,1.808413; dir: 0.4267132,0.5711541,0.7012124
+	sym = strutConnector_4294742636
+	srfN = srfAttach,FSbomberWing_4294745110
 	EVENTS
 	{
 	}
@@ -5256,9 +5726,9 @@ PART
 }
 PART
 {
-	part = strutConnector_4294685912
+	part = strutConnector_4294742636
 	partName = StrutConnector
-	pos = 8.290215,4.704806,-6.202755
+	pos = 8.290215,4.704806,-6.202756
 	rot = -0.04131934,0.7443421,0.6649122,0.04625525
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -5267,9 +5737,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: FSfloatStraight_46; pos: 1.100481,1.472985,-1.808407; dir: 0.4267134,0.5711542,-0.7012129
-	sym = strutConnector_4294685968
-	srfN = srfAttach,FSbomberWing_4294687908
+	cData = tgt: FSfloatStraight_46; pos: 1.100482,1.472986,-1.808408; dir: 0.4267134,0.5711542,-0.7012129
+	sym = strutConnector_4294742692
+	srfN = srfAttach,FSbomberWing_4294744628
 	EVENTS
 	{
 	}
@@ -5279,9 +5749,9 @@ PART
 }
 PART
 {
-	part = strutConnector_4294685856
+	part = strutConnector_4294742580
 	partName = StrutConnector
-	pos = 6.212081,2.797287,-10.33335
+	pos = 6.21208,2.797287,-10.33335
 	rot = -0.7019843,0.12301,0.06161537,-0.698778
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -5290,9 +5760,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: FSbomberFuselageEmpty_1; pos: -5.171047,6.008224,0.2445698; dir: -0.652017,0.757577,0.03083734
-	sym = strutConnector_4294685800
-	srfN = srfAttach,FSfloatGearbay_4294686618
+	cData = tgt: FSbomberFuselageEmpty_1; pos: -5.171046,6.008227,0.2445706; dir: -0.652017,0.757577,0.03083734
+	sym = strutConnector_4294742524
+	srfN = srfAttach,FSfloatGearbay_4294743342
 	EVENTS
 	{
 	}
@@ -5302,10 +5772,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4294685800
+	part = strutConnector_4294742524
 	partName = StrutConnector
 	pos = -6.212091,2.797286,-10.33336
-	rot = -0.06161538,0.6987783,0.701984,-0.12301
+	rot = -0.06161539,0.6987783,0.701984,-0.12301
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -5313,9 +5783,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: FSbomberFuselageEmpty_1; pos: -5.171058,6.00823,-0.2445776; dir: -0.6520176,0.7575777,-0.03083819
-	sym = strutConnector_4294685856
-	srfN = srfAttach,FSfloatGearbay_4294686746
+	cData = tgt: FSbomberFuselageEmpty_1; pos: -5.171059,6.008231,-0.244578; dir: -0.6520176,0.7575777,-0.03083819
+	sym = strutConnector_4294742580
+	srfN = srfAttach,FSfloatGearbay_4294743470
 	EVENTS
 	{
 	}
@@ -5325,10 +5795,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4294685744
+	part = strutConnector_4294742468
 	partName = StrutConnector
-	pos = 6.171543,3.19831,-2.162443
-	rot = -0.6800853,0.1913323,0.1747622,-0.6858094
+	pos = 6.171543,3.198309,-2.162445
+	rot = -0.6800854,0.1913323,0.1747622,-0.6858094
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -5336,9 +5806,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: FSbomberWingExtender_41; pos: -4.059284,-5.907626,1.342714; dir: -0.5566376,-0.8100947,0.1841227
-	sym = strutConnector_4294685688
-	srfN = srfAttach,FSfloatStraight_4294687200
+	cData = tgt: FSbomberWingExtender_41; pos: -4.059281,-5.907627,1.342713; dir: -0.5566376,-0.8100947,0.1841227
+	sym = strutConnector_4294742412
+	srfN = srfAttach,FSfloatStraight_4294743924
 	EVENTS
 	{
 	}
@@ -5348,9 +5818,9 @@ PART
 }
 PART
 {
-	part = strutConnector_4294685688
+	part = strutConnector_4294742412
 	partName = StrutConnector
-	pos = -6.171555,3.198308,-2.162436
+	pos = -6.171556,3.198307,-2.162436
 	rot = -0.1747623,0.6858094,0.6800851,-0.1913324
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -5359,9 +5829,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: FSbomberWingExtender_17; pos: -4.059286,-5.907617,-1.34271; dir: -0.5566381,-0.8100953,-0.1841221
-	sym = strutConnector_4294685744
-	srfN = srfAttach,FSfloatStraight_4294687222
+	cData = tgt: FSbomberWingExtender_17; pos: -4.059288,-5.907621,-1.342711; dir: -0.5566381,-0.8100953,-0.1841221
+	sym = strutConnector_4294742468
+	srfN = srfAttach,FSfloatStraight_4294743946
 	EVENTS
 	{
 	}
@@ -5371,7 +5841,7 @@ PART
 }
 PART
 {
-	part = strutConnector_4294685632
+	part = strutConnector_4294742356
 	partName = StrutConnector
 	pos = -0.1180658,4.559372,-18.27291
 	rot = 0.6007203,0.3758025,0.4834597,0.5139791
@@ -5383,8 +5853,8 @@ PART
 	sqor = -1
 	attm = 1
 	cData = tgt: FSfloatEndTail_11; pos: -0.9571287,1.313772,0.6041644; dir: -0.5519426,0.7576123,0.3484005
-	sym = strutConnector_4294685576
-	srfN = srfAttach,FSbomberFuselageTail_4294688552
+	sym = strutConnector_4294742300
+	srfN = srfAttach,FSbomberFuselageTail_4294745270
 	EVENTS
 	{
 	}
@@ -5394,7 +5864,7 @@ PART
 }
 PART
 {
-	part = strutConnector_4294685576
+	part = strutConnector_4294742300
 	partName = StrutConnector
 	pos = 0.1180658,4.559372,-18.27291
 	rot = 0.4834598,0.5139791,0.6007203,0.3758023
@@ -5406,8 +5876,8 @@ PART
 	sqor = -1
 	attm = 1
 	cData = tgt: FSfloatEndTail_11; pos: -0.9571285,1.313772,-0.6041633; dir: -0.5519427,0.7576127,-0.3484008
-	sym = strutConnector_4294685632
-	srfN = srfAttach,FSbomberFuselageTail_4294688552
+	sym = strutConnector_4294742356
+	srfN = srfAttach,FSbomberFuselageTail_4294745270
 	EVENTS
 	{
 	}
