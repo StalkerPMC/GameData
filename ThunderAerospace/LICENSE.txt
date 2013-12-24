@@ -1,4 +1,4 @@
-Thunder Aerospace Corporation's Fuel Balancer for the Kerbal Space Program, by Taranis Elsu
+Thunder Aerospace Corporation's Self Destruct for the Kerbal Space Program, by Taranis Elsu
 
 (C) Copyright 2013, Taranis Elsu
 
