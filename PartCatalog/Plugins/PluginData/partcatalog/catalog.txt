@@ -52,6 +52,14 @@ SHOW SPH True
 SHOW VAB True
 ADD PART AluminiumHybrid1
 END TAG
+TAG ArgonGas
+SHOW SPH True
+SHOW VAB True
+ADD PART pitSmall
+ADD PART pitLarge
+ADD PART vasimr-10
+ADD PART vasimr-200
+END TAG
 TAG Deuterium
 SHOW SPH True
 SHOW VAB True
@@ -70,6 +78,13 @@ ADD PART FScopterRotorTail
 ADD PART FScopterRotorTail2
 ADD PART FScopterRotorMainElectric
 ADD PART cl.small.ionEngine
+ADD PART mpdt.small
+ADD PART mpdt.large
+ADD PART ds4g
+ADD PART pitSmall
+ADD PART pitLarge
+ADD PART vasimr-10
+ADD PART vasimr-200
 ADD PART ionEngine
 END TAG
 TAG FSCoolant
@@ -84,6 +99,12 @@ ADD PART FScopterRotorFenestronNoFins
 ADD PART FScopterRotorTail
 ADD PART FScopterRotorTail2
 ADD PART FScopterRotorMainElectric
+END TAG
+TAG HydrogenGas
+SHOW SPH True
+SHOW VAB True
+ADD PART mpdt.small
+ADD PART mpdt.large
 END TAG
 TAG IntakeAir
 SHOW SPH True
@@ -106,6 +127,7 @@ TAG IntakeAtm
 SHOW SPH True
 SHOW VAB True
 ADD PART ThermalTurbojet
+ADD PART ThermalTurbojet2
 END TAG
 TAG Kethane
 SHOW SPH True
@@ -133,8 +155,6 @@ ADD PART FSVTOLengine
 ADD PART FSVTOLengineLarge
 ADD PART FSswampEngine
 ADD PART cl.large.nuclearEngine
-ADD PART 3m.JoolV
-ADD PART 3m.JoolV.secondstage.engine
 ADD PART SDHI.Rockomax.LV-909.NoFairing
 ADD PART JetEngine
 ADD PART microEngine
@@ -156,6 +176,8 @@ ADD PART smallThermalRocketNozzle
 ADD PART MPD
 ADD PART ThermalRocketNozzle
 ADD PART bigThermalRocketNozzle
+ADD PART smallerMPD
+ADD PART smallerThermalRocketNozzle
 ADD PART vista
 END TAG
 TAG LqdMethane
@@ -178,8 +200,6 @@ SHOW SPH True
 SHOW VAB True
 ADD PART exLaunchPad2
 ADD PART cl.large.nuclearEngine
-ADD PART 3m.JoolV
-ADD PART 3m.JoolV.secondstage.engine
 ADD PART SDHI.Rockomax.LV-909.NoFairing
 ADD PART microEngine
 ADD PART radialEngineMini
@@ -197,6 +217,7 @@ ADD PART toroidalAerospike
 ADD PART smallThermalRocketNozzle
 ADD PART ThermalRocketNozzle
 ADD PART bigThermalRocketNozzle
+ADD PART smallerThermalRocketNozzle
 ADD PART FNMethaneEngine
 ADD PART AluminiumHybrid1
 END TAG
@@ -204,7 +225,6 @@ TAG RCS
 SHOW SPH True
 SHOW VAB True
 ADD PART mumech.MJ2.Pod
-ADD PART FLY.RCSBlock
 ADD PART linearRcs
 ADD PART RCSBlock
 END TAG
@@ -212,8 +232,8 @@ TAG SolidFuel
 SHOW SPH True
 SHOW VAB True
 ADD PART cl.small.escapeTower
-ADD PART 3m.JoolV.SRB
-ADD PART 3m.JoolV.LAS
+ADD PART solidBooster1-1Small
+ADD PART solidBoosterSmall
 ADD PART SDHI.2.5.Mk1-2AeroShroud
 ADD PART solidBooster1-1
 ADD PART solidBooster
@@ -228,6 +248,7 @@ TAG XenonGas
 SHOW SPH True
 SHOW VAB True
 ADD PART cl.small.ionEngine
+ADD PART ds4g
 ADD PART ionEngine
 END TAG
 END TAG
@@ -270,6 +291,16 @@ SHOW SPH True
 SHOW VAB True
 ADD PART BigXenonTank
 END TAG
+TAG ArgonGas
+SHOW SPH True
+SHOW VAB True
+ADD PART argonTankSmlRad
+ADD PART argonTankLrgRad
+ADD PART argonTank100inline
+ADD PART argonTank25inline
+ADD PART argonTank75
+ADD PART argonTank50inline
+END TAG
 TAG CarbonDioxide
 SHOW SPH True
 SHOW VAB True
@@ -302,6 +333,16 @@ SHOW VAB True
 ADD PART HexCanThoriumFl4
 ADD PART HexCanUraniumFl6
 END TAG
+TAG DepletedUranium
+SHOW SPH True
+SHOW VAB True
+ADD PART reactor10kw
+ADD PART nuclearcontainer25
+ADD PART nuclearcontainer125
+ADD PART nuclearcontainer0625
+ADD PART reactor1mw
+ADD PART reactor50kw
+END TAG
 TAG Deuterium
 SHOW SPH True
 SHOW VAB True
@@ -315,6 +356,12 @@ SHOW VAB True
 ADD PART FSoblongFuselageBattery
 ADD PART FSbattery
 ADD PART kOSMachine1m
+ADD PART battery-inlinelarge
+ADD PART battery-inlinesmall
+ADD PART battery-inlinemed
+ADD PART reactor10kw
+ADD PART reactor1mw
+ADD PART reactor50kw
 ADD PART Romfarer.LazorSystem
 ADD PART Romfarer.LazorSystemStackBig
 ADD PART Romfarer.LazorSystemStack
@@ -331,6 +378,16 @@ ADD PART tinyBrayton
 ADD PART phasedArray1
 ADD PART microwaveReceiver
 ADD PART microwaveTransmitter
+END TAG
+TAG EnrichedUranium
+SHOW SPH True
+SHOW VAB True
+ADD PART reactor10kw
+ADD PART nuclearcontainer25
+ADD PART nuclearcontainer125
+ADD PART nuclearcontainer0625
+ADD PART reactor1mw
+ADD PART reactor50kw
 END TAG
 TAG ExoticMatter
 SHOW SPH True
@@ -371,6 +428,14 @@ ADD PART FusionReactor125
 ADD PART FusionReactor0625
 ADD PART HexCanHe3Large
 END TAG
+TAG HydrogenGas
+SHOW SPH True
+SHOW VAB True
+ADD PART h2TankLrgRad
+ADD PART hydrogenTankMedInline
+ADD PART h2TankTinyRad
+ADD PART hydrogenTankLargeinline
+END TAG
 TAG IntakeAir
 SHOW SPH True
 SHOW VAB True
@@ -399,8 +464,6 @@ ADD PART FSjerrycan
 ADD PART cl.large.tripleFuelTank
 ADD PART cl.radial.cylTankFuel
 ADD PART cl.radial.sphereTankFuel
-ADD PART JoolV.2stagetank
-ADD PART JoolV.maintank
 ADD PART fuelTankSmallFlat
 ADD PART fuelTankSmall
 ADD PART fuelTank
@@ -490,8 +553,6 @@ ADD PART FSoxidizerTank
 ADD PART cl.large.tripleFuelTank
 ADD PART cl.radial.cylTankOxy
 ADD PART cl.radial.sphereTankOxy
-ADD PART JoolV.2stagetank
-ADD PART JoolV.maintank
 ADD PART fuelTankSmallFlat
 ADD PART fuelTankSmall
 ADD PART fuelTank
@@ -532,6 +593,15 @@ ADD PART HexCanRocketParts
 ADD PART HexCanRocketPartsHuge
 ADD PART HexCanRocketPartsLarge
 ADD PART HexCanRocketPartsSmall
+END TAG
+TAG StoredCharge
+SHOW SPH True
+SHOW VAB True
+ADD PART capcitorRadial01
+ADD PART capacitorRadial02
+ADD PART capacitorInlineMini
+ADD PART capacitorInlineMed
+ADD PART capacitorInlineLrg
 END TAG
 TAG ThermalPower
 SHOW SPH True
@@ -662,6 +732,9 @@ TAG XenonGas
 SHOW SPH True
 SHOW VAB True
 ADD PART cl.small.xenonTank
+ADD PART xenonTank100radial
+ADD PART xenonTank100inline
+ADD PART xenonTank400
 ADD PART xenonTank
 ADD PART xenonTankRadial
 END TAG
@@ -695,10 +768,14 @@ ADD PART FSfloatStraight
 ADD PART FSfloatStrut
 ADD PART FSfloatEndTail
 ADD PART FSstrutConnectorWire
+ADD PART adapterLargeTo3
+ADD PART adapterLargeTo5
+ADD PART adapterLargeTo7
+ADD PART adapterLargeTo9
+ADD PART adapterRadialSmall
+ADD PART adapterRadialMini
 ADD PART SerCom1m
 ADD PART SerCom2
-ADD PART 3m.JoolV.2to1adapter
-ADD PART 3m.JoolV.3to2adapter
 ADD PART stackPoint1
 ADD PART strutCube
 ADD PART strutConnector
@@ -757,9 +834,6 @@ ADD PART KzProcFairingBaseRing2.5
 ADD PART KzProcFairingBaseRing3.75
 ADD PART KzProcFairingBaseRing5
 ADD PART KzInterstageAdapter
-ADD PART 3m.JoolV.1mdecoupler
-ADD PART 3m.JoolV.2mdecoupler
-ADD PART 3m.JoolV.3mdecoupler
 ADD PART SDHI.2.5.AvionicsRing
 ADD PART SDHI.2.5.ServiceModule
 ADD PART SDHI.2.5.ServiceModuleAdapter
@@ -885,6 +959,11 @@ SHOW VAB True
 TAG Solar Panels
 SHOW SPH True
 SHOW VAB True
+ADD PART solarpanels-modern01
+ADD PART solarpanels-modern04
+ADD PART solarpanels-modern02
+ADD PART solarpanels-modern03
+ADD PART solarpanels-blanket01
 ADD PART largeSolarPanel
 ADD PART solarPanels4
 ADD PART solarPanels3
@@ -1043,6 +1122,9 @@ ADD PART TelescopeFourthA
 ADD PART TelescopeFourthB
 ADD PART TelescopeFourthC
 ADD PART IR.RotatronVTOL
+ADD PART radiator-1mw
+ADD PART radiator-50kW
+ADD PART radiator-10kW
 ADD PART RC.combo.small
 ADD PART RC.combo.small.stack
 ADD PART RC.combo.large
@@ -1071,6 +1153,7 @@ ADD PART TacCarbonExtractorLarge
 ADD PART TacWaterPurifier
 ADD PART TacWaterPurifierLarge
 ADD PART TacWaterSplitter
+ADD PART TacSelfDestruct
 ADD PART AntimatterCollector
 END TAG
 END TAG
@@ -1101,6 +1184,7 @@ ADD PART fsinfopopup
 ADD PART kethane.sensor.1m
 ADD PART kethane.highGain
 ADD PART kethane.kerbalBlender
+ADD PART ThermalFin
 ADD PART Romfarer.Lazor.Blue
 ADD PART Buran Manipulator
 ADD PART Romfarer.Lazor.Green
@@ -1112,6 +1196,9 @@ ADD PART mediumDishAntenna
 ADD PART GooExperiment
 ADD PART science.module
 ADD PART avionicsNoseCone
+ADD PART scienceHardDriveLarge
+ADD PART scienceHardDrive
+ADD PART tarsierSpaceTelescope
 ADD PART DTMagnetometer
 ADD PART sensorGammaRaySpectrometer
 ADD PART FNGCMS
@@ -2343,6 +2430,7 @@ ADD PART TacCarbonExtractorLarge
 ADD PART TacWaterPurifier
 ADD PART TacWaterPurifierLarge
 ADD PART TacWaterSplitter
+ADD PART TacSelfDestruct
 END TAG
 END TAG
 END TAG
@@ -2375,14 +2463,17 @@ TAG IntakeAtm
 SHOW SPH True
 SHOW VAB True
 ADD PART ThermalTurbojet
+ADD PART ThermalTurbojet2
 END TAG
 TAG LiquidFuel
 SHOW SPH True
 SHOW VAB True
-ADD PART MPD
+ADD PART smallerMPD
 ADD PART smallMPD
-ADD PART ThermalRocketNozzle
+ADD PART MPD
+ADD PART smallerThermalRocketNozzle
 ADD PART smallThermalRocketNozzle
+ADD PART ThermalRocketNozzle
 ADD PART bigThermalRocketNozzle
 ADD PART vista
 END TAG
@@ -2401,8 +2492,9 @@ SHOW SPH True
 SHOW VAB True
 ADD PART AluminiumHybrid1
 ADD PART FNMethaneEngine
-ADD PART ThermalRocketNozzle
+ADD PART smallerThermalRocketNozzle
 ADD PART smallThermalRocketNozzle
+ADD PART ThermalRocketNozzle
 ADD PART bigThermalRocketNozzle
 END TAG
 TAG Tritium
@@ -2673,10 +2765,6 @@ ADD PART FNLCMS
 END TAG
 END TAG
 END TAG
-TAG Small Mods
-ICON SmallMods
-SHOW SPH True
-SHOW VAB True
 TAG kOS
 SHOW SPH True
 SHOW VAB True
@@ -2791,6 +2879,173 @@ END TAG
 END TAG
 END TAG
 END TAG
+TAG ModularFuelTanks
+SHOW SPH True
+SHOW VAB True
+TAG Propulsion
+SHOW SPH True
+SHOW VAB True
+TAG SolidFuel
+SHOW SPH True
+SHOW VAB True
+ADD PART solidBooster1-1Small
+ADD PART solidBoosterSmall
+END TAG
+END TAG
+TAG Science
+SHOW SPH True
+SHOW VAB True
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART ThermalFin
+END TAG
+END TAG
+END TAG
+TAG NearFuture
+SHOW SPH True
+SHOW VAB True
+TAG Propulsion
+SHOW SPH True
+SHOW VAB True
+TAG ArgonGas
+SHOW SPH True
+SHOW VAB True
+ADD PART pitLarge
+ADD PART pitSmall
+ADD PART vasimr-10
+ADD PART vasimr-200
+END TAG
+TAG ElectricCharge
+SHOW SPH True
+SHOW VAB True
+ADD PART ds4g
+ADD PART mpdt.large
+ADD PART mpdt.small
+ADD PART pitLarge
+ADD PART pitSmall
+ADD PART vasimr-10
+ADD PART vasimr-200
+END TAG
+TAG HydrogenGas
+SHOW SPH True
+SHOW VAB True
+ADD PART mpdt.large
+ADD PART mpdt.small
+END TAG
+TAG XenonGas
+SHOW SPH True
+SHOW VAB True
+ADD PART ds4g
+END TAG
+END TAG
+TAG Storage
+SHOW SPH True
+SHOW VAB True
+TAG ArgonGas
+SHOW SPH True
+SHOW VAB True
+ADD PART argonTank100inline
+ADD PART argonTank25inline
+ADD PART argonTank50inline
+ADD PART argonTank75
+ADD PART argonTankLrgRad
+ADD PART argonTankSmlRad
+END TAG
+TAG DepletedUranium
+SHOW SPH True
+SHOW VAB True
+ADD PART nuclearcontainer25
+ADD PART nuclearcontainer125
+ADD PART nuclearcontainer0625
+ADD PART reactor10kw
+ADD PART reactor1mw
+ADD PART reactor50kw
+END TAG
+TAG ElectricCharge
+SHOW SPH True
+SHOW VAB True
+ADD PART battery-inlinelarge
+ADD PART battery-inlinemed
+ADD PART battery-inlinesmall
+ADD PART reactor10kw
+ADD PART reactor1mw
+ADD PART reactor50kw
+END TAG
+TAG EnrichedUranium
+SHOW SPH True
+SHOW VAB True
+ADD PART nuclearcontainer25
+ADD PART nuclearcontainer125
+ADD PART nuclearcontainer0625
+ADD PART reactor10kw
+ADD PART reactor1mw
+ADD PART reactor50kw
+END TAG
+TAG HydrogenGas
+SHOW SPH True
+SHOW VAB True
+ADD PART hydrogenTankLargeinline
+ADD PART hydrogenTankMedInline
+ADD PART h2TankLrgRad
+ADD PART h2TankTinyRad
+END TAG
+TAG StoredCharge
+SHOW SPH True
+SHOW VAB True
+ADD PART capacitorInlineLrg
+ADD PART capacitorInlineMed
+ADD PART capacitorInlineMini
+ADD PART capcitorRadial01
+ADD PART capacitorRadial02
+END TAG
+TAG XenonGas
+SHOW SPH True
+SHOW VAB True
+ADD PART xenonTank100inline
+ADD PART xenonTank100radial
+ADD PART xenonTank400
+END TAG
+END TAG
+TAG Structural
+SHOW SPH True
+SHOW VAB True
+TAG Main
+SHOW SPH True
+SHOW VAB True
+ADD PART adapterLargeTo3
+ADD PART adapterLargeTo5
+ADD PART adapterLargeTo7
+ADD PART adapterLargeTo9
+ADD PART adapterRadialMini
+ADD PART adapterRadialSmall
+END TAG
+END TAG
+TAG Utility
+SHOW SPH True
+SHOW VAB True
+TAG Generators
+SHOW SPH True
+SHOW VAB True
+TAG Solar Panels
+SHOW SPH True
+SHOW VAB True
+ADD PART solarpanels-blanket01
+ADD PART solarpanels-modern01
+ADD PART solarpanels-modern02
+ADD PART solarpanels-modern03
+ADD PART solarpanels-modern04
+END TAG
+END TAG
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART radiator-1mw
+ADD PART radiator-10kW
+ADD PART radiator-50kW
+END TAG
+END TAG
+END TAG
 TAG NothkeSerCom
 SHOW SPH True
 SHOW VAB True
@@ -2802,70 +3057,6 @@ SHOW SPH True
 SHOW VAB True
 ADD PART SerCom1m
 ADD PART SerCom2
-END TAG
-END TAG
-END TAG
-TAG Parts
-SHOW SPH True
-SHOW VAB True
-TAG Propulsion
-SHOW SPH True
-SHOW VAB True
-TAG LiquidFuel
-SHOW SPH True
-SHOW VAB True
-ADD PART 3m.JoolV.secondstage.engine
-ADD PART 3m.JoolV
-END TAG
-TAG Oxidizer
-SHOW SPH True
-SHOW VAB True
-ADD PART 3m.JoolV.secondstage.engine
-ADD PART 3m.JoolV
-END TAG
-TAG RCS
-SHOW SPH True
-SHOW VAB True
-ADD PART FLY.RCSBlock
-END TAG
-TAG SolidFuel
-SHOW SPH True
-SHOW VAB True
-ADD PART 3m.JoolV.LAS
-ADD PART 3m.JoolV.SRB
-END TAG
-END TAG
-TAG Storage
-SHOW SPH True
-SHOW VAB True
-TAG LiquidFuel
-SHOW SPH True
-SHOW VAB True
-ADD PART JoolV.2stagetank
-ADD PART JoolV.maintank
-END TAG
-TAG Oxidizer
-SHOW SPH True
-SHOW VAB True
-ADD PART JoolV.2stagetank
-ADD PART JoolV.maintank
-END TAG
-END TAG
-TAG Structural
-SHOW SPH True
-SHOW VAB True
-TAG Main
-SHOW SPH True
-SHOW VAB True
-ADD PART 3m.JoolV.2to1adapter
-ADD PART 3m.JoolV.3to2adapter
-END TAG
-TAG Decoupler
-SHOW SPH True
-SHOW VAB True
-ADD PART 3m.JoolV.1mdecoupler
-ADD PART 3m.JoolV.2mdecoupler
-ADD PART 3m.JoolV.3mdecoupler
 END TAG
 END TAG
 END TAG
@@ -2915,9 +3106,21 @@ ADD PART Romfarer.Lazor.Green
 ADD PART Romfarer.Lazor.Magenta
 ADD PART Romfarer.Lazor.Red
 ADD PART Romfarer.Lazor.Yellow
-ADD PART Buran Manipulator
-ADD PART ISS CanadArm2
 END TAG
+END TAG
+END TAG
+TAG TarsierSpaceTech
+SHOW SPH True
+SHOW VAB True
+TAG Science
+SHOW SPH True
+SHOW VAB True
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART scienceHardDrive
+ADD PART scienceHardDriveLarge
+ADD PART tarsierSpaceTelescope
 END TAG
 END TAG
 END TAG
