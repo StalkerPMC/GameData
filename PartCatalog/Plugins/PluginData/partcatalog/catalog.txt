@@ -21,6 +21,8 @@ ADD PART Mark2Cockpit
 ADD PART mk2LanderCabin
 ADD PART mark3Cockpit
 ADD PART cupola
+ADD PART zoologyBay
+ADD PART scienceLab
 END TAG
 TAG Unmanned
 SHOW SPH True
@@ -155,6 +157,8 @@ ADD PART FSVTOLengine
 ADD PART FSVTOLengineLarge
 ADD PART FSswampEngine
 ADD PART cl.large.nuclearEngine
+ADD PART 3m.JoolV
+ADD PART 3m.JoolV.secondstage.engine
 ADD PART SDHI.Rockomax.LV-909.NoFairing
 ADD PART JetEngine
 ADD PART microEngine
@@ -200,6 +204,8 @@ SHOW SPH True
 SHOW VAB True
 ADD PART exLaunchPad2
 ADD PART cl.large.nuclearEngine
+ADD PART 3m.JoolV
+ADD PART 3m.JoolV.secondstage.engine
 ADD PART SDHI.Rockomax.LV-909.NoFairing
 ADD PART microEngine
 ADD PART radialEngineMini
@@ -225,6 +231,7 @@ TAG RCS
 SHOW SPH True
 SHOW VAB True
 ADD PART mumech.MJ2.Pod
+ADD PART FLY.RCSBlock
 ADD PART linearRcs
 ADD PART RCSBlock
 END TAG
@@ -234,6 +241,8 @@ SHOW VAB True
 ADD PART cl.small.escapeTower
 ADD PART solidBooster1-1Small
 ADD PART solidBoosterSmall
+ADD PART 3m.JoolV.SRB
+ADD PART 3m.JoolV.LAS
 ADD PART SDHI.2.5.Mk1-2AeroShroud
 ADD PART solidBooster1-1
 ADD PART solidBooster
@@ -451,6 +460,12 @@ ADD PART kethane.tank2mLarge
 ADD PART kethane.tank2mExtralarge
 ADD PART kethane.tank1mStandard
 END TAG
+TAG Kibbal
+SHOW SPH True
+SHOW VAB True
+ADD PART kibbalStorageJr
+ADD PART kibbalStorage
+END TAG
 TAG LiquidFuel
 SHOW SPH True
 SHOW VAB True
@@ -464,6 +479,24 @@ ADD PART FSjerrycan
 ADD PART cl.large.tripleFuelTank
 ADD PART cl.radial.cylTankFuel
 ADD PART cl.radial.sphereTankFuel
+ADD PART TAL.Large.HalfSpherical.Tank.Fuel
+ADD PART TAL.Large.HalfSpherical.Tank.V2.Fuel
+ADD PART TAL.Medium.HalfSpherical.Tank.Fuel
+ADD PART TAL.Medium.HalfSpherical.Tank.V2.Fuel
+ADD PART TAL.Small.HalfSpherical.Tank.Fuel
+ADD PART TAL.Small.HalfSpherical.Tank.V2.Fuel
+ADD PART TAL.Large.Spherical.Tank.Fuel
+ADD PART TAL.Large.Spherical.Tank.V2.Fuel
+ADD PART TAL.Medium.Spherical.Tank.Fuel
+ADD PART TAL.Medium.Spherical.Tank.V2.Fuel
+ADD PART TAL.Small.Spherical.Tank.Fuel
+ADD PART TAL.Small.Spherical.Tank.V2.Fuel
+ADD PART TAL.Toroidal.Tank.Large.Fuel
+ADD PART TAL.Toroidal.Tank.Medium.Fuel
+ADD PART TAL.Toroidal.Tank.Small.Fuel
+ADD PART TAL.XLarge.Toroidal.Tank.Fuel
+ADD PART JoolV.2stagetank
+ADD PART JoolV.maintank
 ADD PART fuelTankSmallFlat
 ADD PART fuelTankSmall
 ADD PART fuelTank
@@ -553,6 +586,24 @@ ADD PART FSoxidizerTank
 ADD PART cl.large.tripleFuelTank
 ADD PART cl.radial.cylTankOxy
 ADD PART cl.radial.sphereTankOxy
+ADD PART TAL.Large.HalfSpherical.Tank.Fuel
+ADD PART TAL.Large.HalfSpherical.Tank.V2.Fuel
+ADD PART TAL.Medium.HalfSpherical.Tank.Fuel
+ADD PART TAL.Medium.HalfSpherical.Tank.V2.Fuel
+ADD PART TAL.Small.HalfSpherical.Tank.Fuel
+ADD PART TAL.Small.HalfSpherical.Tank.V2.Fuel
+ADD PART TAL.Large.Spherical.Tank.Fuel
+ADD PART TAL.Large.Spherical.Tank.V2.Fuel
+ADD PART TAL.Medium.Spherical.Tank.Fuel
+ADD PART TAL.Medium.Spherical.Tank.V2.Fuel
+ADD PART TAL.Small.Spherical.Tank.Fuel
+ADD PART TAL.Small.Spherical.Tank.V2.Fuel
+ADD PART TAL.Toroidal.Tank.Large.Fuel
+ADD PART TAL.Toroidal.Tank.Medium.Fuel
+ADD PART TAL.Toroidal.Tank.Small.Fuel
+ADD PART TAL.XLarge.Toroidal.Tank.Fuel
+ADD PART JoolV.2stagetank
+ADD PART JoolV.maintank
 ADD PART fuelTankSmallFlat
 ADD PART fuelTankSmall
 ADD PART fuelTank
@@ -768,6 +819,32 @@ ADD PART FSfloatStraight
 ADD PART FSfloatStrut
 ADD PART FSfloatEndTail
 ADD PART FSstrutConnectorWire
+ADD PART TAL.Flush.Radial.Mount.Small
+ADD PART TAL.Flush.Radial.Mount.Medium
+ADD PART TAL.Flush.Radial.Mount.Large
+ADD PART TAL.Cubic.Truss.Half
+ADD PART TAL.Cubic.Truss.10m
+ADD PART TAL.Cubic.Truss.1m
+ADD PART TAL.Cubic.Truss.2m
+ADD PART TAL.Cubic.Truss.3m
+ADD PART TAL.Cubic.Truss.5m
+ADD PART TAL.Cubic.Truss.Adapter.Large
+ADD PART TAL.Cubic.Truss.Adapter.Long
+ADD PART TAL.Cubic.Truss.Adapter.Short
+ADD PART TAL.Cubic.Truss.Hub
+ADD PART TAL.Extended.Radial.Mount.Large
+ADD PART TAL.Extended.Radial.Mount.Medium
+ADD PART TAL.Cubic.Truss.Mini.Half
+ADD PART TAL.Cubic.Truss.Mini.0.5m
+ADD PART TAL.Cubic.Truss.Mini.1.5m
+ADD PART TAL.Cubic.Truss.Mini.1m
+ADD PART TAL.Cubic.Truss.Mini.2.5m
+ADD PART TAL.Cubic.Truss.Mini.5m
+ADD PART TAL.Cubic.Truss.Mini.Adapter.Large
+ADD PART TAL.Cubic.Truss.Mini.Adapter.Long
+ADD PART TAL.Cubic.Truss.Mini.Adapter.Short
+ADD PART TAL.Cubic.Truss.Mini.Hub
+ADD PART TAL.Extended.Radial.Mount.Small
 ADD PART adapterLargeTo3
 ADD PART adapterLargeTo5
 ADD PART adapterLargeTo7
@@ -776,6 +853,8 @@ ADD PART adapterRadialSmall
 ADD PART adapterRadialMini
 ADD PART SerCom1m
 ADD PART SerCom2
+ADD PART 3m.JoolV.2to1adapter
+ADD PART 3m.JoolV.3to2adapter
 ADD PART stackPoint1
 ADD PART strutCube
 ADD PART strutConnector
@@ -834,6 +913,9 @@ ADD PART KzProcFairingBaseRing2.5
 ADD PART KzProcFairingBaseRing3.75
 ADD PART KzProcFairingBaseRing5
 ADD PART KzInterstageAdapter
+ADD PART 3m.JoolV.1mdecoupler
+ADD PART 3m.JoolV.2mdecoupler
+ADD PART 3m.JoolV.3mdecoupler
 ADD PART SDHI.2.5.AvionicsRing
 ADD PART SDHI.2.5.ServiceModule
 ADD PART SDHI.2.5.ServiceModuleAdapter
@@ -952,6 +1034,7 @@ ADD PART dockingPort3
 ADD PART dockingPort1
 ADD PART dockingPortLarge
 ADD PART dockingPortLateral
+ADD PART StnSciAttachOTron
 END TAG
 TAG Generators
 SHOW SPH True
@@ -1054,6 +1137,7 @@ ADD PART FSfighterTailGear
 ADD PART FSbiPlaneWheelPair
 ADD PART FSbiplaneGear
 ADD PART FSbiPlaneSkid
+ADD PART JSIPrimitiveExternalCamera
 ADD PART KAS.Hook.Anchor
 ADD PART KAS.ContainerBay1
 ADD PART KAS.Container1
@@ -1122,6 +1206,22 @@ ADD PART TelescopeFourthA
 ADD PART TelescopeFourthB
 ADD PART TelescopeFourthC
 ADD PART IR.RotatronVTOL
+ADD PART TAL.Large.HalfSpherical.Tank.Utility
+ADD PART TAL.Large.HalfSpherical.Tank.V2.Utility
+ADD PART TAL.Medium.HalfSpherical.Tank.Utility
+ADD PART TAL.Medium.HalfSpherical.Tank.V2.Utility
+ADD PART TAL.Small.HalfSpherical.Tank.Utility
+ADD PART TAL.Small.HalfSpherical.Tank.V2.Utility
+ADD PART TAL.Large.Spherical.Tank.Utility
+ADD PART TAL.Large.Spherical.Tank.V2.Utility
+ADD PART TAL.Medium.Spherical.Tank.Utility
+ADD PART TAL.Medium.Spherical.Tank.V2.Utility
+ADD PART TAL.Small.Spherical.Tank.Utility
+ADD PART TAL.Small.Spherical.Tank.V2.Utility
+ADD PART TAL.Toroidal.Tank.Large.Utility
+ADD PART TAL.Toroidal.Tank.Medium.Utility
+ADD PART TAL.Toroidal.Tank.Small.Utility
+ADD PART TAL.XLarge.Toroidal.Tank.Utility
 ADD PART radiator-1mw
 ADD PART radiator-50kW
 ADD PART radiator-10kW
@@ -1192,10 +1292,23 @@ ADD PART ISS CanadArm2
 ADD PART Romfarer.Lazor.Magenta
 ADD PART Romfarer.Lazor.Red
 ADD PART Romfarer.Lazor.Yellow
+ADD PART SCANsat.Scanner32
+ADD PART SCANsat.Tracker
+ADD PART SCANsat.Scanner24
+ADD PART SCANsat.Scanner
+ADD PART SCANsat.Scanner2
 ADD PART mediumDishAntenna
 ADD PART GooExperiment
 ADD PART science.module
 ADD PART avionicsNoseCone
+ADD PART cyclotron
+ADD PART StnSciExperiment5
+ADD PART StnSciExperiment4
+ADD PART StnSciExperiment6
+ADD PART StnSciExperiment1
+ADD PART StnSciExperiment2
+ADD PART StnSciExperiment3
+ADD PART spectrometron
 ADD PART scienceHardDriveLarge
 ADD PART scienceHardDrive
 ADD PART tarsierSpaceTelescope
@@ -1208,6 +1321,10 @@ END TAG
 TAG Other
 SHOW SPH True
 SHOW VAB True
+ADD PART TAL.Toroidal.Tank.Hub.Small
+ADD PART TAL.Toroidal.Tank.Hub.Medium
+ADD PART TAL.Toroidal.Tank.Hub.Large
+ADD PART TAL.Toroidal.Tank.Hub.XLarge
 ADD PART RAPIER
 END TAG
 END TAG
@@ -2765,143 +2882,6 @@ ADD PART FNLCMS
 END TAG
 END TAG
 END TAG
-TAG kOS
-SHOW SPH True
-SHOW VAB True
-TAG Storage
-SHOW SPH True
-SHOW VAB True
-TAG ElectricCharge
-SHOW SPH True
-SHOW VAB True
-ADD PART kOSMachine1m
-END TAG
-END TAG
-END TAG
-TAG MagicSmokeIndustries
-SHOW SPH True
-SHOW VAB True
-TAG Utility
-SHOW SPH True
-SHOW VAB True
-TAG Other
-SHOW SPH True
-SHOW VAB True
-ADD PART AdjustableRail
-ADD PART AdjustableRailHalf
-ADD PART AdjustableRailFourth
-ADD PART dockingwasher.std
-ADD PART dockingwasher.sr
-ADD PART dockingwasher.jr
-ADD PART dockingwasher.free
-ADD PART dockingwasher.freejr
-ADD PART dockingwasher.freesr
-ADD PART GantryLarge
-ADD PART Gantry
-ADD PART GantrySmall
-ADD PART GantryExtraSmall
-ADD PART GantryLargeVariant
-ADD PART GantryVariant
-ADD PART GantrySmallVariant
-ADD PART GantryExtraSmallVariant
-ADD PART IRHingeClosed
-ADD PART IRHingeClosedHalf
-ADD PART IRHingeClosedFourth
-ADD PART IR.HingeIndustrial
-ADD PART IRHingeOpen
-ADD PART IRHingeOpenHalf
-ADD PART IRHingeOpenFourth
-ADD PART IRHingeTall
-ADD PART IRHingeTallHalf
-ADD PART IRHingeTallFourth
-ADD PART IRHingeTallND
-ADD PART IRHingeTallHalfND
-ADD PART IRHingeTallFourthND
-ADD PART IRPiston
-ADD PART IRPistonHalf
-ADD PART IRPistonFourth
-ADD PART IR.Rotatron
-ADD PART IR.RotatronHalf
-ADD PART IR.RotatronFourth
-ADD PART IR.Rotatronmk2
-ADD PART IR.RotatronVTOL
-ADD PART TelescopeFullA
-ADD PART TelescopeFullB
-ADD PART TelescopeFullC
-ADD PART TelescopeHalfA
-ADD PART TelescopeHalfB
-ADD PART TelescopeHalfC
-ADD PART TelescopeFourthA
-ADD PART TelescopeFourthB
-ADD PART TelescopeFourthC
-END TAG
-END TAG
-END TAG
-TAG MechJeb2
-ICON MechJeb2
-SHOW SPH True
-SHOW VAB True
-TAG Pods
-SHOW SPH True
-SHOW VAB True
-TAG Unmanned
-SHOW SPH True
-SHOW VAB True
-ADD PART mumech.MJ2.AR202
-ADD PART mumech.MJ2.Pod
-END TAG
-END TAG
-TAG Propulsion
-SHOW SPH True
-SHOW VAB True
-TAG MJPropellant
-SHOW SPH True
-SHOW VAB True
-ADD PART mumech.MJ2.Pod
-END TAG
-TAG RCS
-SHOW SPH True
-SHOW VAB True
-ADD PART mumech.MJ2.Pod
-END TAG
-END TAG
-TAG Utility
-SHOW SPH True
-SHOW VAB True
-TAG Generators
-SHOW SPH True
-SHOW VAB True
-TAG Other
-SHOW SPH True
-SHOW VAB True
-ADD PART mumech.MJ2.Pod
-END TAG
-END TAG
-END TAG
-END TAG
-TAG ModularFuelTanks
-SHOW SPH True
-SHOW VAB True
-TAG Propulsion
-SHOW SPH True
-SHOW VAB True
-TAG SolidFuel
-SHOW SPH True
-SHOW VAB True
-ADD PART solidBooster1-1Small
-ADD PART solidBoosterSmall
-END TAG
-END TAG
-TAG Science
-SHOW SPH True
-SHOW VAB True
-TAG Other
-SHOW SPH True
-SHOW VAB True
-ADD PART ThermalFin
-END TAG
-END TAG
-END TAG
 TAG NearFuture
 SHOW SPH True
 SHOW VAB True
@@ -3046,6 +3026,323 @@ ADD PART radiator-50kW
 END TAG
 END TAG
 END TAG
+TAG StationScience
+SHOW SPH True
+SHOW VAB True
+TAG Pods
+SHOW SPH True
+SHOW VAB True
+TAG Manned
+SHOW SPH True
+SHOW VAB True
+ADD PART scienceLab
+ADD PART zoologyBay
+END TAG
+END TAG
+TAG Storage
+SHOW SPH True
+SHOW VAB True
+TAG Kibbal
+SHOW SPH True
+SHOW VAB True
+ADD PART kibbalStorage
+ADD PART kibbalStorageJr
+END TAG
+END TAG
+TAG Utility
+SHOW SPH True
+SHOW VAB True
+TAG Docking
+SHOW SPH True
+SHOW VAB True
+ADD PART StnSciAttachOTron
+END TAG
+END TAG
+TAG Science
+SHOW SPH True
+SHOW VAB True
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART cyclotron
+ADD PART spectrometron
+ADD PART StnSciExperiment1
+ADD PART StnSciExperiment2
+ADD PART StnSciExperiment3
+ADD PART StnSciExperiment4
+ADD PART StnSciExperiment5
+ADD PART StnSciExperiment6
+END TAG
+END TAG
+END TAG
+TAG Small Mods
+ICON SmallMods
+SHOW SPH True
+SHOW VAB True
+TAG JSI
+SHOW SPH True
+SHOW VAB True
+TAG Utility
+SHOW SPH True
+SHOW VAB True
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART JSIPrimitiveExternalCamera
+END TAG
+END TAG
+END TAG
+TAG kOS
+SHOW SPH True
+SHOW VAB True
+TAG Storage
+SHOW SPH True
+SHOW VAB True
+TAG ElectricCharge
+SHOW SPH True
+SHOW VAB True
+ADD PART kOSMachine1m
+END TAG
+END TAG
+END TAG
+TAG MagicSmokeIndustries
+SHOW SPH True
+SHOW VAB True
+TAG Utility
+SHOW SPH True
+SHOW VAB True
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART AdjustableRail
+ADD PART AdjustableRailHalf
+ADD PART AdjustableRailFourth
+ADD PART dockingwasher.std
+ADD PART dockingwasher.sr
+ADD PART dockingwasher.jr
+ADD PART dockingwasher.free
+ADD PART dockingwasher.freejr
+ADD PART dockingwasher.freesr
+ADD PART GantryLarge
+ADD PART Gantry
+ADD PART GantrySmall
+ADD PART GantryExtraSmall
+ADD PART GantryLargeVariant
+ADD PART GantryVariant
+ADD PART GantrySmallVariant
+ADD PART GantryExtraSmallVariant
+ADD PART IRHingeClosed
+ADD PART IRHingeClosedHalf
+ADD PART IRHingeClosedFourth
+ADD PART IR.HingeIndustrial
+ADD PART IRHingeOpen
+ADD PART IRHingeOpenHalf
+ADD PART IRHingeOpenFourth
+ADD PART IRHingeTall
+ADD PART IRHingeTallHalf
+ADD PART IRHingeTallFourth
+ADD PART IRHingeTallND
+ADD PART IRHingeTallHalfND
+ADD PART IRHingeTallFourthND
+ADD PART IRPiston
+ADD PART IRPistonHalf
+ADD PART IRPistonFourth
+ADD PART IR.Rotatron
+ADD PART IR.RotatronHalf
+ADD PART IR.RotatronFourth
+ADD PART IR.Rotatronmk2
+ADD PART IR.RotatronVTOL
+ADD PART TelescopeFullA
+ADD PART TelescopeFullB
+ADD PART TelescopeFullC
+ADD PART TelescopeHalfA
+ADD PART TelescopeHalfB
+ADD PART TelescopeHalfC
+ADD PART TelescopeFourthA
+ADD PART TelescopeFourthB
+ADD PART TelescopeFourthC
+END TAG
+END TAG
+END TAG
+TAG MechJeb2
+ICON MechJeb2
+SHOW SPH True
+SHOW VAB True
+TAG Pods
+SHOW SPH True
+SHOW VAB True
+TAG Unmanned
+SHOW SPH True
+SHOW VAB True
+ADD PART mumech.MJ2.AR202
+ADD PART mumech.MJ2.Pod
+END TAG
+END TAG
+TAG Propulsion
+SHOW SPH True
+SHOW VAB True
+TAG MJPropellant
+SHOW SPH True
+SHOW VAB True
+ADD PART mumech.MJ2.Pod
+END TAG
+TAG RCS
+SHOW SPH True
+SHOW VAB True
+ADD PART mumech.MJ2.Pod
+END TAG
+END TAG
+TAG Utility
+SHOW SPH True
+SHOW VAB True
+TAG Generators
+SHOW SPH True
+SHOW VAB True
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART mumech.MJ2.Pod
+END TAG
+END TAG
+END TAG
+END TAG
+TAG ModsByTal
+SHOW SPH True
+SHOW VAB True
+TAG Storage
+SHOW SPH True
+SHOW VAB True
+TAG LiquidFuel
+SHOW SPH True
+SHOW VAB True
+ADD PART TAL.Large.HalfSpherical.Tank.Fuel
+ADD PART TAL.Large.HalfSpherical.Tank.V2.Fuel
+ADD PART TAL.Medium.HalfSpherical.Tank.Fuel
+ADD PART TAL.Medium.HalfSpherical.Tank.V2.Fuel
+ADD PART TAL.Small.HalfSpherical.Tank.Fuel
+ADD PART TAL.Small.HalfSpherical.Tank.V2.Fuel
+ADD PART TAL.Large.Spherical.Tank.Fuel
+ADD PART TAL.Large.Spherical.Tank.V2.Fuel
+ADD PART TAL.Medium.Spherical.Tank.Fuel
+ADD PART TAL.Medium.Spherical.Tank.V2.Fuel
+ADD PART TAL.Small.Spherical.Tank.Fuel
+ADD PART TAL.Small.Spherical.Tank.V2.Fuel
+ADD PART TAL.Toroidal.Tank.Large.Fuel
+ADD PART TAL.Toroidal.Tank.Medium.Fuel
+ADD PART TAL.Toroidal.Tank.Small.Fuel
+ADD PART TAL.XLarge.Toroidal.Tank.Fuel
+END TAG
+TAG Oxidizer
+SHOW SPH True
+SHOW VAB True
+ADD PART TAL.Large.HalfSpherical.Tank.Fuel
+ADD PART TAL.Large.HalfSpherical.Tank.V2.Fuel
+ADD PART TAL.Medium.HalfSpherical.Tank.Fuel
+ADD PART TAL.Medium.HalfSpherical.Tank.V2.Fuel
+ADD PART TAL.Small.HalfSpherical.Tank.Fuel
+ADD PART TAL.Small.HalfSpherical.Tank.V2.Fuel
+ADD PART TAL.Large.Spherical.Tank.Fuel
+ADD PART TAL.Large.Spherical.Tank.V2.Fuel
+ADD PART TAL.Medium.Spherical.Tank.Fuel
+ADD PART TAL.Medium.Spherical.Tank.V2.Fuel
+ADD PART TAL.Small.Spherical.Tank.Fuel
+ADD PART TAL.Small.Spherical.Tank.V2.Fuel
+ADD PART TAL.Toroidal.Tank.Large.Fuel
+ADD PART TAL.Toroidal.Tank.Medium.Fuel
+ADD PART TAL.Toroidal.Tank.Small.Fuel
+ADD PART TAL.XLarge.Toroidal.Tank.Fuel
+END TAG
+END TAG
+TAG Structural
+SHOW SPH True
+SHOW VAB True
+TAG Main
+SHOW SPH True
+SHOW VAB True
+ADD PART TAL.Cubic.Truss.Mini.0.5m
+ADD PART TAL.Cubic.Truss.Mini.1.5m
+ADD PART TAL.Cubic.Truss.Mini.5m
+ADD PART TAL.Cubic.Truss.Mini.1m
+ADD PART TAL.Cubic.Truss.Mini.2.5m
+ADD PART TAL.Cubic.Truss.Mini.Adapter.Large
+ADD PART TAL.Cubic.Truss.Mini.Adapter.Long
+ADD PART TAL.Cubic.Truss.Mini.Adapter.Short
+ADD PART TAL.Cubic.Truss.Mini.Half
+ADD PART TAL.Cubic.Truss.Mini.Hub
+ADD PART TAL.Cubic.Truss.10m
+ADD PART TAL.Cubic.Truss.1m
+ADD PART TAL.Cubic.Truss.2m
+ADD PART TAL.Cubic.Truss.3m
+ADD PART TAL.Cubic.Truss.5m
+ADD PART TAL.Cubic.Truss.Adapter.Large
+ADD PART TAL.Cubic.Truss.Adapter.Long
+ADD PART TAL.Cubic.Truss.Adapter.Short
+ADD PART TAL.Cubic.Truss.Half
+ADD PART TAL.Cubic.Truss.Hub
+ADD PART TAL.Extended.Radial.Mount.Large
+ADD PART TAL.Extended.Radial.Mount.Medium
+ADD PART TAL.Extended.Radial.Mount.Small
+ADD PART TAL.Flush.Radial.Mount.Large
+ADD PART TAL.Flush.Radial.Mount.Medium
+ADD PART TAL.Flush.Radial.Mount.Small
+END TAG
+END TAG
+TAG Utility
+SHOW SPH True
+SHOW VAB True
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART TAL.Large.HalfSpherical.Tank.Utility
+ADD PART TAL.Large.HalfSpherical.Tank.V2.Utility
+ADD PART TAL.Medium.HalfSpherical.Tank.Utility
+ADD PART TAL.Medium.HalfSpherical.Tank.V2.Utility
+ADD PART TAL.Small.HalfSpherical.Tank.Utility
+ADD PART TAL.Small.HalfSpherical.Tank.V2.Utility
+ADD PART TAL.Large.Spherical.Tank.Utility
+ADD PART TAL.Large.Spherical.Tank.V2.Utility
+ADD PART TAL.Medium.Spherical.Tank.Utility
+ADD PART TAL.Medium.Spherical.Tank.V2.Utility
+ADD PART TAL.Small.Spherical.Tank.Utility
+ADD PART TAL.Small.Spherical.Tank.V2.Utility
+ADD PART TAL.Toroidal.Tank.Large.Utility
+ADD PART TAL.Toroidal.Tank.Medium.Utility
+ADD PART TAL.Toroidal.Tank.Small.Utility
+ADD PART TAL.XLarge.Toroidal.Tank.Utility
+END TAG
+END TAG
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART TAL.Toroidal.Tank.Hub.Large
+ADD PART TAL.Toroidal.Tank.Hub.Medium
+ADD PART TAL.Toroidal.Tank.Hub.Small
+ADD PART TAL.Toroidal.Tank.Hub.XLarge
+END TAG
+END TAG
+TAG ModularFuelTanks
+SHOW SPH True
+SHOW VAB True
+TAG Propulsion
+SHOW SPH True
+SHOW VAB True
+TAG SolidFuel
+SHOW SPH True
+SHOW VAB True
+ADD PART solidBooster1-1Small
+ADD PART solidBoosterSmall
+END TAG
+END TAG
+TAG Science
+SHOW SPH True
+SHOW VAB True
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART ThermalFin
+END TAG
+END TAG
+END TAG
 TAG NothkeSerCom
 SHOW SPH True
 SHOW VAB True
@@ -3057,6 +3354,70 @@ SHOW SPH True
 SHOW VAB True
 ADD PART SerCom1m
 ADD PART SerCom2
+END TAG
+END TAG
+END TAG
+TAG Parts
+SHOW SPH True
+SHOW VAB True
+TAG Propulsion
+SHOW SPH True
+SHOW VAB True
+TAG LiquidFuel
+SHOW SPH True
+SHOW VAB True
+ADD PART 3m.JoolV.secondstage.engine
+ADD PART 3m.JoolV
+END TAG
+TAG Oxidizer
+SHOW SPH True
+SHOW VAB True
+ADD PART 3m.JoolV.secondstage.engine
+ADD PART 3m.JoolV
+END TAG
+TAG RCS
+SHOW SPH True
+SHOW VAB True
+ADD PART FLY.RCSBlock
+END TAG
+TAG SolidFuel
+SHOW SPH True
+SHOW VAB True
+ADD PART 3m.JoolV.LAS
+ADD PART 3m.JoolV.SRB
+END TAG
+END TAG
+TAG Storage
+SHOW SPH True
+SHOW VAB True
+TAG LiquidFuel
+SHOW SPH True
+SHOW VAB True
+ADD PART JoolV.2stagetank
+ADD PART JoolV.maintank
+END TAG
+TAG Oxidizer
+SHOW SPH True
+SHOW VAB True
+ADD PART JoolV.2stagetank
+ADD PART JoolV.maintank
+END TAG
+END TAG
+TAG Structural
+SHOW SPH True
+SHOW VAB True
+TAG Main
+SHOW SPH True
+SHOW VAB True
+ADD PART 3m.JoolV.2to1adapter
+ADD PART 3m.JoolV.3to2adapter
+END TAG
+TAG Decoupler
+SHOW SPH True
+SHOW VAB True
+ADD PART 3m.JoolV.1mdecoupler
+ADD PART 3m.JoolV.2mdecoupler
+ADD PART 3m.JoolV.3mdecoupler
 END TAG
 END TAG
 END TAG
@@ -3106,6 +3467,25 @@ ADD PART Romfarer.Lazor.Green
 ADD PART Romfarer.Lazor.Magenta
 ADD PART Romfarer.Lazor.Red
 ADD PART Romfarer.Lazor.Yellow
+ADD PART Buran Manipulator
+ADD PART ISS CanadArm2
+END TAG
+END TAG
+END TAG
+TAG SCANsat
+SHOW SPH True
+SHOW VAB True
+TAG Science
+SHOW SPH True
+SHOW VAB True
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART SCANsat.Tracker
+ADD PART SCANsat.Scanner
+ADD PART SCANsat.Scanner2
+ADD PART SCANsat.Scanner32
+ADD PART SCANsat.Scanner24
 END TAG
 END TAG
 END TAG
@@ -3121,6 +3501,7 @@ SHOW VAB True
 ADD PART scienceHardDrive
 ADD PART scienceHardDriveLarge
 ADD PART tarsierSpaceTelescope
+END TAG
 END TAG
 END TAG
 END TAG
