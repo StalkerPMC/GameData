@@ -57,7 +57,7 @@ dragCoefficient: drag coefficient of this material (recommended to not go below 
 --Effects node--
 EFFECTS
 {
-  rcpredeploy
+  rcpredeploy  //name of the predeployment effect
   {
      AUDIO
      {
@@ -66,7 +66,7 @@ EFFECTS
         volume = 1
      }
   }
-  rcdeploy
+  rcdeploy  //name of the deployment effect
   {
      AUDIO
      {
@@ -75,7 +75,7 @@ EFFECTS
         volume = 1
      }
   }
-  rccut
+  rccut  //name of the cut effect
   {
      AUDIO
      {
@@ -84,7 +84,7 @@ EFFECTS
         volume = 1
      }
   }
-  rcrepack
+  rcrepack  //name of the repack effect
   {
      AUDIO
      {
@@ -96,6 +96,14 @@ EFFECTS
 }
 
 Changelog:
+December 18th 2013 (take two)
+v0.3.2.1
+*Hotfix*
+-Fixed the bug where dual parachutes would take mass forever
+-Fixed a bug with combo chutes having ridiculous starting weight
+-Finally fixed the bug with the FASA and Bargain Rocket parachutes, they will now animate properly (big thanks to sirkut)
+-All the ModuleManager files are now included with the main download, remove those you don't want.
+
 December 18th 2013
 v0.3.2
 KSP 0.23 compatibility update!
