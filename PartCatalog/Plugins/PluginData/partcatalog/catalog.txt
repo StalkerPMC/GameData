@@ -3075,6 +3075,120 @@ ADD PART StnSciExperiment6
 END TAG
 END TAG
 END TAG
+TAG ModsByTal
+SHOW SPH True
+SHOW VAB True
+TAG Storage
+SHOW SPH True
+SHOW VAB True
+TAG LiquidFuel
+SHOW SPH True
+SHOW VAB True
+ADD PART TAL.Large.HalfSpherical.Tank.Fuel
+ADD PART TAL.Large.HalfSpherical.Tank.V2.Fuel
+ADD PART TAL.Medium.HalfSpherical.Tank.Fuel
+ADD PART TAL.Medium.HalfSpherical.Tank.V2.Fuel
+ADD PART TAL.Small.HalfSpherical.Tank.Fuel
+ADD PART TAL.Small.HalfSpherical.Tank.V2.Fuel
+ADD PART TAL.Large.Spherical.Tank.Fuel
+ADD PART TAL.Large.Spherical.Tank.V2.Fuel
+ADD PART TAL.Medium.Spherical.Tank.Fuel
+ADD PART TAL.Medium.Spherical.Tank.V2.Fuel
+ADD PART TAL.Small.Spherical.Tank.Fuel
+ADD PART TAL.Small.Spherical.Tank.V2.Fuel
+ADD PART TAL.Toroidal.Tank.Large.Fuel
+ADD PART TAL.Toroidal.Tank.Medium.Fuel
+ADD PART TAL.Toroidal.Tank.Small.Fuel
+ADD PART TAL.XLarge.Toroidal.Tank.Fuel
+END TAG
+TAG Oxidizer
+SHOW SPH True
+SHOW VAB True
+ADD PART TAL.Large.HalfSpherical.Tank.Fuel
+ADD PART TAL.Large.HalfSpherical.Tank.V2.Fuel
+ADD PART TAL.Medium.HalfSpherical.Tank.Fuel
+ADD PART TAL.Medium.HalfSpherical.Tank.V2.Fuel
+ADD PART TAL.Small.HalfSpherical.Tank.Fuel
+ADD PART TAL.Small.HalfSpherical.Tank.V2.Fuel
+ADD PART TAL.Large.Spherical.Tank.Fuel
+ADD PART TAL.Large.Spherical.Tank.V2.Fuel
+ADD PART TAL.Medium.Spherical.Tank.Fuel
+ADD PART TAL.Medium.Spherical.Tank.V2.Fuel
+ADD PART TAL.Small.Spherical.Tank.Fuel
+ADD PART TAL.Small.Spherical.Tank.V2.Fuel
+ADD PART TAL.Toroidal.Tank.Large.Fuel
+ADD PART TAL.Toroidal.Tank.Medium.Fuel
+ADD PART TAL.Toroidal.Tank.Small.Fuel
+ADD PART TAL.XLarge.Toroidal.Tank.Fuel
+END TAG
+END TAG
+TAG Structural
+SHOW SPH True
+SHOW VAB True
+TAG Main
+SHOW SPH True
+SHOW VAB True
+ADD PART TAL.Cubic.Truss.Mini.0.5m
+ADD PART TAL.Cubic.Truss.Mini.1.5m
+ADD PART TAL.Cubic.Truss.Mini.5m
+ADD PART TAL.Cubic.Truss.Mini.1m
+ADD PART TAL.Cubic.Truss.Mini.2.5m
+ADD PART TAL.Cubic.Truss.Mini.Adapter.Large
+ADD PART TAL.Cubic.Truss.Mini.Adapter.Long
+ADD PART TAL.Cubic.Truss.Mini.Adapter.Short
+ADD PART TAL.Cubic.Truss.Mini.Half
+ADD PART TAL.Cubic.Truss.Mini.Hub
+ADD PART TAL.Cubic.Truss.10m
+ADD PART TAL.Cubic.Truss.1m
+ADD PART TAL.Cubic.Truss.2m
+ADD PART TAL.Cubic.Truss.3m
+ADD PART TAL.Cubic.Truss.5m
+ADD PART TAL.Cubic.Truss.Adapter.Large
+ADD PART TAL.Cubic.Truss.Adapter.Long
+ADD PART TAL.Cubic.Truss.Adapter.Short
+ADD PART TAL.Cubic.Truss.Half
+ADD PART TAL.Cubic.Truss.Hub
+ADD PART TAL.Extended.Radial.Mount.Large
+ADD PART TAL.Extended.Radial.Mount.Medium
+ADD PART TAL.Extended.Radial.Mount.Small
+ADD PART TAL.Flush.Radial.Mount.Large
+ADD PART TAL.Flush.Radial.Mount.Medium
+ADD PART TAL.Flush.Radial.Mount.Small
+END TAG
+END TAG
+TAG Utility
+SHOW SPH True
+SHOW VAB True
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART TAL.Large.HalfSpherical.Tank.Utility
+ADD PART TAL.Large.HalfSpherical.Tank.V2.Utility
+ADD PART TAL.Medium.HalfSpherical.Tank.Utility
+ADD PART TAL.Medium.HalfSpherical.Tank.V2.Utility
+ADD PART TAL.Small.HalfSpherical.Tank.Utility
+ADD PART TAL.Small.HalfSpherical.Tank.V2.Utility
+ADD PART TAL.Large.Spherical.Tank.Utility
+ADD PART TAL.Large.Spherical.Tank.V2.Utility
+ADD PART TAL.Medium.Spherical.Tank.Utility
+ADD PART TAL.Medium.Spherical.Tank.V2.Utility
+ADD PART TAL.Small.Spherical.Tank.Utility
+ADD PART TAL.Small.Spherical.Tank.V2.Utility
+ADD PART TAL.Toroidal.Tank.Large.Utility
+ADD PART TAL.Toroidal.Tank.Medium.Utility
+ADD PART TAL.Toroidal.Tank.Small.Utility
+ADD PART TAL.XLarge.Toroidal.Tank.Utility
+END TAG
+END TAG
+TAG Other
+SHOW SPH True
+SHOW VAB True
+ADD PART TAL.Toroidal.Tank.Hub.Large
+ADD PART TAL.Toroidal.Tank.Hub.Medium
+ADD PART TAL.Toroidal.Tank.Hub.Small
+ADD PART TAL.Toroidal.Tank.Hub.XLarge
+END TAG
+END TAG
 TAG Small Mods
 ICON SmallMods
 SHOW SPH True
@@ -3204,120 +3318,6 @@ SHOW VAB True
 ADD PART mumech.MJ2.Pod
 END TAG
 END TAG
-END TAG
-END TAG
-TAG ModsByTal
-SHOW SPH True
-SHOW VAB True
-TAG Storage
-SHOW SPH True
-SHOW VAB True
-TAG LiquidFuel
-SHOW SPH True
-SHOW VAB True
-ADD PART TAL.Large.HalfSpherical.Tank.Fuel
-ADD PART TAL.Large.HalfSpherical.Tank.V2.Fuel
-ADD PART TAL.Medium.HalfSpherical.Tank.Fuel
-ADD PART TAL.Medium.HalfSpherical.Tank.V2.Fuel
-ADD PART TAL.Small.HalfSpherical.Tank.Fuel
-ADD PART TAL.Small.HalfSpherical.Tank.V2.Fuel
-ADD PART TAL.Large.Spherical.Tank.Fuel
-ADD PART TAL.Large.Spherical.Tank.V2.Fuel
-ADD PART TAL.Medium.Spherical.Tank.Fuel
-ADD PART TAL.Medium.Spherical.Tank.V2.Fuel
-ADD PART TAL.Small.Spherical.Tank.Fuel
-ADD PART TAL.Small.Spherical.Tank.V2.Fuel
-ADD PART TAL.Toroidal.Tank.Large.Fuel
-ADD PART TAL.Toroidal.Tank.Medium.Fuel
-ADD PART TAL.Toroidal.Tank.Small.Fuel
-ADD PART TAL.XLarge.Toroidal.Tank.Fuel
-END TAG
-TAG Oxidizer
-SHOW SPH True
-SHOW VAB True
-ADD PART TAL.Large.HalfSpherical.Tank.Fuel
-ADD PART TAL.Large.HalfSpherical.Tank.V2.Fuel
-ADD PART TAL.Medium.HalfSpherical.Tank.Fuel
-ADD PART TAL.Medium.HalfSpherical.Tank.V2.Fuel
-ADD PART TAL.Small.HalfSpherical.Tank.Fuel
-ADD PART TAL.Small.HalfSpherical.Tank.V2.Fuel
-ADD PART TAL.Large.Spherical.Tank.Fuel
-ADD PART TAL.Large.Spherical.Tank.V2.Fuel
-ADD PART TAL.Medium.Spherical.Tank.Fuel
-ADD PART TAL.Medium.Spherical.Tank.V2.Fuel
-ADD PART TAL.Small.Spherical.Tank.Fuel
-ADD PART TAL.Small.Spherical.Tank.V2.Fuel
-ADD PART TAL.Toroidal.Tank.Large.Fuel
-ADD PART TAL.Toroidal.Tank.Medium.Fuel
-ADD PART TAL.Toroidal.Tank.Small.Fuel
-ADD PART TAL.XLarge.Toroidal.Tank.Fuel
-END TAG
-END TAG
-TAG Structural
-SHOW SPH True
-SHOW VAB True
-TAG Main
-SHOW SPH True
-SHOW VAB True
-ADD PART TAL.Cubic.Truss.Mini.0.5m
-ADD PART TAL.Cubic.Truss.Mini.1.5m
-ADD PART TAL.Cubic.Truss.Mini.5m
-ADD PART TAL.Cubic.Truss.Mini.1m
-ADD PART TAL.Cubic.Truss.Mini.2.5m
-ADD PART TAL.Cubic.Truss.Mini.Adapter.Large
-ADD PART TAL.Cubic.Truss.Mini.Adapter.Long
-ADD PART TAL.Cubic.Truss.Mini.Adapter.Short
-ADD PART TAL.Cubic.Truss.Mini.Half
-ADD PART TAL.Cubic.Truss.Mini.Hub
-ADD PART TAL.Cubic.Truss.10m
-ADD PART TAL.Cubic.Truss.1m
-ADD PART TAL.Cubic.Truss.2m
-ADD PART TAL.Cubic.Truss.3m
-ADD PART TAL.Cubic.Truss.5m
-ADD PART TAL.Cubic.Truss.Adapter.Large
-ADD PART TAL.Cubic.Truss.Adapter.Long
-ADD PART TAL.Cubic.Truss.Adapter.Short
-ADD PART TAL.Cubic.Truss.Half
-ADD PART TAL.Cubic.Truss.Hub
-ADD PART TAL.Extended.Radial.Mount.Large
-ADD PART TAL.Extended.Radial.Mount.Medium
-ADD PART TAL.Extended.Radial.Mount.Small
-ADD PART TAL.Flush.Radial.Mount.Large
-ADD PART TAL.Flush.Radial.Mount.Medium
-ADD PART TAL.Flush.Radial.Mount.Small
-END TAG
-END TAG
-TAG Utility
-SHOW SPH True
-SHOW VAB True
-TAG Other
-SHOW SPH True
-SHOW VAB True
-ADD PART TAL.Large.HalfSpherical.Tank.Utility
-ADD PART TAL.Large.HalfSpherical.Tank.V2.Utility
-ADD PART TAL.Medium.HalfSpherical.Tank.Utility
-ADD PART TAL.Medium.HalfSpherical.Tank.V2.Utility
-ADD PART TAL.Small.HalfSpherical.Tank.Utility
-ADD PART TAL.Small.HalfSpherical.Tank.V2.Utility
-ADD PART TAL.Large.Spherical.Tank.Utility
-ADD PART TAL.Large.Spherical.Tank.V2.Utility
-ADD PART TAL.Medium.Spherical.Tank.Utility
-ADD PART TAL.Medium.Spherical.Tank.V2.Utility
-ADD PART TAL.Small.Spherical.Tank.Utility
-ADD PART TAL.Small.Spherical.Tank.V2.Utility
-ADD PART TAL.Toroidal.Tank.Large.Utility
-ADD PART TAL.Toroidal.Tank.Medium.Utility
-ADD PART TAL.Toroidal.Tank.Small.Utility
-ADD PART TAL.XLarge.Toroidal.Tank.Utility
-END TAG
-END TAG
-TAG Other
-SHOW SPH True
-SHOW VAB True
-ADD PART TAL.Toroidal.Tank.Hub.Large
-ADD PART TAL.Toroidal.Tank.Hub.Medium
-ADD PART TAL.Toroidal.Tank.Hub.Small
-ADD PART TAL.Toroidal.Tank.Hub.XLarge
 END TAG
 END TAG
 TAG ModularFuelTanks
