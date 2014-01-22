@@ -1,0 +1,3 @@
+Tank = Propulsion__Tank.grp
+Engine = Propulsion__Engine.grp
+RCS = Propulsion__RCS.grp
