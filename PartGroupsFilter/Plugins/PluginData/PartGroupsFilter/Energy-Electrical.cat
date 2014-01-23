@@ -1,0 +1,7 @@
+Nuclear = Energy-Electrical__Nuclear.grp
+Solar = Energy-Electrical__Solar.grp
+Microwave = Energy-Electrical__Microwave.grp
+Wasteheat = Energy-Electrical__Wasteheat.grp
+Batteries = Energy-Electrical__Batteries.grp
+Heat = Energy-Electrical__Heat.grp
+Other = Energy-Electrical__Other.grp

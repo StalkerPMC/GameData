@@ -1,2 +1,4 @@
 Manned = Command__Manned.grp
 Unmanned = Command__Unmanned.grp
+ReactionW = Command__ReactionW.grp
+Lazor = Command__Lazor.grp

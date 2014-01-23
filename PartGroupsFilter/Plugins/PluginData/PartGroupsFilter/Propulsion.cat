@@ -1,3 +1,6 @@
 Tank = Propulsion__Tank.grp
-Engine = Propulsion__Engine.grp
-RCS = Propulsion__RCS.grp
+RCSThruster = Propulsion__RCSThruster.grp
+EngineChemical = Propulsion__EngineChemical.grp
+EngineElectric-Thermal = Propulsion__EngineElectric-Thermal.grp
+EngineOther = Propulsion__EngineOther.grp
+EngineJet = Propulsion__EngineJet.grp

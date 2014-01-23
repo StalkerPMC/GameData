@@ -1,0 +1,7 @@
+StackSplit = Structural__StackSplit.grp
+Radial = Structural__Radial.grp
+Separation = Structural__Separation.grp
+Frame = Structural__Frame.grp
+Other = Structural__Other.grp
+Adapter = Structural__Adapter.grp
+Cargo = Structural__Cargo.grp
