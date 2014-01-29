@@ -11,4 +11,3 @@
 {1:"Crewman #6:"; ; }   {0}$&$CREW_9_FULL CREW_9_PRESENT
 {1:"Crewman #7:"; ; }   {0}$&$CREW_10_FULL CREW_10_PRESENT
 {1:"Crewman #8:"; ; }   {0}$&$CREW_11_FULL CREW_11_PRESENT
-

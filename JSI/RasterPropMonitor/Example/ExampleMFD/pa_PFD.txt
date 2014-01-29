@@ -1,11 +1,11 @@
- {0:SIP_6.1}m                       {1:SIP4}m/s    $&$ ALTITUDE SURFSPEED
+[@y5] {0:SIP_6.1}m                       {1:SIP4}m/s    $&$ ALTITUDE SURFSPEED
 
-                {0,6:000.0}° $&$ HEADING
+                [@x2]{0,6:000.0}° $&$ HEADING
  {0:SIP_6.1}m                      {1:SIP4}m/s     $&$ ORBTSPEED ACCEL
 
   {0:ORB;TGT;SRF}                                  $&$ SPEEDDISPLAYMODE 
 
- {0,6:000.0}°                        {1,6:000.0}° $&$ ROLL PITCH
+ [@x-3]{0,6:000.0}°                        [@x2]{1,6:000.0}° $&$ ROLL PITCH
 
 
 

@@ -1,4 +1,4 @@
--- Asc/Des Mode --- Body: {0} ---------------------$&$ORBITBODY
+   Asc/Des Mode     Body: {0} $&$ ORBITBODY
 R.Alt [#00ffffff]{0:SIP_6.3}m            [#ffffffff]Roll: [#00ffffff]{1,7:0.00}° $&$RADARALT ROLL
 V.Spd [#00ffffff]{0:SIP_6.3}m/s          [#ffffffff]Pitch:[#00ffffff]{1,7:0.00}° $&$VERTSPEED PITCH
 H.Spd [#00ffffff]{0:SIP_6.3}m/s          [#ffffffff]Hdg:  [#00ffffff]{1,7:0.00}° $&$HORZVELOCITY HEADING
