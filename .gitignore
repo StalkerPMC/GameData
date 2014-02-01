@@ -9,3 +9,4 @@ config.xml
 /ThunderAerospace/TacFuelBalancer/PluginData/TacFuelBalancer/*.cfg
 /TriggerTech/PluginData/KerbalAlarmClock/*.txt
 /Romfarer/PluginData/Romfarer/*.txt
+/notes/Plugins/PluginData/notes/*
