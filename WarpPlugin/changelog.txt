@@ -1,3 +1,39 @@
+Version 0.10.2
+-Fixed thrust asymmetry issue with fusion and direct conversion generators
+-Impactor detection improvements
+-Improvement of Thermal UI handling of microwave receivers
+-Fixed Antimatter Initated Reactor cfg
+-Lithium comes with Lithium tank by default
+-Minor Antimatter tank ElectricCharge handling improvements
+
+Version 0.10.1
+-Fixed Plasma thruster loading bug
+-Switched Antimatter Initiated Reactor to UraniumNitride fuel (instead of UF4).
+-Fixed Antimatter Initated Reactor Resource amounts
+-New planet science curve from impactor experiment (more science everywhere except Kerbin)
+-Fixed some typos and included some missing part descriptions
+-Thermal helper toggle key changed to "I"
+-Fixed Gamma Ray Spectrometer orientation and attachment
+-Fixed Radial Tank attachment
+-Tritium radioactive decay added to reactors
+
+Version 0.10
+-Added Thermal Mechanics Helper (toggle with 'T' key in VAB)
+-Added Large Fusion Reactors (by AArtisan)
+-Added Antimatter Initiated Fission/Fusion reactor (by AArtisan)
+-Added Solar Sail (by SasquatchM)
+-Added extra fission reactors - particle bed/dusty plasma (by AArtisan)
+-Added augmented arcjet electrical thruster (by AArtisan)
+-Added IR telescope (with Kerbol gravitational lens experiment capability)
+-Added inline refinery
+-Added refinery option to produce Uranium Nitride fuel
+-Integration with ORS (fixes resource generation/consumption bugs since 0.23)
+-Changed accelerometer to new impactor experiment (smash things into planets in the name of science!)
+-Changed antimatter factory rates based on tech level, added low tech antimatter bottle to store tiny quantities of antimatter for new reactor
+-Hexcans replaced by unique radial tank (by Vaporlynx)
+-Fixed second Van Allen belt for radiation detection purposes and added surface radiation levels
+-Misc bug fixes
+
 Version 0.9.2
 -Added 62.5cm thermal rocket and plasma thruster.
 -Added 2.5m thermal turbojet.
