@@ -1,3 +1,10 @@
+Version 0.10.3
+-Integrated Impactor experiment into the stock science system
+-Fixed zero resource extraction rate at low timewarp
+-Fixed refinery monopropellant conversion rate
+-Fixed overheating with atmospheric engines
+-Fixed Tritium breeding rate
+
 Version 0.10.2
 -Fixed thrust asymmetry issue with fusion and direct conversion generators
 -Impactor detection improvements
